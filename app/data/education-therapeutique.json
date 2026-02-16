@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Éducation thérapeutique",
+    "subtitle": "Accompagnement et ateliers pour la gestion des maladies chroniques"
+  },
+  "articles": [
+    {
+      "id": "syndrome-apnee-sommeil",
+      "title": "Le Syndrome d'Apnée obstructive du Sommeil",
+      "date": "21 janvier 2025",
+      "image": "/prevention/apnée-sommeil.jpg",
+      "link": "/prevention/education-therapeutique/syndrome-apnee-sommeil"
+    },
+    {
+      "id": "ateliers-education-therapeutique",
+      "title": "Des ateliers d'éducation thérapeutique sur le territoire de la CPTS",
+      "date": "17 octobre 2023",
+      "image": "/prevention/education-therapeutique.png",
+      "link": "/prevention/education-therapeutique/ateliers-education-therapeutique"
+    }
+  ]
+}

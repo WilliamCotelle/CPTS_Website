@@ -1,0 +1,97 @@
+{
+  "title": "Mon Espace de Santé",
+  "heroImage": "/mon-espace-sante/mon-espace-sante.svg",
+  "backLink": {
+    "href": "/patients",
+    "label": "Retour à l'espace patients"
+  },
+  "intro": {
+    "description": "Le service public « Mon Espace de Santé » est désormais généralisé à tous les citoyens. Il s'agit d'un espace numérique personnel, permettant à chacun de stocker et partager ses documents et données de santé, en toute sécurité.",
+    "summary": "En résumé, un carnet de santé numérique interactif où le patient est acteur de santé.",
+    "link": {
+      "url": "https://www.ameli.fr/medecin/sante-prevention/dmp-et-mon-espace-sante/mon-espace-sante/mon-espace-sante-espace-numerique-patients",
+      "label": "En savoir plus sur ameli.fr"
+    }
+  },
+  "features": [
+    {
+      "id": "profil-medical",
+      "title": "Mon profil médical",
+      "iconName": "UserRound",
+      "subtitle": "Partagez l'essentiel de vos informations de santé",
+      "items": [
+        "Vos maladies et sujets de santé",
+        "Vos traitements",
+        "Vos allergies",
+        "Vos vaccinations",
+        "Vos mesures de santé"
+      ],
+      "additionalText": "Vous pouvez également partager une synthèse de votre profil avec les professionnels de santé de votre choix et vous avez la possibilité d'activer Mon espace santé pour vos enfants. Vous bénéficiez de ces services pour suivre leur santé. Leurs profils sont directement rattachés à votre service Mon espace santé."
+    },
+    {
+      "id": "documents-sante",
+      "title": "Mes documents de santé",
+      "iconName": "FileText",
+      "subtitle": "Retrouvez tous vos documents médicaux au même endroit",
+      "paragraphs": [
+        "Vous pouvez comme vos professionnels de santé déposer tous vos documents importants dans Mon espace santé. Vous y retrouvez le contenu de votre Dossier Médical Partagé (DMP) si vous en possédez un."
+      ],
+      "items": [
+        "Stockez vos documents et ceux de vos enfants",
+        "Classez vos documents par catégorie",
+        "Consultez vos documents en un clic"
+      ]
+    },
+    {
+      "id": "messagerie-sante",
+      "title": "Ma messagerie de santé",
+      "iconName": "MessageSquare",
+      "subtitle": "Facilitez le suivi de votre santé avec vos professionnels de santé",
+      "paragraphs": [
+        "Grâce à la messagerie sécurisée, vos professionnels de santé peuvent vous envoyer des informations en toute confidentialité.",
+        "Ils peuvent également vous transmettre des documents que vous pouvez ajouter à votre dossier médical."
+      ]
+    },
+    {
+      "id": "catalogue-services",
+      "title": "Mon catalogue de services",
+      "iconName": "LayoutGrid",
+      "subtitle": "Des services numériques pour accompagner votre santé",
+      "paragraphs": [
+        "Un catalogue de services numériques de confiance, utiles et sélectionnés pour vous par l'État."
+      ],
+      "items": [
+        "Des solutions utiles pour votre santé",
+        "Des services dans le domaine de la santé, du bien-être ou du maintien de l'autonomie pour mieux gérer votre santé",
+        "Des services numériques de confiance",
+        "Des services sélectionnés par l'État pour la qualité de leur contenu, leur transparence, leur accessibilité et leur éco-responsabilité"
+      ]
+    }
+  ],
+  "dmp": {
+    "title": "Le Dossier Médical Partagé (DMP) en pratique",
+    "description": "Véritable carnet de santé numérique, le Dossier Médical Partagé (DMP) répond à un enjeu de santé publique : disposer de la bonne information, au bon moment, où que l'on se trouve.",
+    "highlight": "Le DMP reste le point d'entrée des professionnels de santé pour alimenter et consulter les dossiers médicaux partagés de leurs patients.",
+    "paragraphs": [
+      "Tous les documents ajoutés dans les DMP des patients sont automatiquement visibles par ces derniers dans leurs profils Mon espace santé.",
+      "Pour les professionnels de santé, c'est le gage d'une meilleure prise en charge médicale des patients."
+    ],
+    "note": "NB: Chacun reste libre de s'opposer à la création de son espace personnel ou de le fermer à tout moment.",
+    "link": {
+      "url": "https://www.ameli.fr/medecin/sante-prevention/dmp-et-mon-espace-sante/dossier-medical-partage/dmp-en-pratique",
+      "label": "En savoir plus sur le DMP"
+    },
+    "buttons": [
+      {
+        "label": "Échanger avec mes professionnels de santé",
+        "url": "https://drive.google.com/file/d/1VWPswTao4JJRkLf6YPKEQmupyDQI2rB0/view?usp=drive_link",
+        "variant": "default"
+      },
+      {
+        "label": "Gérer mes documents",
+        "url": "https://drive.google.com/file/d/1jftYlMPd0yVWMPoFCGwFoTws9bpushPA/view?usp=sharing",
+        "variant": "default"
+      }
+    ]
+  }
+}

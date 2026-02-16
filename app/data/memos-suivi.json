@@ -1,0 +1,683 @@
+{
+  "hero": {
+    "title": "Les Mémos de Suivi",
+    "subtitle": "Des outils pratiques pour suivre votre santé au quotidien"
+  },
+  "introduction": {
+    "paragraphs": [
+      {
+        "text": "Si vous êtes porteur ",
+        "bold": "d'une maladie chronique",
+        "after": " (Diabète, Hypertension, Insuffisance Cardiaque…) vous justifiez d'un ",
+        "highlight": "suivi régulier",
+        "end": " auprès de votre médecin référent et de vos spécialistes."
+      },
+      {
+        "text": "Il en est de même au moment de ",
+        "bold": "votre grossesse",
+        "after": " ou ",
+        "bold2": "à certains âges clefs",
+        "end": " (petite enfance, adolescence, âge senior). Un mémo vous est proposé pour résumer ces suivis et ainsi les faciliter."
+      },
+      {
+        "bold": "Soyez acteur de votre soin",
+        "text": " : un suivi rapproché permet de ",
+        "bold2": "mieux contrôler votre maladie",
+        "end": " ou votre état clinique et évite, voire repousse, ses complications."
+      }
+    ]
+  },
+  "memos": [
+    {
+      "id": "diabete",
+      "title": "Le Diabète",
+      "image": "/prevention/memo-suivi/diabete.jpg",
+      "color": "emerald",
+      "content": {
+        "intro": "EXAMEN CLINIQUE : approfondi minimum 1 fois par an voire plus si diabète déséquilibré :",
+        "points": [
+          "POIDS, mesure de TA, examen CARDIOVASCULAIRE",
+          "examen NEUROLOGIQUE (sensibilité au FILAMENT)",
+          "examen CUTANE (recherche de PLAIES)",
+          "ACCOMPAGNEMENT (tolérance médicaments, diététique, activités physiques)"
+        ],
+        "subtitle": "7 EXAMENS DE SUIVI :",
+        "images": [
+          "/prevention/memo-suivi/diabete/diabete1.jpg",
+          "/prevention/memo-suivi/diabete/diabete2.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hypertension",
+      "title": "L'Hypertension Artérielle",
+      "image": "/prevention/memo-suivi/hypertension-arterielle.jpg",
+      "color": "blue",
+      "content": {
+        "intro": [
+          { "type": "bold", "text": "L'AUTOMESURE" },
+          { "type": "text", "text": " avec un tensiomètre : Confirme l'HTA et suit l'" },
+          { "type": "bold", "text": "EFFICACITÉ DU TRAITEMENT" },
+          { "type": "text", "text": ". Réalisable sur une application gratuite ou un relevé papier." }
+        ],
+        "links": [
+          {
+            "label": "Application de suivi HTA",
+            "url": "https://www.depisthta.net/suivihta.html"
+          },
+          {
+            "label": "Relevé d'accompagnement HTA (PDF)",
+            "url": "https://www.ameli.fr/sites/default/files/2018403_releve_amt_accompagnement_hta-v2.pdf"
+          }
+        ],
+        "sections": [
+          {
+            "title": "EXAMEN CLINIQUE",
+            "points": [
+              [
+                { "type": "bold", "text": "ACCOMPAGNEMENT" },
+                { "type": "text", "text": " (" },
+                { "type": "underline", "text": "OBSERVANCE" },
+                { "type": "text", "text": " du traitement, mesures " },
+                { "type": "underline", "text": "Hygiéno-diététiques" },
+                { "type": "text", "text": " incluant le " },
+                { "type": "underline", "text": "SPORT" },
+                { "type": "text", "text": " et le CONTRÔLE DES " },
+                { "type": "underline", "text": "TOXIQUES tabac, alcool etc." },
+                { "type": "text", "text": ", TOLÉRANCE des médicaments)" }
+              ],
+              [
+                { "type": "bold", "text": "CONTRÔLE des auto-mesures" },
+                { "type": "text", "text": " (efficacité du traitement, adaptation du traitement et de la posologie)" }
+              ],
+              [
+                { "type": "bold", "text": "POIDS et IMC" }
+              ],
+              [
+                { "type": "bold", "text": "EXAMEN CARDIO-VASCULAIRE :" },
+                { "type": "text", "text": " recherche de signes d'insuffisance cardiaque" }
+              ]
+            ]
+          },
+          {
+            "title": "EXAMENS BIOLOGIQUES COMPLÉMENTAIRES",
+            "points": [
+              [
+                { "type": "bold", "text": "REIN" },
+                { "type": "text", "text": " par analyse de sang et des " },
+                { "type": "underline", "text": "urines (1/an recherche de PROTÉINURIE et CRÉATINURIE RAC)" }
+              ],
+              [
+                { "type": "bold", "text": "LDL CHOLESTÉROL" }
+              ],
+              [
+                { "type": "bold", "text": "IONS NA+ (Sodium) K+ (Potassium) CA2+ (Calcium)" }
+              ],
+              [
+                { "type": "bold", "text": "SUIVI SPÉCIALISTE :" },
+                { "type": "text", "text": " consultation chez le médecin " },
+                { "type": "bold", "text": "CARDIOLOGUE : 1/2ans" }
+              ],
+              [
+                { "type": "bold", "text": "ECG" }
+              ],
+              [
+                { "type": "bold", "text": "ÉCHOGRAPHIE CARDIAQUE :" },
+                { "type": "text", "text": " surveille la taille de votre cœur (myocardiopathie hypertensive), sa fraction d'éjection (FE)" }
+              ],
+              [
+                { "type": "bold", "text": "ÉPREUVE D'EFFORT :" },
+                { "type": "text", "text": " contrôle votre Tension Artérielle à l'effort et d'éventuels troubles du rythme à l'effort" }
+              ],
+              [
+                { "type": "bold", "text": "+/- DOPPLER vasculaires" }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "insuffisance-cardiaque",
+      "title": "Insuffisance Cardiaque",
+      "image": "/prevention/memo-suivi/insuffisance-cardiaque.jpg",
+      "color": "emerald",
+      "content": {
+        "intro": [
+          { "type": "bold", "text": "EXAMEN CLINIQUE" },
+          { "type": "text", "text": " : recherche d'un Essoufflement (dyspnée), Prise de poids, Œdème et Fatigue (" },
+          { "type": "bold", "text": "EPOF" },
+          { "type": "text", "text": ")" }
+        ],
+        "sections": [
+          {
+            "title": "POIDS",
+            "points": [
+              [
+                { "type": "underline", "text": "Il est demandé au patient de se peser 1/semaine" },
+                { "type": "text", "text": " : Alerter le médecin si PRISE DE POIDS brutale de " },
+                { "type": "bold", "text": "+ 2kgs /5 jours !" }
+              ]
+            ]
+          },
+          {
+            "title": "OEDEMES DES MEMBRES INFERIEURS",
+            "points": [
+              [
+                { "type": "text", "text": "auscultation CARDIO " },
+                { "type": "bold", "text": "PULMONAIRE (" },
+                { "type": "bold", "text": "crépitants)" }
+              ]
+            ]
+          },
+          {
+            "title": "EXAMENS BIOLOGIQUES",
+            "points": [
+              [
+                { "type": "bold", "text": "PROBNP (doseur marqueur minimum une fois /an)" }
+              ],
+              [
+                { "type": "bold", "text": "FONCTION RENALE" },
+                { "type": "text", "text": " (prise de sang et URINES)" }
+              ],
+              [
+                { "type": "bold", "text": "IONOGRAMME NA+ (Sodium) K+ (Potassium) CA2+ (Calcium)" }
+              ]
+            ]
+          },
+          {
+            "title": "SURVEILLANCE PAR LE SPECIALISTE CARDIOLOGUE",
+            "points": [
+              [
+                { "type": "bold", "text": "ECG" }
+              ],
+              [
+                { "type": "bold", "text": "ECHOCARDIOGRAPHIE" },
+                { "type": "text", "text": " : MESURE DE la fraction d'éjection " },
+                { "type": "bold", "text": "1/an" }
+              ]
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "En savoir plus sur l'insuffisance cardiaque",
+            "url": "/prevention/memos-suivi/insuffisance-cardiaque"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grossesse",
+      "title": "Grossesse",
+      "image": "/prevention/memo-suivi/grossesse.jpg",
+      "color": "pink",
+      "content": {
+        "sections": [
+          {
+            "title": "EXAMEN CLINIQUE",
+            "points": [
+              [
+                { "type": "bold", "text": "7 examens prénataux" },
+                { "type": "text", "text": " : pris en charge à 100% par la CPAM. Le premier entre le 1er et le 3ème mois puis 1/mois : " },
+                { "type": "bold", "text": "POIDS, TA, examen obstétrical" }
+              ]
+            ],
+            "image": "/grossesse/1-grossesse.png"
+          },
+          {
+            "title": "EXAMENS BIOLOGIQUES",
+            "points": [
+              [
+                { "type": "bold", "text": "BETA HCG" },
+                { "type": "text", "text": " quantitatif pour confirmer la grossesse" }
+              ],
+              [
+                { "type": "bold", "text": "GROUPAGE Sanguin RAI" },
+                { "type": "text", "text": ", " },
+                { "type": "bold", "text": "SÉROLOGIES" },
+                { "type": "text", "text": " (" },
+                { "type": "underline", "text": "TOXOPLASMOSE++" },
+                { "type": "text", "text": ", RUBEOLE, HIV, SYPHILIS, HEPATITE B (" },
+                { "type": "underline", "text": "Ag Hbs" },
+                { "type": "text", "text": ") et C, " },
+                { "type": "bold", "text": "ferritine" },
+                { "type": "text", "text": " et " },
+                { "type": "bold", "text": "TSH" },
+                { "type": "text", "text": " en fct de la clinique." }
+              ],
+              [
+                { "type": "text", "text": "Analyse urinaire mensuelle : " },
+                { "type": "bold", "text": "PROTEINURIE et GLYCOSURIE 1/mois" }
+              ],
+              [
+                { "type": "bold", "text": "RECHERCHE DE TRISOMIE 21" },
+                { "type": "underline", "text": " : Au 3ème mois de grossesse" }
+              ],
+              [
+                { "type": "text", "text": "PRELEVEMENT VAGINAL (recherche de streptocoques), analyse d'urine " },
+                { "type": "bold", "text": "ECBU" },
+                { "type": "text", "text": " au 6ème mois" }
+              ]
+            ]
+          },
+          {
+            "title": "EXAMENS COMPLÉMENTAIRES",
+            "points": [
+              [
+                { "type": "bold", "text": "ÉCHOGRAPHIES OBSTÉTRICALES" },
+                { "type": "text", "text": " : " },
+                { "type": "bold", "text": "1 fois par TRIMESTRE" },
+                { "type": "text", "text": ". Surveille le développement du fœtus : " },
+                { "type": "underline", "text": "prise en charge à 100 % à partir du 6ème mois" }
+              ],
+              [
+                { "type": "bold", "text": "Une consultation ANESTHÉSISTE" },
+                { "type": "text", "text": " : pour faire le point sur les allergies, la possible péridurale et les traitements en cours (au 8ème mois : PRISE EN CHARGE 100 %)" }
+              ],
+              [
+                { "type": "bold", "text": "UN EXAMEN BUCCO-DENTAIRE" },
+                { "type": "text", "text": " : au 4ème mois prise en charge 100%" }
+              ],
+              [
+                { "type": "bold", "text": "7 SÉANCES DE PRÉPARATION à la naissance et à la parentalité" },
+                { "type": "text", "text": " : entre le 7ème et le 9ème mois prise en charge 100%" }
+              ]
+            ],
+            "images": ["/grossesse/2-grossesse.png", "/grossesse/3-grossesse.jpg"]
+          },
+          {
+            "title": "LA \"DOUDOU LISTE\"",
+            "points": [
+              [
+                { "type": "text", "text": "La " },
+                { "type": "bold", "text": "\"doudou liste\"" },
+                { "type": "text", "text": ", mise en place par la CPAM et la CAF vous rappelle les rdv importants pendant et après votre grossesse." }
+              ],
+              [
+                { "type": "text", "text": "A la naissance de votre enfant, " },
+                { "type": "bold", "text": "il est possible que vous soyez fragile psychologiquement : vous pouvez être aidée" }
+              ]
+            ],
+            "image": "/grossesse/4-grossesse.jpeg"
+          },
+          {
+            "title": "1000 PREMIERS JOURS",
+            "points": [
+              [
+                { "type": "text", "text": "Le site " },
+                { "type": "bold", "text": "1000-premiers-jours.fr" },
+                { "type": "text", "text": " - Le site des parents et des futurs parents. Les réponses à vos questions de la grossesse à deux ans." }
+              ]
+            ],
+            "image": "/grossesse/5-grossesse.jpg"
+          }
+        ],
+        "links": [
+          {
+            "label": "1000 Premiers Jours - Le site des parents",
+            "url": "https://www.1000-premiers-jours.fr/fr"
+          }
+        ]
+      }
+    },
+    {
+      "id": "prevention-sexuelle",
+      "title": "La Prévention Santé Sexuelle",
+      "image": "/prevention/memo-suivi/prevention-sante-sexuelle.jpg",
+      "color": "rose",
+      "content": {
+        "intro": [
+          { "type": "text", "text": "Consiste à " },
+          { "type": "bold", "text": "sensibiliser les patients" },
+          { "type": "text", "text": " sur :" }
+        ],
+        "points": [
+          "La Vaccination contre HUMAN PAPILLOMA VIRUS (HPV)",
+          "Les INFECTIONS SEXUELLEMENT TRANSMISSIBLES (IST)",
+          "La CONTRACEPTION",
+          "l'INFERTILITÉ",
+          "La PRÉVENTION CANCER : Col, Sein",
+          "La MÉNOPAUSE"
+        ],
+        "sections": [
+          {
+            "title": "VACCINATION HPV",
+            "points": [
+              [
+                { "type": "text", "text": "Concerne " },
+                { "type": "bold", "text": "TOUS LES PATIENTS de 11 à 14 ans" },
+                { "type": "text", "text": " (rattrapage jusqu'à 26 ans révolu pour les filles et les garçons !). Prévient de l'IST la plus fréquente. Protège des virus responsables de cancer (col, anus) et de condylomes." }
+              ]
+            ]
+          },
+          {
+            "title": "IST (Infections Sexuellement Transmissibles)",
+            "points": [
+              [
+                { "type": "text", "text": "Transmission par rapports NON PROTÉGÉS : peuvent engager le pronostic de " },
+                { "type": "bold", "text": "FERTILITÉ" },
+                { "type": "text", "text": " (chlamydiae) ou " },
+                { "type": "bold", "text": "VITAL" },
+                { "type": "text", "text": " (HIV) : " },
+                { "type": "underline", "text": "DÉPISTAGE +++" },
+                { "type": "text", "text": " avant de débuter rapports non protégés." }
+              ],
+              [
+                { "type": "bold", "text": "1/ Comment dépister ?" },
+                { "type": "text", "text": " Prélèvement de " },
+                { "type": "bold", "text": "SANG" },
+                { "type": "text", "text": " : sérologies HÉPATITE A (homosexuel) B ET C, HIV, SYPHILIS et Prélèvement " },
+                { "type": "bold", "text": "URINAIRE" },
+                { "type": "text", "text": " : recherche chlamydiae et gonocoques." }
+              ],
+              [
+                { "type": "bold", "text": "2/ Comment se protéger ?" },
+                { "type": "text", "text": " " },
+                { "type": "bold", "text": "PRÉSERVATIF pris en charge" },
+                { "type": "text", "text": " par la CPAM sans ordonnance pour les MOINS DE 26 ans." }
+              ]
+            ]
+          },
+          {
+            "title": "LA CONTRACEPTION",
+            "points": [
+              [
+                { "type": "text", "text": "Accès " },
+                { "type": "bold", "text": "facilité" },
+                { "type": "text", "text": " pour les femmes d" },
+                { "type": "bold", "text": "e moins de 26 ans" },
+                { "type": "text", "text": " : avec consultations 1/an " },
+                { "type": "bold", "text": "prises en charge à 100% jusqu'à 25 ans révolu" },
+                { "type": "text", "text": " (suivi, pose de stérilet etc..). Des contraceptions remboursées : prescrites par des médecins ou des sage-femme et possiblement renouvelée 1 fois par infirmier ou pharmacien." }
+              ],
+              [
+                { "type": "underline", "text": "QUELLES CONTRACEPTIONS ?" },
+                { "type": "text", "text": " Hormonales (pilule, anneau, patch, implant, stérilet progestatif), les stérilets intra utérin au cuivre, les diaphragmes, les capes, les préservatifs et les spermicides." }
+              ],
+              [
+                { "type": "underline", "text": "LA CONTRACEPTION D'URGENCE ?" },
+                { "type": "text", "text": " Après un rapport non protégé, à prendre RAPIDEMENT dans un délai de 3 à 5 jours." }
+              ],
+              [
+                { "type": "underline", "text": "QUI FAIT LE SUIVI DE CONTRACEPTION ?" },
+                { "type": "text", "text": " Suivi gynécologique par " },
+                { "type": "bold", "text": "une sage-femme" },
+                { "type": "text", "text": " (compétente pour prescrire, surveiller, poser ou retirer des moyens contraceptifs), " },
+                { "type": "bold", "text": "un médecin généraliste ou gynécologue" },
+                { "type": "text", "text": "." }
+              ],
+              [
+                { "type": "bold", "text": "Examen clinique annuel" },
+                { "type": "text", "text": " (entretien sur les Antécédents personnels et familiaux, les facteurs de risque et les usages de toxiques, Tension artérielle, poids, palpation des SEINS, examen gynécologique si NÉCESSAIRE)." }
+              ],
+              [
+                { "type": "bold", "text": "FROTTIS du col utérin" },
+                { "type": "text", "text": " : remboursé de 25 à 65 ans (les 2 premiers à 1 an d'intervalle puis tous les 3 ans et après 30 ans tous les 5 ans)." }
+              ],
+              [
+                { "type": "bold", "text": "Prélèvement de sang" },
+                { "type": "text", "text": " (CHOLESTÉROL) en fonction du contraceptif, " },
+                { "type": "bold", "text": "MAMMOGRAPHIE" },
+                { "type": "text", "text": " de suivi (tous les 2 ans de 50 à 74 ans)." }
+              ]
+            ]
+          },
+          {
+            "title": "L'INFERTILITÉ",
+            "points": [
+              [
+                { "type": "text", "text": "Le " },
+                { "type": "bold", "text": "bilan concerne le couple" },
+                { "type": "text", "text": " avec :" }
+              ],
+              [
+                { "type": "text", "text": "1. " },
+                { "type": "bold", "text": "Spermogramme" }
+              ],
+              [
+                { "type": "text", "text": "2. " },
+                { "type": "bold", "text": "Bilan hormonal chez la femme" },
+                { "type": "text", "text": " : FSH + estradiol + AMH à J2 J3 du cycle menstruel. Dosage progestérone J20 J22 + sérologies Toxoplasmose, rubéole et chlamydiae." }
+              ],
+              [
+                { "type": "text", "text": "3. Comptage des follicules antraux par " },
+                { "type": "bold", "text": "ÉCHOGRAPHIE" },
+                { "type": "text", "text": "." }
+              ],
+              [
+                { "type": "text", "text": "4. " },
+                { "type": "bold", "text": "HYSTÉROGRAPHIE" },
+                { "type": "text", "text": " (évalue la perméabilité des trompes)." }
+              ]
+            ]
+          },
+          {
+            "title": "LA MÉNOPAUSE",
+            "points": [
+              [
+                { "type": "text", "text": "Définie par une " },
+                { "type": "bold", "text": "absence de règles pendant 1 an" },
+                { "type": "text", "text": "." }
+              ],
+              [
+                { "type": "text", "text": "1. " },
+                { "type": "bold", "text": "Suivi annuel" },
+                { "type": "text", "text": " pour prévenir les " },
+                { "type": "bold", "text": "cancers" },
+                { "type": "text", "text": " (sein, ovaire) et l'" },
+                { "type": "bold", "text": "ostéoporose" },
+                { "type": "text", "text": " : entretien sur les symptômes gênants la patiente, tension artérielle, examen des seins et gynécologique, mesure de la taille++ (ostéoporose)." }
+              ],
+              [
+                { "type": "text", "text": "2. " },
+                { "type": "bold", "text": "Frottis du col utérin" },
+                { "type": "text", "text": " jusqu'à 65 ans." }
+              ],
+              [
+                { "type": "text", "text": "3. " },
+                { "type": "bold", "text": "Mammographie" },
+                { "type": "text", "text": " jusqu'à 74 ans révolu." }
+              ],
+              [
+                { "type": "text", "text": "4. " },
+                { "type": "bold", "text": "Ostéodensitométrie osseuse" },
+                { "type": "text", "text": " tous les 2 ans après 50 ans." }
+              ]
+            ]
+          },
+          {
+            "title": "LIEUX ET SITES DE PRÉVENTION SEXUELLE",
+            "points": [
+              [
+                { "type": "text", "text": "Des centres de santé assurent des consultations de contraception ainsi que d'éducation et de prévention sexuelle." }
+              ],
+              [
+                { "type": "bold", "text": "Santé JEUNES" },
+                { "type": "text", "text": " : 0800 235 236 appel anonyme gratuit de 8h à minuit." }
+              ],
+              [
+                { "type": "bold", "text": "questionsexualite.fr" },
+                { "type": "text", "text": " : informations sur contraception." }
+              ],
+              [
+                { "type": "bold", "text": "ivglesinfos.org" },
+                { "type": "text", "text": " : informations fiables et adresses utiles sur IVG." }
+              ]
+            ],
+            "image": "/prévention-sexuelle/test-ist.png",
+            "imageLink": "https://www.ameli.fr/paris/laboratoire-danalyses-medicales/exercice-liberal/prise-charge-patients/depistage-ist/mon-test-ist-depistage-en-laboratoire-sans-ordonnance"
+          },
+          {
+            "title": "MON TEST IST",
+            "points": [
+              [
+                { "type": "text", "text": "Depuis le " },
+                { "type": "bold", "text": "01 septembre 2024" },
+                { "type": "text", "text": ", face à la hausse des infections sexuellement transmissibles (IST) entre 2021 et 2023, " },
+                { "type": "bold", "text": "la CPAM" },
+                { "type": "text", "text": " a mis en place le dispositif « Mon Test IST »." }
+              ],
+              [
+                { "type": "text", "text": "Il permet à " },
+                { "type": "bold", "text": "TOUS LES PATIENTS" },
+                { "type": "text", "text": " de bénéficier " },
+                { "type": "bold", "text": "sans ordonnance" },
+                { "type": "text", "text": " du " },
+                { "type": "bold", "text": "dépistage de plusieurs IST" },
+                { "type": "text", "text": " (chlamydiae, gonocoques, syphilis et hépatite B) " },
+                { "type": "bold", "text": "dans le laboratoire de biologie médicale de leur choix" },
+                { "type": "text", "text": "." }
+              ],
+              [
+                { "type": "text", "text": "Ce dispositif vient compléter le dépistage actuel du HIV." }
+              ]
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Centres de santé sexuelle en Gironde (PDF)",
+            "url": "https://www.gironde.fr/sites/default/files/2023-07/css%204%20PAGES%2010.07.pdf"
+          },
+          {
+            "label": "Mon Test IST - Dépistage sans ordonnance",
+            "url": "https://www.ameli.fr/paris/laboratoire-danalyses-medicales/exercice-liberal/prise-charge-patients/depistage-ist/mon-test-ist-depistage-en-laboratoire-sans-ordonnance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bon-usage",
+      "title": "Le Bon Usage du Système de Santé",
+      "image": "/prevention/memo-suivi/systeme-sante.png",
+      "color": "slate",
+      "content": {
+        "intro": [
+          { "type": "text", "text": "Pour que notre système de santé demeure toujours protecteur et pour assurer la pérennité du système de santé Français, la participation du patient en adoptant les bons réflexes est " },
+          { "type": "bold", "text": "INDISPENSABLE" },
+          { "type": "text", "text": " : le " },
+          { "type": "bold", "text": "JUSTE SOIN" },
+          { "type": "text", "text": ", AU " },
+          { "type": "bold", "text": "JUSTE COÛT" },
+          { "type": "text", "text": "." }
+        ],
+        "sections": [
+          {
+            "title": "QUELS SONT LES BONS RÉFLEXES ET LES BONS COMPORTEMENTS À ADOPTER ?",
+            "points": []
+          },
+          {
+            "title": "LES BONS CONTACTS EN CAS D'URGENCE",
+            "points": [
+              [
+                { "type": "text", "text": "En " },
+                { "type": "bold", "text": "situation d'urgence vitale" },
+                { "type": "text", "text": " ou si vous avez un doute sur la gravité : " },
+                { "type": "bold", "text": "J'appelle le 15" },
+                { "type": "text", "text": " (ou le 114 pour les malentendants) 24h/24 et 7j/7 qui m'orientera et pourra m'adresser au médecin de garde ou à SOS médecins." }
+              ],
+              [
+                { "type": "text", "text": "Si j'ai " },
+                { "type": "bold", "text": "besoin de voir un médecin rapidement" },
+                { "type": "text", "text": " : pendant les heures d'ouverture des cabinets médicaux, j'appelle " },
+                { "type": "bold", "text": "mon médecin traitant" },
+                { "type": "text", "text": ". S'il n'est pas disponible, je consulte la carte des lieux de soins à proximité sur " },
+                { "type": "bold", "text": "santé.fr" },
+                { "type": "text", "text": " pour consulter quelqu'un d'autre." }
+              ],
+              [
+                { "type": "text", "text": "En semaine après 20h, le week-end à partir de samedi 12h et les jours fériés : consultez santé.fr pour trouver un professionnel disponible." }
+              ]
+            ],
+            "image": "/systeme-sante/1-systeme-sante.png",
+            "imageNoClick": true
+          },
+          {
+            "title": "LES BONS RÉFLEXES POUR PRÉPARER VOS RDV MÉDICAUX",
+            "points": [
+              [
+                { "type": "bold", "text": "QUI CONSULTER ?" }
+              ],
+              [
+                { "type": "bold", "text": "Mon médecin traitant" },
+                { "type": "text", "text": " : L'interlocuteur privilégié pour le suivi médical, l'orientation vers certains spécialistes (cardiologue, rhumatologue, dermatologue...)." }
+              ],
+              [
+                { "type": "bold", "text": "Mes médecins spécialistes en accès direct" },
+                { "type": "text", "text": " : Prise de rendez-vous directe, sans passer par le médecin traitant : Ophtalmologue, Gynécologue, Pédiatre, Psychiatre entre 16 et 26 ans, Stomatologue." }
+              ],
+              [
+                { "type": "bold", "text": "Mes autres professionnels de santé" },
+                { "type": "text", "text": " : Test rapide d'orientation diagnostique de l'angine en cas de mal de gorge, vaccination (contre la grippe, le Covid, les papillomavirus humains, etc.) : certains actes peuvent désormais être réalisés directement en pharmacie ou par votre infirmière ou votre sage-femme." }
+              ],
+              [
+                { "type": "bold", "text": "QUE PRÉPARER AVANT ?" }
+              ],
+              [
+                { "type": "text", "text": "Je note mon rendez-vous dans mon agenda et " },
+                { "type": "bold", "text": "je programme un rappel" },
+                { "type": "text", "text": ". Un rendez-vous pour les enfants ? Je partage les informations avec l'autre parent." }
+              ],
+              [
+                { "type": "text", "text": "Pour une consultation efficace, je note les symptômes qui m'amènent à consulter, je prépare mes questions et " },
+                { "type": "bold", "text": "je note tous les sujets à aborder avec mon médecin" },
+                { "type": "text", "text": "." }
+              ],
+              [
+                { "type": "bold", "text": "En cas d'empêchement" },
+                { "type": "text", "text": " : Je pense à " },
+                { "type": "underline", "text": "annuler mon rendez-vous immédiatement" },
+                { "type": "text", "text": ", de préférence par téléphone ou sur la plateforme de réservation." }
+              ]
+            ],
+            "image": "/systeme-sante/2-systeme-sante.png",
+            "imageNoClick": true
+          },
+          {
+            "title": "AUTRES BONS RÉFLEXES À ADOPTER",
+            "points": [
+              [
+                { "type": "bold", "text": "PRENDRE VOTRE CARTE VITALE" },
+                { "type": "text", "text": " pour vos consultations." }
+              ],
+              [
+                { "type": "bold", "text": "ANNULER LES RDV DE SANTÉ" },
+                { "type": "text", "text": " que vous ne pouvez honorer." }
+              ],
+              [
+                { "type": "bold", "text": "APPELER LE 15" },
+                { "type": "text", "text": " en cas d'urgence médicale." }
+              ],
+              [
+                { "type": "bold", "text": "EN CAS DE PRISE DE SANG" },
+                { "type": "text", "text": " : votre médecin et vos spécialistes peuvent vous donner des analyses à faire et parfois ordonner des bilans avec doublons. " },
+                { "type": "underline", "text": "PENSER À PRÉVENIR LE LABORATOIRE POUR ÉVITER DE FAIRE DES EXAMENS EN DOUBLONS et d'occasionner des dépenses inutiles." }
+              ],
+              [
+                { "type": "bold", "text": "PENSER À MONTRER AUX SPÉCIALISTES" },
+                { "type": "text", "text": " les bilans ordonnés par votre médecin traitant." }
+              ],
+              [
+                { "type": "bold", "text": "PRÉPARER VOS PRISES DE SANG ET VOS RÉSULTATS D'EXAMENS" },
+                { "type": "text", "text": " pour toutes vos consultations." }
+              ]
+            ],
+            "image": "/systeme-sante/3-systeme-sante.png",
+            "imageNoClick": true,
+            "imageHalfSize": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "parent-planner",
+      "title": "Parent Planner",
+      "image": "/prevention/memo-suivi/parent-planner.jpg",
+      "color": "amber",
+      "content": {
+        "pdfEmbed": "https://drive.google.com/file/d/1Q84f8AULBLIL2Mk6KPd686spqQ5EQ4YP/preview"
+      }
+    }
+  ]
+}

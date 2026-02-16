@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ménopause : Protéger ses os</title>
+    <!-- Tailwind CSS pour le style moderne -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Police Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["Montserrat", "sans-serif"],
+              body: ["Open Sans", "sans-serif"],
+            },
+            colors: {
+              "brand-pink": "#FF8FA3",
+              "brand-pink-dark": "#E65A73",
+              "brand-blue": "#6CB2EB",
+              "brand-blue-dark": "#4A90E2",
+              "brand-green": "#8FD19E",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        /* Force A4 proportions if printed directly or viewed */
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background-color: white;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .bg-pattern {
+        background-image: radial-gradient(#e65a73 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.1;
+      }
+      /* Print specific adjustments */
+      @media print {
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        main {
+          box-shadow: none;
+          border: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-2 md:p-4">
+    <!-- Conteneur Principal (Format Affiche A4 Compact) -->
+    <main
+      class="w-full bg-white shadow-xl rounded-xl overflow-hidden border border-gray-200 relative text-sm"
+    >
+      <!-- En-tête Compact -->
+      <header
+        class="bg-brand-pink/10 p-4 text-center border-b-2 border-brand-pink relative overflow-hidden"
+      >
+        <div class="absolute inset-0 bg-pattern z-0"></div>
+        <div class="relative z-10">
+          <h1
+            class="text-3xl font-extrabold text-gray-800 tracking-tight mb-1 uppercase text-brand-pink-dark"
+          >
+            Ménopause
+          </h1>
+          <h2 class="text-xl font-bold text-slate-700 mb-3">
+            Protéger ses os au quotidien
+          </h2>
+
+          <div
+            class="bg-white/80 backdrop-blur-sm inline-block p-3 rounded-lg shadow-sm max-w-xl mx-auto border-l-4 border-brand-pink"
+          >
+            <h3 class="text-brand-pink-dark font-bold text-sm mb-0.5">
+              Pourquoi c'est important ?
+            </h3>
+            <p class="text-gray-700 leading-snug text-xs">
+              Après la ménopause, la baisse des œstrogènes accélère la perte
+              osseuse et augmente le risque d'ostéoporose et de fractures.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section 1: Le Quiz (Ultra Compact) -->
+      <section class="px-4 py-3">
+        <div
+          class="bg-slate-50 border border-slate-200 rounded-lg p-1 shadow-sm"
+        >
+          <table class="w-full text-left border-collapse text-xs md:text-sm">
+            <thead>
+              <tr class="bg-slate-200 text-slate-700">
+                <th class="p-2 rounded-tl-lg font-bold w-3/4">
+                  Protégez-vous correctement vos os ?
+                </th>
+                <th
+                  class="p-2 text-center font-bold text-brand-pink-dark border-l border-white w-1/8"
+                >
+                  OUI
+                </th>
+                <th
+                  class="p-2 rounded-tr-lg text-center font-bold text-gray-500 border-l border-white w-1/8"
+                >
+                  NON
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700 font-medium">
+              <tr class="border-b border-slate-200">
+                <td class="p-2">
+                  Consommez-vous au moins 2 produits laitiers par jour ?
+                </td>
+                <td
+                  class="p-2 text-center text-brand-pink-dark font-bold bg-pink-50/50"
+                >
+                  1
+                </td>
+                <td class="p-2 text-center text-gray-400">0</td>
+              </tr>
+              <tr class="border-b border-slate-200">
+                <td class="p-2">
+                  Buvez-vous une eau minérale riche en calcium (> 150mg/L) ?
+                </td>
+                <td
+                  class="p-2 text-center text-brand-pink-dark font-bold bg-pink-50/50"
+                >
+                  1
+                </td>
+                <td class="p-2 text-center text-gray-400">0</td>
+              </tr>
+              <tr class="border-b border-slate-200">
+                <td class="p-2">
+                  Pratiquez-vous une activité physique avec impact (marche...) ?
+                </td>
+                <td
+                  class="p-2 text-center text-brand-pink-dark font-bold bg-pink-50/50"
+                >
+                  1
+                </td>
+                <td class="p-2 text-center text-gray-400">0</td>
+              </tr>
+              <tr class="border-b border-slate-200">
+                <td class="p-2">Prenez-vous une supplémentation Vit D ?</td>
+                <td
+                  class="p-2 text-center text-brand-pink-dark font-bold bg-pink-50/50"
+                >
+                  1
+                </td>
+                <td class="p-2 text-center text-gray-400">0</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="bg-brand-pink/20">
+                <td
+                  class="p-2 font-bold text-brand-pink-dark rounded-bl-lg text-xs"
+                >
+                  <i class="fas fa-info-circle mr-1"></i>Score < 4/4 :
+                  Protection osseuse optimisable
+                </td>
+                <td
+                  colspan="2"
+                  class="p-2 text-center font-bold text-lg rounded-br-lg text-brand-pink-dark"
+                >
+                  /4
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p class="text-[10px] text-center text-gray-400 mt-1 italic">
+          Ce test ne se substitue pas à l'avis de votre médecin.
+        </p>
+      </section>
+
+      <!-- Section 2: Sources de Calcium (Compact) -->
+      <section class="bg-blue-50/50 px-4 py-3 border-t border-blue-100">
+        <h2
+          class="text-xl font-extrabold text-center text-brand-blue-dark uppercase mb-1"
+        >
+          Où trouver le calcium ?
+        </h2>
+        <div class="text-center mb-3">
+          <span
+            class="inline-block bg-brand-blue-dark text-white px-3 py-0.5 rounded-full text-xs font-semibold shadow-sm"
+          >
+            Apport recommandé : 950 mg/jour (RNP ANSES)
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Sources Principales -->
+          <div
+            class="bg-white p-3 rounded-xl shadow-md border-t-4 border-brand-blue flex flex-col justify-between"
+          >
+            <div>
+              <h3
+                class="text-sm font-bold text-brand-blue-dark mb-2 flex items-center"
+              >
+                <i class="fas fa-cheese mr-2 text-lg"></i> Principales
+              </h3>
+              <ul class="space-y-1 mb-2 text-gray-700 text-xs">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-brand-blue mr-2"></i>Fromages,
+                  laitages
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-brand-blue mr-2"></i>Lait,
+                  sardines (arêtes)
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-brand-pink text-white p-2 rounded-lg text-center font-bold text-xs shadow-sm"
+            >
+              2 à 3 produits laitiers /jour<br />
+              1 poisson gras /semaine
+            </div>
+          </div>
+
+          <!-- Sources Complémentaires -->
+          <div
+            class="bg-white p-3 rounded-xl shadow-md border-t-4 border-brand-green flex flex-col justify-between"
+          >
+            <div>
+              <h3
+                class="text-sm font-bold text-green-600 mb-2 flex items-center"
+              >
+                <i class="fas fa-leaf mr-2 text-lg"></i> Complémentaires
+              </h3>
+              <ul class="space-y-1 mb-2 text-xs text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-green-500 mr-1">●</span>
+                  <span><b>Eaux >150 mg/L</b> (Hépar...)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-500 mr-1">●</span>
+                  <span><b>Légumes verts</b> (chou...)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-500 mr-1">●</span>
+                  <span><b>Oléagineux</b> (amandes...)</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-brand-pink text-white p-2 rounded-lg text-center font-bold text-xs shadow-sm"
+            >
+              1 poignée oléagineux /jour<br />
+              Légumineuses 2x /semaine
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Facteurs associés (Compact) -->
+      <section class="px-4 py-3 pb-6">
+        <h2
+          class="text-lg font-extrabold text-center text-slate-800 uppercase mb-3"
+        >
+          <span class="border-b-2 border-brand-pink pb-0.5"
+            >Le Calcium seul ne suffit pas</span
+          >
+        </h2>
+
+        <div class="grid grid-cols-2 gap-3">
+          <!-- A favoriser -->
+          <div class="space-y-2">
+            <div
+              class="flex items-center bg-green-50 p-2 rounded-lg border border-green-100"
+            >
+              <div
+                class="bg-green-100 p-1.5 rounded-full mr-2 text-green-600 shrink-0"
+              >
+                <i class="fas fa-sun text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-xs">Vitamine D</h4>
+                <p class="text-[10px] text-slate-600 leading-tight">
+                  Complémentation recommandée (voir médecin).
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center bg-green-50 p-2 rounded-lg border border-green-100"
+            >
+              <div
+                class="bg-green-100 p-1.5 rounded-full mr-2 text-green-600 shrink-0"
+              >
+                <i class="fas fa-running text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-xs">
+                  Activité physique
+                </h4>
+                <p class="text-[10px] text-slate-600 leading-tight">
+                  Sports avec impact (marche, danse...).
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center bg-green-50 p-2 rounded-lg border border-green-100"
+            >
+              <div
+                class="bg-green-100 p-1.5 rounded-full mr-2 text-green-600 shrink-0"
+              >
+                <i class="fas fa-drumstick-bite text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-xs">Protéines</h4>
+                <p class="text-[10px] text-slate-600 leading-tight">
+                  Soutien musculaire (viande, œufs, poisson...).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- A limiter -->
+          <div
+            class="bg-red-50 p-3 rounded-xl border border-red-100 flex flex-col justify-center items-center text-center"
+          >
+            <div
+              class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-500 text-lg mb-2"
+            >
+              <i class="fas fa-ban"></i>
+            </div>
+            <h3 class="text-sm font-bold text-red-600 uppercase mb-1">
+              A limiter
+            </h3>
+            <p class="font-bold text-slate-800 text-sm">Alcool - Tabac</p>
+            <p class="text-slate-600 text-xs">accélèrent la perte osseuse</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer très fin -->
+      <footer
+        class="bg-slate-800 text-white text-center p-2 text-[10px] opacity-80 absolute bottom-0 w-full"
+      >
+        <p>Design optimisé A4</p>
+      </footer>
+    </main>
+  </body>
+</html>

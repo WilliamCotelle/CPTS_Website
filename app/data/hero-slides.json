@@ -1,0 +1,28 @@
+{
+  "slides": [
+    {
+      "image": "/colimaçon.jpg",
+      "title": "Santé mentale : comprendre et s'orienter",
+      "alt": "Santé mentale",
+      "link": "/sante-mental"
+    },
+    {
+      "image": "/insomnie.jpg",
+      "title": "L'insomnie : la comprendre et la traiter",
+      "alt": "Comprendre l'insomnie",
+      "link": "/l-insomnie-la-comprendre-et-la-traiter"
+    },
+    {
+      "image": "/femme-floue-face-anxiete-vue-f.png",
+      "title": "FACE AUX VIOLENCES, VOUS N'ÊTES PAS SEULES !",
+      "alt": "Aide aux victimes de violences",
+      "link": "/face-aux-violences-vous-n-etes-pas-seules"
+    },
+    {
+      "image": "/mon-espace-santé.png",
+      "title": "Mon espace santé : TOUT SAVOIR, TOUT COMPRENDRE et S'EN SERVIR !",
+      "alt": "Mon espace santé",
+      "link": "/mon-espace-sante-tout-savoir-tout-comprendre-et-sen-servir"
+    }
+  ]
+}

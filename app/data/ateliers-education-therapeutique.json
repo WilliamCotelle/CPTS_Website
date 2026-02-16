@@ -1,0 +1,70 @@
+{
+  "title": "Des ateliers d'éducation thérapeutique sur le territoire de la CPTS",
+  "date": "17 octobre 2023",
+  "image": "/prevention/sante-famille.png",
+  "backLink": {
+    "href": "/prevention/education-therapeutique",
+    "label": "Retour à l'éducation thérapeutique"
+  },
+  "intro": {
+    "highlight": "2 structures effectrices",
+    "description": "qui proposent des ateliers gratuits animés par des professionnels de santé et avec lesquelles la CPTS Ouest Gironde a conventionné :"
+  },
+  "structures": [
+    {
+      "id": "pole-etp",
+      "title": "Le pôle ETP",
+      "type": "primary",
+      "contact": {
+        "intro": "Pour <strong>vos patients atteints de maladie chronique</strong>, contactez l'équipe des professionnels de santé au Standard :",
+        "phone": "05 56 47 86 66",
+        "email": "poletpnouvelleaquitaine@cetba.fr"
+      },
+      "description": "Le Pôle ETP Ambulatoire Nouvelle Aquitaine met place des programmes d'Éducation Thérapeutique pour les patients présentant des maladies chroniques (Asthme, HTA, DT1, DT2, SAS, Surpoids-obésité, Sevrage tabagique...) sur le territoire.",
+      "modalites": {
+        "intro": "Les modalités d'organisation du dispositif sont les suivantes :",
+        "text": "La CPTS ou le professionnel de santé lui-même informe le Pôle ETP de l'inclusion du patient (par téléphone ou messagerie sécurisée)"
+      },
+      "services": {
+        "intro": "Le Pôle ETP se charge alors :",
+        "items": [
+          "De contacter les patients de la part de leur professionnel de santé",
+          "De réaliser le(les) ateliers du programme ETP",
+          "De faire la synthèse des ateliers",
+          "D'évaluer les patients et le(les) programmes",
+          "De gérer les salles nécessaire pour mettre en œuvre les ateliers"
+        ]
+      }
+    },
+    {
+      "id": "maison-nutrition",
+      "title": "La Maison de la Nutrition",
+      "type": "secondary",
+      "contact": {
+        "intro": "Pour <strong>vos patients atteints de diabète de type 2</strong>, Contactez l'équipe de la Maison de la Nutrition au",
+        "phone": "05 56 92 34 83",
+        "suffix": "pour connaitre le planning des ateliers Diabète cœur"
+      },
+      "ateliers": {
+        "title": "Ateliers passé sur Pessac :",
+        "dates": [
+          "le 14/12/23 de 9H30 à 12H30",
+          "le 21/12/23 de 9H30 à 12H30",
+          "le 4/01/2024 de 9H30 à 16H30"
+        ]
+      },
+      "affiche": "/prevention/atelier/AFFICHE-ATELIERS-ETP.png"
+    }
+  ],
+  "plateforme": {
+    "sectionTitle": "Une plateforme d'information:",
+    "title": "La plateforme ETHNA",
+    "description": "Éducation THérapeutique en Nouvelle-Aquitaine a pour vocation d'améliorer l'accompagnement vers l'autonomie des personnes atteintes de maladies chroniques. Elle existe depuis 2018 et est soutenue par l'Agence Régionale de Santé.",
+    "missions": [
+      "Mettre en réseau les acteurs",
+      "Améliorer la visibilité",
+      "Diffuser les bonnes pratiques",
+      "Donner leur place aux patients et à leurs proches"
+    ]
+  }
+}

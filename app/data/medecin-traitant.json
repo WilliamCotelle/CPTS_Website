@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "Avez-vous un médecin traitant ?",
+    "subtitle": "Non ? On vous explique pourquoi c'est important pour vous :"
+  },
+  "benefits": [
+    {
+      "id": "1",
+      "title": "Meilleur suivi médical",
+      "description": "Un médecin dédié vous connaît et vous soigne régulièrement. Il centralise votre dossier médical et établit le protocole de soins pour les affections de longue durée.",
+      "iconName": "FolderOpen"
+    },
+    {
+      "id": "2",
+      "title": "Orientation vers un spécialiste",
+      "description": "Votre médecin traitant vous accompagne dans votre parcours de soins. C'est lui qui vous oriente vers un spécialiste si nécessaire.",
+      "iconName": "Globe"
+    },
+    {
+      "id": "3",
+      "title": "Meilleur remboursement",
+      "description": "sur les consultations en médecine générale et auprès de spécialistes, dans le cadre du parcours de soins coordonné.",
+      "iconName": "Zap"
+    },
+    {
+      "id": "4",
+      "title": "Votre prévention dediee",
+      "description": "Votre médecin traitant peut vous accompagner dans un parcours de prévention adapté.",
+      "iconName": "Tablet"
+    }
+  ],
+  "choix": {
+    "title": "Comment choisir son médecin traitant ?",
+    "description": "S'il est le plus souvent généraliste, le médecin traitant peut aussi être un spécialiste, notamment pour les patients souffrant d'affections de longue durée ou de maladie chronique. Il peut exercer en cabinet, à l'hôpital ou dans un centre de santé. C'est vous qui le choisissez, selon vos besoins.",
+    "declaration": "Vous devez d'abord obtenir son accord avant de le déclarer à l'Assurance Maladie."
+  },
+  "declaration": {
+    "title": "Comment déclarer son médecin traitant à l'Assurance Maladie ?",
+    "methods": [
+      {
+        "text": "Par télétransmission : le médecin que vous avez choisi, s'il est d'accord, fait la déclaration en ligne sur présentation de votre carte vitale, lors d'une consultation."
+      },
+      {
+        "text": "Via le",
+        "linkText": "formulaire suivant",
+        "linkUrl": "https://drive.google.com/file/d/1XvE_goP0iDz-2h1choB564e0ACq-V1_s/preview",
+        "afterText": ", disponible également auprès de votre caisse d'Assurance Maladie"
+      }
+    ],
+    "annuaire": {
+      "text": "Lien vers l'annuaire santé d'ameli.fr :",
+      "url": "http://annuairesante.ameli.fr/"
+    }
+  },
+  "noPas": {
+    "title": "Vous ne trouvez pas de médecin traitant?",
+    "description": "La CPTS Ouest Gironde se mobilise pour vous et essaye de vous aider à trouver un médecin proche de chez vous. Vous devez résider sur une des 4 communes de la CPTS Ouest Gironde (Mérignac, Pessac, Martignas en Jalles, Saint Jean d'Illac).",
+    "questionnaire": {
+      "intro": "vous êtes invités à remplir",
+      "bold": "un questionnaire",
+      "description": "qui va vous permettre de vous inscrire sur une liste d'attente Lorsque votre nom arrivera en haut de la liste d'attente,",
+      "contact": "vous serez contacté  pour vous indiquer vers quel médecin vous diriger"
+    },
+    "note": "Cette démarche ne vous empêche pas de poursuivre les recherches de votre côté",
+    "warning": {
+      "title": "Le questionnaire",
+      "description": "contenant des informations médicales sécurisées, il est à transmettre à la CPTS",
+      "bold": "UNIQUEMENT",
+      "afterBold": "via la messagerie de santé sécurisée d'un professionnel de santé (Pharmacie de quartier, médecin généraliste, IDEL, médecin du CNP Hôpital privé Saint Martin de Pessac ...)."
+    },
+    "mas": {
+      "intro": "Si vous avez des  des difficultés à vous déplacer et/ou à accéder aux soins, la MAS",
+      "linkText": "Mission Accompagnement aux soins",
+      "linkUrl": "https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/mission-accompagnement-sante",
+      "outro": "de l'Assurance Maladie peut vous aider. COMMENT BÉNÉFICIER DE L'ACCOMPAGNEMENT DE LA MAS ?",
+      "contact": {
+        "text": "Pour être accompagné, prenez contact avec votre caisse d'assurance maladie :",
+        "methods": [
+          "soit à l'accueil de votre CPAM ;",
+          "soit par la messagerie de votre compte ameli ;",
+          "soit par téléphone au 36 46."
+        ],
+        "ameliUrl": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true#"
+      }
+    }
+  },
+  "image": "/medecin-traitan/medecin-traitant.jpg",
+  "downloads": {
+    "title": "Plus d'infos",
+    "subtitle": "Questionnaires inclusion patient sans médecin traitant (MT) à télécharger",
+    "files": [
+      {
+        "id": "1",
+        "label": "Formulaire inclusion patient sans médecin traitant",
+        "description": "Si vous êtes accompagné par un médecin",
+        "pdfUrl": "https://drive.google.com/file/d/1URjioX7bzMKPNCyNIKpOuCf9QieZUm4J/view"
+      },
+      {
+        "id": "2",
+        "label": "Formulaire inclusion patient sans médecin traitant",
+        "description": "Si vous êtes accompagné par un professionnel paramédical (infirmier, kinésithérapeute, pharmacien...)",
+        "pdfUrl": "https://drive.google.com/file/d/1fzg3CqlVDXdGMe0Exz6q2L3b4TDwNxsL/view"
+      }
+    ]
+  }
+}

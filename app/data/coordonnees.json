@@ -1,0 +1,318 @@
+{
+  "hero": {
+    "title": "Coordonnées utiles",
+    "subtitle": "Tous les contacts essentiels pour votre santé et vos urgences",
+    "illustration": "/coordonnees/Call center-cuate.svg"
+  },
+  "allContacts": [
+    {
+      "id": "police",
+      "category": "urgences-vitales",
+      "label": "Police",
+      "number": "17",
+      "iconName": "ShieldCheck",
+      "description": ""
+    },
+    {
+      "id": "pompiers",
+      "category": "urgences-vitales",
+      "label": "Pompiers",
+      "number": "18",
+      "iconName": "Flame",
+      "description": ""
+    },
+    {
+      "id": "samu",
+      "category": "urgences-vitales",
+      "label": "SAMU",
+      "number": "15",
+      "iconName": "Ambulance",
+      "description": ""
+    },
+    {
+      "id": "urgence-europeenne",
+      "category": "urgences-vitales",
+      "label": "Appel urgence européen",
+      "number": "112",
+      "iconName": "Phone",
+      "description": ""
+    },
+    {
+      "id": "pharmacie",
+      "category": "urgences-vitales",
+      "label": "Pharmacie de garde",
+      "number": "3237",
+      "iconName": "Pill",
+      "description": ""
+    },
+    {
+      "id": "antipoison",
+      "category": "urgences-vitales",
+      "label": "Centre antipoison et de toxicovigilance",
+      "number": "05 56 96 40 80",
+      "iconName": "AlertTriangle",
+      "description": ""
+    },
+    {
+      "id": "adultes-pellegrin",
+      "category": "urgences-medicales",
+      "label": "Adultes Pellegrin",
+      "number": "05 57 82 04 05",
+      "iconName": "Hospital",
+      "description": "Urgences adultes"
+    },
+    {
+      "id": "adultes-saint-andre",
+      "category": "urgences-medicales",
+      "label": "Adultes Saint-André",
+      "number": "05 57 82 07 70",
+      "iconName": "Hospital",
+      "description": "Urgences adultes"
+    },
+    {
+      "id": "cardiologiques",
+      "category": "urgences-medicales",
+      "label": "Cardiologiques",
+      "number": "05 57 65 67 90",
+      "iconName": "Heart",
+      "description": ""
+    },
+    {
+      "id": "dentaires",
+      "category": "urgences-medicales",
+      "label": "Dentaires accueil 7j/7 à Saint-André",
+      "number": "05 57 62 34 34",
+      "iconName": "Stethoscope",
+      "description": ""
+    },
+    {
+      "id": "enfants-pellegrin",
+      "category": "urgences-medicales",
+      "label": "Enfants Pellegrin",
+      "number": "05 56 79 59 72",
+      "iconName": "Baby",
+      "description": "Urgences pédiatriques"
+    },
+    {
+      "id": "maternite",
+      "category": "urgences-medicales",
+      "label": "Maternité",
+      "number": "05 57 82 01 01",
+      "iconName": "HeartPulse",
+      "description": ""
+    },
+    {
+      "id": "mains-pessac",
+      "category": "urgences-medicales",
+      "label": "Mains à Pessac",
+      "number": "05 56 46 76 76",
+      "iconName": "Hand",
+      "description": ""
+    },
+    {
+      "id": "ophtalmologiques",
+      "category": "urgences-medicales",
+      "label": "Ophtalmologiques",
+      "number": "05 56 79 56 79",
+      "iconName": "Eye",
+      "description": ""
+    },
+    {
+      "id": "malentendants",
+      "category": "urgences-vitales",
+      "label": "Personnes malentendantes",
+      "number": "114",
+      "iconName": "Ear",
+      "description": ""
+    },
+    {
+      "id": "sos-pied",
+      "category": "urgences-medicales",
+      "label": "SOS Pied Cheville",
+      "number": "05 56 13 10 83",
+      "iconName": "Footprints",
+      "description": ""
+    },
+    {
+      "id": "victimes-agressions",
+      "category": "urgences-medicales",
+      "label": "Victimes d'agressions",
+      "number": "05 56 79 87 77",
+      "iconName": "ShieldAlert",
+      "description": ""
+    },
+    {
+      "id": "sos-medecin",
+      "category": "urgences-non-vitales",
+      "label": "SOS Médecin",
+      "number": "05 56 44 74 74",
+      "iconName": "Stethoscope",
+      "description": "RDV en ligne sur sosmedecins.com/patient/login. Cabinet Des Palanques à Saint Jean d'Illac : 955 Av. de Bordeaux",
+      "link": "https://www.sosmedecins.com/patient/login",
+      "phone2": "05 56 48 75 59"
+    },
+    {
+      "id": "cnp-pessac",
+      "category": "urgences-non-vitales",
+      "label": "CNP Hôpital privé Saint Martin à Pessac",
+      "number": "",
+      "iconName": "Hospital",
+      "description": "Consultations non programmées - RDV du lundi au vendredi, allée des tulipes à Pessac",
+      "link": "https://www.doctolib.fr/cabinet-medical/pessac/cnp-saint-martin"
+    },
+    {
+      "id": "espace-sante-etudiant",
+      "category": "services-territoire",
+      "label": "Espace santé étudiant – Université de Bordeaux",
+      "number": "05 33 51 42 00",
+      "iconName": "GraduationCap",
+      "description": "22 av de Pey Berland 33600 Pessac",
+      "link": "https://www.doctolib.fr/centre-de-sante/pessac"
+    }
+  ],
+  "consultationsNonProgrammees": {
+    "title": "Consultations non programmées",
+    "steps": [
+      "En première intention, la sollicitation de son médecin traitant ;",
+      "Si celui-ci n'est pas disponible, le recours à la carte des lieux de soins, disponible sur Santé.fr",
+      "Si aucune offre n'est disponible, l'appel au 15 avant de se rendre aux urgences."
+    ],
+    "image": "/coordonnees/consultation-non-programmées.png"
+  },
+  "urgencesNonVitales": {
+    "title": "Pour les urgences non vitales, pensez aussi à",
+    "items": [
+      {
+        "title": "Votre médecin traitant",
+        "description": "il a peut-être des créneaux de soins non programmés (SNP) réservés à sa patientèle"
+      },
+      {
+        "title": "SOS Médecin",
+        "description": "tel: 05 56 44 74 74 et rdv en ligne",
+        "link": "https://www.sosmedecins.com/patient/login",
+        "details": "avec 4 cabinets de consultation sur la Métropole bordelaise dont un à Saint Jean d'Illac : Cabinet Des Palanques, 955 Av. de Bordeaux",
+        "phone": "05 56 48 75 59"
+      },
+      {
+        "title": "CNP (consultations non programmées) Hôpital privé Saint Martin à Pessac",
+        "description": "sur rdv du lundi au vendredi : allée des tulipes à Pessac. Prise de rdv sur :",
+        "link": "https://www.doctolib.fr/cabinet-medical/pessac/cnp-saint-martin"
+      },
+      {
+        "title": "Espace santé étudiant – Université de Bordeaux 22 av de Pey Berland 33600 Pessac",
+        "description": "Tel 05 33 51 42 00 ou en cliquant sur",
+        "link": "https://www.doctolib.fr/centre-de-sante/pessac"
+      }
+    ]
+  },
+  "urgencesImage": "/coordonnees/urgences.jpg",
+  "ressourcesSanteMentale": [
+    {
+      "id": "3919",
+      "title": "Le 39 19",
+      "subtitle": "Violences femmes info",
+      "image": "/coordonnees/violence-femme-info.jpg",
+      "buttons": [
+        {
+          "label": "Planning familial de la Gironde - Violences",
+          "pdfUrl": "https://drive.google.com/file/d/1EPrRWIXHzwJ7XtKfduw0CU27Oi-NnS0m/preview"
+        },
+        {
+          "label": "ACV2F - Solidarité femmes en Sud Gironde",
+          "pdfUrl": "https://drive.google.com/file/d/1EPrRWIXHzwJ7XtKfduw0CU27Oi-NnS0m/preview"
+        }
+      ]
+    },
+    {
+      "id": "renovation",
+      "title": "Tous les dispositifs d'écoute",
+      "subtitle": "",
+      "image": "/coordonnees/renovation_logo.webp",
+      "buttons": [
+        {
+          "label": "Rénovation - Dispositifs d'écoute",
+          "pdfUrl": "https://drive.google.com/file/d/1Fr1isCn6X3UbqRD2lmQcaXxGGXjVVpMC/preview"
+        }
+      ]
+    },
+    {
+      "id": "3114",
+      "title": "Le 31 14",
+      "subtitle": "",
+      "image": "/coordonnees/3114.webp",
+      "buttons": [
+        {
+          "label": "Le numéro national de prévention du suicide",
+          "pdfUrl": "https://drive.google.com/file/d/1nN-qytBscwaBE2DIPInw9WQ4JpgEXcnV/preview"
+        }
+      ]
+    },
+    {
+      "id": "questions-psy",
+      "title": "Santé mentale, besoin d'aide ?",
+      "subtitle": "Un numéro unique pour vous soutenir et vous orienter",
+      "image": "/coordonnees/question_psy_hd.webp",
+      "phone": "0.800.71.08.90 (appel gratuit)",
+      "schedule": "du lundi au vendredi, de 10h à 17h30"
+    }
+  ],
+  "territoireInfos": [
+    {
+      "id": "laboratoires",
+      "emoji": "🔬",
+      "title": "Les laboratoires de biologie du territoire",
+      "description": "horaires et coordonnées",
+      "link": "https://drive.google.com/file/d/1G6c6ggrrVrUhc696t2BkXi42C_2HIO9N/preview",
+      "category": "services-territoire"
+    },
+    {
+      "id": "orthophoniste",
+      "emoji": "🗣️",
+      "title": "Orthophoniste",
+      "description": "une liste d'attente commune est déployée au niveau régional pour un accès facilité",
+      "link": "https://www.cpts-na.org/liste-dattente-commune-orthophonistes/",
+      "category": "services-territoire"
+    },
+    {
+      "id": "soins-dentaires",
+      "emoji": "😁",
+      "title": "Soins dentaires en urgence",
+      "description": "En Gironde, lors de la permanence des soins dentaires (les dimanches et jours fériés), des chirurgiens-dentistes libéraux assurent désormais une prise en charge des demandes sur appel au centre 15 de 8h à 18h.",
+      "link": "https://www.cpts-na.org/urgences-dentaires/",
+      "category": "services-territoire"
+    },
+    {
+      "id": "sante-mentale",
+      "emoji": "🧠",
+      "title": "Accéder à un annuaire en santé mentale",
+      "description": "avec ce lien : https://www.retab.fr/ et connaître mon secteur de rattachement pour mieux m'orienter : https://www.psychiatriepublique33.fr/nos-secteurs",
+      "link": "https://www.retab.fr/",
+      "link2": "https://www.psychiatriepublique33.fr/nos-secteurs",
+      "category": "sante-mentale"
+    },
+    {
+      "id": "sante-etudiants",
+      "emoji": "🎓",
+      "title": "La santé des étudiants",
+      "description": "de la Métropole bordelaise avec le site web tasantecarte.fr. Possibilité de localiser tous les services de santé proposés sur la métropole bordelaise. ce site a été réalisé grâce à un partenariat entre Bordeaux Métropole et l'Université de Bordeaux https://tasantecarte.fr/",
+      "link": "https://tasantecarte.fr/",
+      "category": "services-territoire"
+    },
+    {
+      "id": "coordination-girondac",
+      "emoji": "🔗",
+      "title": "Dispositif d'appui à la coordination Girondac",
+      "description": "un contact unique 0809 109 109 pour « Faciliter LES PARCOURS DE SANTÉ et Préserver L'AUTONOMIE » https://annuaire.pta33.fr/",
+      "link": "https://annuaire.pta33.fr/",
+      "category": "services-territoire"
+    }
+  ],
+  "filters": [
+    { "id": "tous", "label": "Tous" },
+    { "id": "urgences-vitales", "label": "Urgences vitales" },
+    { "id": "urgences-medicales", "label": "Urgences médicales" },
+    { "id": "urgences-non-vitales", "label": "Urgences non vitales" },
+    { "id": "sante-mentale", "label": "Santé mentale" },
+    { "id": "services-territoire", "label": "Services du territoire" }
+  ]
+}

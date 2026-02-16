@@ -1,0 +1,72 @@
+{
+  "topics": [
+    {
+      "title": "Face aux violences",
+      "description": "Ressources et soutien pour les victimes de violence",
+      "iconName": "Heart",
+      "color": "bg-red-100 hover:bg-red-200 dark:bg-red-900/30 dark:hover:bg-red-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">Numéros d'urgence et de soutien</h3><div class=\"space-y-4 mb-6\"><div class=\"bg-primary/10 p-4 rounded-xl\"><p class=\"font-bold text-lg mb-2\">📞 3919 - Violences Femmes Info</p><p class=\"text-muted-foreground\">Appel gratuit et anonyme, 7j/7 de 9h à 19h</p></div><div class=\"bg-primary/10 p-4 rounded-xl\"><p class=\"font-bold text-lg mb-2\">📞 17 ou 112 - Urgences</p><p class=\"text-muted-foreground\">En cas de danger immédiat</p></div></div><h3 class=\"text-xl font-bold mb-4\">Vous n'êtes pas seule</h3><p class=\"mb-4\">Les violences peuvent prendre de nombreuses formes : physiques, psychologiques, sexuelles, économiques... Il est important de savoir que vous n'êtes pas responsable de ces violences et que des professionnels sont là pour vous aider.</p><h3 class=\"text-xl font-bold mb-4\">Ressources locales</h3><ul class=\"space-y-2 list-disc list-inside\"><li>Associations d'aide aux victimes dans votre territoire</li><li>Psychologues spécialisés en traumatologie</li><li>Assistantes sociales dédiées</li><li>Hébergements d'urgence si nécessaire</li></ul>"
+    },
+    {
+      "title": "L'insomnie",
+      "description": "Conseils et solutions pour retrouver un sommeil réparateur",
+      "iconName": "Moon",
+      "color": "bg-indigo-100 hover:bg-indigo-200 dark:bg-indigo-900/30 dark:hover:bg-indigo-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">Qu'est-ce que l'insomnie ?</h3><p class=\"mb-4\">L'insomnie se caractérise par des difficultés à s'endormir, des réveils nocturnes fréquents ou un réveil trop précoce. Elle peut avoir un impact significatif sur votre qualité de vie.</p><h3 class=\"text-xl font-bold mb-4\">Les causes principales</h3><ul class=\"space-y-2 list-disc list-inside mb-6\"><li>Stress et anxiété</li><li>Mauvaises habitudes de sommeil</li><li>Conditions médicales sous-jacentes</li><li>Environnement de sommeil inadapté</li><li>Consommation de stimulants (caféine, écrans...)</li></ul><h3 class=\"text-xl font-bold mb-4\">Solutions et bonnes pratiques</h3><div class=\"bg-secondary/30 p-6 rounded-xl space-y-3\"><p><strong>✓</strong> Maintenir des horaires de sommeil réguliers</p><p><strong>✓</strong> Créer un environnement propice au sommeil</p><p><strong>✓</strong> Éviter les écrans 1h avant le coucher</p><p><strong>✓</strong> Pratiquer une activité physique régulière</p><p><strong>✓</strong> Consulter un professionnel si l'insomnie persiste</p></div>"
+    },
+    {
+      "title": "Apnée du Sommeil",
+      "description": "Comprendre le lien entre apnée du sommeil et anxio-dépression",
+      "iconName": "Activity",
+      "color": "bg-purple-100 hover:bg-purple-200 dark:bg-purple-900/30 dark:hover:bg-purple-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">Qu'est-ce que l'apnée du sommeil ?</h3><p class=\"mb-4\">Le syndrome d'apnée du sommeil se caractérise par des interruptions répétées de la respiration pendant le sommeil. Ces pauses peuvent durer de quelques secondes à plus d'une minute.</p><h3 class=\"text-xl font-bold mb-4\">Le lien avec la santé mentale</h3><p class=\"mb-4\">L'apnée du sommeil peut contribuer ou aggraver :</p><ul class=\"space-y-2 list-disc list-inside mb-6\"><li>L'anxiété et les troubles anxieux</li><li>La dépression</li><li>Les troubles de la concentration</li><li>L'irritabilité et les sautes d'humeur</li><li>La fatigue chronique</li></ul><div class=\"bg-accent/30 p-6 rounded-xl mb-6\"><h3 class=\"text-lg font-bold mb-3\">Signes d'alerte</h3><ul class=\"space-y-2\"><li>• Ronflements importants</li><li>• Fatigue au réveil malgré une nuit complète</li><li>• Somnolence diurne excessive</li><li>• Maux de tête matinaux</li><li>• Difficultés de concentration</li></ul></div><h3 class=\"text-xl font-bold mb-4\">Que faire ?</h3><p>Si vous présentez ces symptômes, parlez-en à votre médecin traitant. Un diagnostic peut être établi grâce à une étude du sommeil, et des traitements efficaces existent.</p>"
+    },
+    {
+      "title": "Santé mentale des jeunes",
+      "description": "La santé mentale des adolescents et jeunes adultes",
+      "iconName": "Users",
+      "color": "bg-green-100 hover:bg-green-200 dark:bg-green-900/30 dark:hover:bg-green-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">La santé mentale des jeunes : un enjeu majeur</h3><p class=\"mb-4\">L'adolescence et le début de l'âge adulte sont des périodes de transformation intense qui peuvent être sources de stress et d'anxiété.</p><h3 class=\"text-xl font-bold mb-4\">Les défis spécifiques</h3><ul class=\"space-y-2 list-disc list-inside mb-6\"><li>Pression scolaire et orientation</li><li>Relations sociales et réseaux sociaux</li><li>Construction de l'identité</li><li>Transition vers l'autonomie</li><li>Impacts de la crise sanitaire</li></ul><div class=\"bg-primary/10 p-6 rounded-xl mb-6\"><h3 class=\"text-lg font-bold mb-3\">Ressources pour les jeunes</h3><div class=\"space-y-3\"><div><p class=\"font-bold\">📞 Fil Santé Jeunes : 0 800 235 236</p><p class=\"text-sm text-muted-foreground\">Appel anonyme et gratuit, 7j/7 de 9h à 23h</p></div><div><p class=\"font-bold\">💬 31 14 - Numéro national de prévention du suicide</p><p class=\"text-sm text-muted-foreground\">Disponible 24h/24 et 7j/7</p></div></div></div><h3 class=\"text-xl font-bold mb-4\">Structures locales</h3><p class=\"mb-2\"><strong>Maisons des Adolescents</strong></p><p class=\"mb-4 text-muted-foreground\">Espaces d'accueil, d'écoute et de soins pour les 11-25 ans</p><p class=\"mb-2\"><strong>Points Accueil Écoute Jeunes</strong></p><p class=\"text-muted-foreground\">Lieux d'écoute anonymes et gratuits</p>"
+    },
+    {
+      "title": "Dépression",
+      "description": "Reconnaître et traiter la dépression",
+      "iconName": "Brain",
+      "color": "bg-blue-100 hover:bg-blue-200 dark:bg-blue-900/30 dark:hover:bg-blue-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">Qu'est-ce que la dépression ?</h3><p class=\"mb-4\">La dépression est une maladie qui se caractérise par une tristesse persistante, une perte d'intérêt pour les activités habituelles et une incapacité à accomplir les tâches quotidiennes.</p><h3 class=\"text-xl font-bold mb-4\">Signes à surveiller</h3><ul class=\"space-y-2 list-disc list-inside mb-6\"><li>Tristesse persistante ou humeur dépressive</li><li>Perte d'intérêt ou de plaisir</li><li>Troubles du sommeil</li><li>Fatigue ou manque d'énergie</li><li>Sentiment de dévalorisation</li><li>Difficultés de concentration</li></ul><div class=\"bg-primary/10 p-6 rounded-xl mb-6\"><h3 class=\"text-lg font-bold mb-3\">Numéro d'urgence</h3><p class=\"font-bold text-lg\">📞 3114 - Numéro national de prévention du suicide</p><p class=\"text-muted-foreground\">Disponible 24h/24 et 7j/7</p></div><h3 class=\"text-xl font-bold mb-4\">Traitements</h3><p class=\"mb-4\">La dépression se soigne. Les traitements incluent la psychothérapie, les médicaments antidépresseurs, ou une combinaison des deux. N'hésitez pas à consulter votre médecin traitant.</p>"
+    },
+    {
+      "title": "Anxiété & Stress",
+      "description": "Gérer l'anxiété et le stress au quotidien",
+      "iconName": "Stethoscope",
+      "color": "bg-yellow-100 hover:bg-yellow-200 dark:bg-yellow-900/30 dark:hover:bg-yellow-900/50",
+      "content": "<h3 class=\"text-xl font-bold mb-4\">Comprendre l'anxiété</h3><p class=\"mb-4\">L'anxiété est une réaction normale face au stress, mais elle peut devenir problématique quand elle est excessive, persistante et interfère avec la vie quotidienne.</p><h3 class=\"text-xl font-bold mb-4\">Techniques de gestion</h3><div class=\"bg-secondary/30 p-6 rounded-xl space-y-3 mb-6\"><p><strong>✓</strong> Respiration profonde et cohérence cardiaque</p><p><strong>✓</strong> Méditation et pleine conscience</p><p><strong>✓</strong> Activité physique régulière</p><p><strong>✓</strong> Limiter caféine et alcool</p><p><strong>✓</strong> Maintenir un rythme de sommeil régulier</p></div><h3 class=\"text-xl font-bold mb-4\">Quand consulter ?</h3><p class=\"mb-4\">Si l'anxiété persiste depuis plusieurs semaines et impacte votre vie quotidienne, n'hésitez pas à consulter un professionnel de santé.</p><h3 class=\"text-xl font-bold mb-4\">Ressources</h3><p>Des thérapies comme la TCC (Thérapie Cognitivo-Comportementale) ont prouvé leur efficacité dans le traitement des troubles anxieux.</p>"
+    }
+  ],
+  "annuaire": {
+    "adultes": [
+      {
+        "name": "CMP Pessac",
+        "phone": "05 56 56 XX XX",
+        "address": "Avenue du Dr Albert Schweitzer, 33600 Pessac"
+      },
+      {
+        "name": "CMP Mérignac",
+        "phone": "05 56 56 XX XX",
+        "address": "Rue du Professeur Arnozan, 33700 Mérignac"
+      }
+    ],
+    "jeunes": [
+      {
+        "name": "Maison des Adolescents",
+        "phone": "05 56 79 XX XX",
+        "description": "Accueil des 11-25 ans"
+      },
+      {
+        "name": "CMPEA (Centre Médico-Psychologique Enfants-Ados)",
+        "phone": "05 56 56 XX XX",
+        "description": "Pour les enfants et adolescents"
+      }
+    ]
+  }
+}

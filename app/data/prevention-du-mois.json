@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Votre prévention du mois",
+    "subtitle": "Découvrez nos conseils de prévention et les campagnes de santé publique du mois"
+  },
+  "categories": [
+    {
+      "id": "memos-suivi",
+      "title": "Les mémos de suivi",
+      "description": "Retrouvez tous vos documents de suivi médical",
+      "image": "/prevention/memos-suivi.png",
+      "link": "/prevention/memos-suivi"
+    },
+    {
+      "id": "education-therapeutique",
+      "title": "Éducation thérapeutique",
+      "description": "Des programmes pour mieux comprendre et gérer votre santé",
+      "image": "/prevention/education-therapeutique.png",
+      "link": "/prevention/education-therapeutique"
+    },
+    {
+      "id": "sante-familiale",
+      "title": "Santé familiale",
+      "description": "Conseils et accompagnement pour toute la famille",
+      "image": "/prevention/sante-famille.png",
+      "link": "/prevention/sante-familiale"
+    }
+  ],
+  "articles": [
+    {
+      "id": "insomnie",
+      "title": "L'insomnie : la comprendre et la traiter",
+      "image": "/insomnie.jpg",
+      "category": "Education thérapeutique",
+      "link": "/l-insomnie-la-comprendre-et-la-traiter"
+    },
+    {
+      "id": "violences",
+      "title": "Face aux violences, vous n'êtes pas seules !",
+      "image": "/femme-floue-face-anxiete-vue-f.png",
+      "category": "Santé familiale",
+      "link": "/face-aux-violences-vous-n-etes-pas-seules"
+    }
+  ]
+}

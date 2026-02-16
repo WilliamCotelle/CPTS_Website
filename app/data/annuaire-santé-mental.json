@@ -1,0 +1,579 @@
+{
+  "version_date": "2026-02-08",
+  "scope": "CPTS Ouest Gironde",
+  "topic": "Annuaire santé mentale",
+  "age_groups": [
+    {
+      "age_group": "0–6 ans",
+      "sections": [
+        {
+          "section_title": "Soutien à la parentalité, repérage précoce, développement de l'enfant",
+          "resources": [
+            {
+              "name": "PMI de Mérignac",
+              "type": "PMI",
+              "address": "419 avenue de Verdun, 33700 Mérignac",
+              "phone": "05 56 12 13 90",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "PMI de Pessac",
+              "type": "PMI",
+              "address": "MDS, 10 rue Pierre Wiehn, 33600 Pessac",
+              "phone": "05 56 45 07 15",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Soins en santé mentale",
+          "resources": [
+            {
+              "name": "CMPEA de Mérignac",
+              "type": "CMPEA",
+              "address": "3 rue du Jard, 33700 Mérignac",
+              "phone": "05 56 10 18 27",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "CMPP de Pessac",
+              "type": "CMPP",
+              "address": "24 avenue Roger Cohé, 33600 Pessac",
+              "phone": "05 56 45 24 19",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "7–12 ans",
+      "sections": [
+        {
+          "section_title": "Soins en santé mentale",
+          "resources": [
+            {
+              "name": "CMPEA de Mérignac",
+              "type": "CMPEA",
+              "address": "3 rue du Jard, 33700 Mérignac",
+              "phone": "05 56 10 18 27",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "CMPP de Pessac",
+              "type": "CMPP",
+              "address": "24 avenue Roger Cohé, 33600 Pessac",
+              "phone": "05 56 45 24 19",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Hôpital de jour Halloran (CH Charles Perrens)",
+              "type": "Hôpital de jour",
+              "address": "33 avenue de Noès, 33600 Pessac",
+              "phone": "05 56 45 71 34",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Psychologues en libéral - Dispositif Mon Soutien Psy",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://monsoutienpsy.ameli.fr/recherche-psychologue",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Aide et soutien à l’école pour les enfants en difficulté",
+          "resources": [
+            {
+              "name": "RASED (Réseau d’Aides Spécialisées aux Élèves en Difficulté) - Éducation nationale",
+              "type": "Dispositif scolaire",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "Orientation via l'école",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Repérage et orientation des troubles du neurodéveloppement (0–12 ans)",
+          "resources": [
+            {
+              "name": "Plateforme de Coordination et d’Orientation (PCO)",
+              "type": "PCO",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "non précisé",
+              "coverage": "non précisé",
+              "access": "Orientation par un médecin",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "Adolescents / Jeunes adultes (jusqu’à 25 ans)",
+      "sections": [
+        {
+          "section_title": "Accueil, écoute et accompagnement",
+          "resources": [
+            {
+              "name": "Maison des Adolescents (MDA) - Permanence Le relais des familles (La parenthèse)",
+              "type": "MDA",
+              "address": "23 bis avenue du Dr Fernand Grosse, 33700 Mérignac",
+              "phone": "05 56 38 48 65",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Point Accueil Écoute Jeunes (PAEJ)",
+              "type": "PAEJ",
+              "address": "Place de la 5ème République, 33600 Pessac",
+              "phone": "06 99 47 80 57",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Soins en santé mentale",
+          "resources": [
+            {
+              "name": "CMPEA de Mérignac (jusqu'à 18 ans)",
+              "type": "CMPEA",
+              "address": "3 rue du Jard, 33700 Mérignac",
+              "phone": "05 56 10 18 27",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "Limite d'âge : jusqu'à 18 ans",
+              "source": "email"
+            },
+            {
+              "name": "CMPP de Pessac (jusqu'à 18 ans)",
+              "type": "CMPP",
+              "address": "24 avenue Roger Cohé, 33600 Pessac",
+              "phone": "05 56 45 24 19",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "Limite d'âge : jusqu'à 18 ans",
+              "source": "email"
+            },
+            {
+              "name": "Psychologues en libéral - Dispositif Mon Soutien Psy",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://monsoutienpsy.ameli.fr/recherche-psychologue",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Addictions",
+          "resources": [
+            {
+              "name": "ANPAA33 – Permanence",
+              "type": "Addictologie",
+              "address": "419 avenue de Verdun, 33700 Mérignac",
+              "phone": "05 57 57 00 77",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "Étudiants de l’enseignement supérieur",
+      "sections": [
+        {
+          "section_title": "Soins et accompagnement",
+          "resources": [
+            {
+              "name": "Espace Santé Étudiant",
+              "type": "Service étudiant",
+              "address": "22 avenue Pey Berland, 33600 Pessac",
+              "phone": "05 33 51 42 00",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Santé Psy Étudiant",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://santepsy.etudiant.gouv.fr/",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Psychologues en libéral - Dispositif Mon Soutien Psy",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://monsoutienpsy.ameli.fr/recherche-psychologue",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "Adultes (25–60 ans)",
+      "sections": [
+        {
+          "section_title": "Soins en santé mentale",
+          "resources": [
+            {
+              "name": "CMP de Mérignac",
+              "type": "CMP",
+              "address": "3 rue du Jard, 33700 Mérignac",
+              "phone": "05 56 56 35 16",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "CMP de Pessac",
+              "type": "CMP",
+              "address": "10 avenue Pierre Wiehn, bâtiment du Conseil Général, 33600 Pessac",
+              "phone": "05 56 56 35 16",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Psychologues en libéral - Dispositif Mon Soutien Psy",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://monsoutienpsy.ameli.fr/recherche-psychologue",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Addictions",
+          "resources": [
+            {
+              "name": "ANPAA33 – Permanence",
+              "type": "Addictologie",
+              "address": "419 avenue de Verdun, 33700 Mérignac",
+              "phone": "05 57 57 00 77",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Mémoire",
+          "resources": [
+            {
+              "name": "Centre Mémoire CHU",
+              "type": "Consultation mémoire",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "non précisé",
+              "coverage": "non précisé",
+              "access": "non précisé",
+              "notes": "Pour les moins de 65 ans",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "Seniors (60 ans et +)",
+      "sections": [
+        {
+          "section_title": "Soins en santé mentale",
+          "resources": [
+            {
+              "name": "CMP de Mérignac",
+              "type": "CMP",
+              "address": "3 rue du Jard, 33700 Mérignac",
+              "phone": "05 56 56 35 16",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "CMP de Pessac",
+              "type": "CMP",
+              "address": "10 avenue Pierre Wiehn, bâtiment du Conseil Général, 33600 Pessac",
+              "phone": "05 56 56 35 16",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Psychologues en libéral - Dispositif Mon Soutien Psy",
+              "type": "Dispositif national",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "https://monsoutienpsy.ameli.fr/recherche-psychologue",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Mémoire",
+          "resources": [
+            {
+              "name": "CS Mémoire - Fontaines de Monjous",
+              "type": "Consultation mémoire",
+              "address": "non précisé",
+              "phone": "non précisé",
+              "website": "non précisé",
+              "coverage": "non précisé",
+              "access": "non précisé",
+              "notes": "Pour les plus de 75 ans",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Addictions",
+          "resources": [
+            {
+              "name": "ANPAA33 – Permanence",
+              "type": "Addictologie",
+              "address": "419 avenue de Verdun, 33700 Mérignac",
+              "phone": "05 57 57 00 77",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "age_group": "Tous âges",
+      "sections": [
+        {
+          "section_title": "Aidants en psychiatrie",
+          "resources": [
+            {
+              "name": "à venir",
+              "type": "Aidants en psychiatrie",
+              "address": "à venir",
+              "phone": "à venir",
+              "website": "à venir",
+              "coverage": "non précisé",
+              "access": "non précisé",
+              "notes": "Rubrique créée - noms et coordonnées à venir",
+              "source": "email"
+            }
+          ]
+        },
+        {
+          "section_title": "Numéros d'urgence et d'écoute (gratuits)",
+          "resources": [
+            {
+              "name": "3114 – Numéro national de prévention du suicide",
+              "type": "Numéro national",
+              "address": "non précisé",
+              "phone": "3114",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Urgences",
+              "type": "Urgences",
+              "address": "non précisé",
+              "phone": "15 / 112",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "SOS Amitié",
+              "type": "Écoute",
+              "address": "non précisé",
+              "phone": "09 72 39 40 50",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Croix Rouge Écoute",
+              "type": "Écoute",
+              "address": "non précisé",
+              "phone": "0800 858 858",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Allô enfance en danger",
+              "type": "Protection de l'enfance",
+              "address": "non précisé",
+              "phone": "119",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Fil Santé Jeunes",
+              "type": "Écoute",
+              "address": "non précisé",
+              "phone": "0 800 235 236",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "CNAE – Ligne d'écoute étudiants",
+              "type": "Écoute",
+              "address": "non précisé",
+              "phone": "0 800 737 800",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Drogues Info Service",
+              "type": "Addictologie",
+              "address": "non précisé",
+              "phone": "0 800 23 13 13",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Violences",
+              "type": "Violences",
+              "address": "non précisé",
+              "phone": "3919",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "non précisé",
+              "notes": "non précisé",
+              "source": "email"
+            },
+            {
+              "name": "Question Psy",
+              "type": "Écoute",
+              "address": "non précisé",
+              "phone": "0 800 71 08 90",
+              "website": "non précisé",
+              "coverage": "nationale",
+              "access": "Lundi au vendredi 10h–17h30",
+              "notes": "non précisé",
+              "source": "email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "PMI de Saint-Médard",
+      "reason": "Ne pas inclure (instruction reçue)",
+      "source": "email"
+    },
+    {
+      "name": "HDJ (référencé sur le site) - version adulte",
+      "reason": "À retirer chez l'adulte (instruction reçue)",
+      "source": "email"
+    }
+  ]
+}

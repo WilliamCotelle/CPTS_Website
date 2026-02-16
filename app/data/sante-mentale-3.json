@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "badge": "Espace Santé Mentale",
+    "title": "Santé mentale :",
+    "titleMuted": "comprendre et s'orienter",
+    "description": "Un espace pour comprendre et accéder aux dispositifs d’aide existants.",
+    "scrollText": "Scroll pour explorer"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "title": "Le Stress",
+      "tag": "Biologie",
+      "size": "col-span-12 md:col-span-8",
+      "variant": "primary",
+      "iconName": "Activity",
+      "desc": "Comprendre pourquoi votre corps s'active et comment réguler le système nerveux en moins de 2 minutes."
+    },
+    {
+      "id": 2,
+      "title": "Sommeil",
+      "tag": "Vitalité",
+      "size": "col-span-12 md:col-span-4",
+      "variant": "outline",
+      "iconName": "Moon",
+      "desc": "La science du repos profond et de la régénération cognitive."
+    },
+    {
+      "id": 3,
+      "title": "Liens Sociaux",
+      "tag": "Communauté",
+      "size": "col-span-12 md:col-span-4",
+      "variant": "card",
+      "iconName": "Users",
+      "desc": "Pourquoi s'entourer est un besoin vital pour la résilience."
+    },
+    {
+      "id": 4,
+      "title": "L'Équilibre",
+      "tag": "Mental",
+      "size": "col-span-12 md:col-span-8",
+      "variant": "secondary",
+      "iconName": "Brain",
+      "desc": "Apprendre à tracer la ligne entre performance et préservation de soi au quotidien."
+    }
+  ],
+  "breathingTool": {
+    "title": "Respirer pour s'apaiser",
+    "subtitle": "Laissez-vous guider par un exercice simple pour apaiser le corps et le mental.",
+    "guidanceText": "Laissez-vous guider.",
+    "clickToStart": "Cliquez sur le cercle pour commencer",
+    "duration": "5 minutes",
+    "instructions": {
+      "inspire": "Inspirez par le nez",
+      "expire": "Expirez par la bouche"
+    },
+    "guidance": {
+      "intro": "Installez-vous confortablement. 5 minutes, 30 respirations.",
+      "during": [
+        "Concentrez-vous sur votre respiration",
+        "Laissez votre rythme cardiaque se stabiliser",
+        "Vous réglez progressivement votre système nerveux",
+        "Continuez à respirer calmement",
+        "Chaque respiration apaise votre corps",
+        "Maintenez ce rythme régulier"
+      ],
+      "outro": "Exercice terminé. Prenez quelques instants pour ressentir les effets."
+    }
+  },
+  "emergencyCard": {
+    "title": "Besoin d'aide ?",
+    "description": "Le numéro national de prévention est accessible 24h/24.",
+    "number": "3114"
+  },
+  "annuaire": {
+    "title": "Annuaire.",
+    "tabs": {
+      "adults": "Adultes",
+      "youth": "Jeunes"
+    },
+    "adults": [
+      {
+        "city": "Pessac",
+        "type": "CMP",
+        "phone": "05.56.56.35.16"
+      },
+      {
+        "city": "Mérignac",
+        "type": "CMP",
+        "phone": "05.56.56.35.16"
+      }
+    ],
+    "youth": [
+      {
+        "city": "Mérignac",
+        "type": "Maison des Ados",
+        "phone": "05.56.38.48.65"
+      },
+      {
+        "city": "Pessac",
+        "type": "PAEJ",
+        "phone": "06.99.47.80.57"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "title": "Vidéos pédagogiques.",
+      "description": "Un clip Psycom pour comprendre la santé mentale et ce qui l’influence",
+      "iconName": "Video",
+      "buttonText": "Visionner",
+      "type": "video"
+    },
+    {
+      "title": "Ressources Officielles.",
+      "description": "Le portail national Santé Mentale Info Service propose des outils validés par l'ARS et des lignes d'écoute anonymes.",
+      "iconName": "ShieldCheck",
+      "buttonText": "Accéder au portail ARS",
+      "type": "link",
+      "url": "https://www.santementale-info-service.fr/"
+    }
+  ],
+  "modal": {
+    "indexPrefix": "Index:",
+    "readMore": "Lire le dossier complet",
+    "contactPro": "Contacter un professionnel",
+    "modalDescription": "Une approche systémique du bien-être pour vous aider à comprendre les mécanismes de {{title}} et agir sur votre équilibre."
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "title": "Le Syndrome d'Apnée obstructive du Sommeil",
+  "date": "21 janvier 2025",
+  "image": "/prevention/apnée-sommeil.jpg",
+  "backLink": {
+    "href": "/prevention/education-therapeutique",
+    "label": "Retour à l'éducation thérapeutique"
+  },
+  "sections": [
+    {
+      "id": "definition",
+      "number": "1",
+      "title": "Qu'est-ce que c'est ?",
+      "type": "default",
+      "image": "/prevention/apné-sommeil/illustration-apnée-obstruction.png",
+      "imageAlt": "Illustration de l'obstruction des voies aériennes",
+      "paragraphs": [
+        "Il s'agit d'épisodes répétées d'<strong>obstruction complète</strong> (apnée) ou partielle (hypopnée) des voies aériennes supérieures pendant le sommeil. Ces événements, apnées ou hypopnées, doivent durer au moins 10 secondes et doivent se produire au moins 5 fois par heure de sommeil (Index d'apnées hypopnées).",
+        "Cette réduction ou interruption de la ventilation pendant le sommeil <strong>provoque un manque en oxygène</strong>. Le cerveau réagit et la personne se réveille pour reprendre sa respiration. Ces éveils sont de courte durée : on parle de « micro-éveils » dont la personne n'a pas conscience. Le sommeil est alors très perturbé, saccadé et de mauvaise qualité."
+      ]
+    },
+    {
+      "id": "gravite",
+      "iconName": "AlertTriangle",
+      "title": "Apnées du sommeil : Est-ce que c’est grave ?",
+      "type": "warning",
+      "paragraphs": [
+        "L'importance du syndrome d'apnées du sommeil se mesure au nombre d'apnées/hypopnées par heure de sommeil (IAH ou indice d'apnées/hypopnées) :"
+      ],
+      "levels": [
+        { "range": "Entre 5 et 15", "label": "Apnée légère", "color": "green" },
+        {
+          "range": "Entre 16 et 30",
+          "label": "Apnée modérée",
+          "color": "amber"
+        },
+        { "range": "Supérieur à 30", "label": "Apnée sévère", "color": "red" }
+      ]
+    },
+    {
+      "id": "population",
+      "iconName": "Users",
+      "title": "Qui est concerné en France ?",
+      "type": "default",
+      "paragraphs": [
+        "En France, le SAHOS (syndrome d'apnées-hypopnées obstructives du sommeil) touche <strong>4 à 8 % de la population</strong>. Les populations les plus à risques sont :"
+      ],
+      "riskFactors": [
+        {
+          "title": "Les personnes de plus de 65 ans",
+          "description": "L’apnée du sommeil est plus fréquente lors du vieillissement et on estime que 30 % des personnes de plus de 65 ans sont concernées."
+        },
+        {
+          "title": "Les hommes",
+          "description": "Les hommes sont deux fois plus exposés que les femmes. Cependant, la fréquence du SAOS augmente après la ménopause."
+        },
+        {
+          "title": "Surpoids et obésité",
+          "description": "Le surpoids et surtout l’obésité sont des facteurs de risque majeurs. L’infiltration graisseuse des tissus autour du pharynx favorise l’obstruction des voies aériennes supérieures au cours du sommeil. 70 % des personnes ayant un SAOS sont en surpoids. Le risque de SAOS augmente encore si la personne est obèse."
+        },
+        {
+          "title": "Certaines anomalies ORL",
+          "description": "Les facteurs qui empêchent le bon fonctionnement des voies aériennes supérieures favorisent l’apnée du sommeil. Une obstruction nasale plus ou moins permanente, conséquence de problèmes ORL (oto-rhino-laryngologiques), chirurgicaux, allergiques, ou des anomalies de taille et de position de la mâchoire (mandibule trop petite par exemple), de la langue (langue très volumineuse) et du palais (luette ou amygdales volumineuses, etc.) favorisent la survenue de pauses respiratoires nocturnes."
+        },
+        {
+          "title": "Certaines habitudes de vie",
+          "description": "La consommation d'alcool et de tabac, la prise de sédatifs peuvent aggraver les symptômes."
+        }
+      ]
+    },
+    {
+      "id": "symptomes",
+      "iconName": "Activity",
+      "title": "Devant quels symptômes devez-vous penser à l'apnée de sommeil ?",
+      "type": "info",
+      "image": "/prevention/apné-sommeil/symptome.jpg",
+      "imageAlt": "Symptômes de l'apnée du sommeil",
+      "paragraphs": [
+        "L'apnée du sommeil retentit sur les <strong>activités quotidiennes</strong>.",
+        "En effet, elle provoque une somnolence en journée avec des <strong>endormissements incontrôlables</strong>. Vous pouvez rencontrer des <strong>difficultés à vous concentrer</strong>, présenter <strong>des troubles de la mémoire</strong>, des <strong>troubles de l'humeur</strong> ;",
+        "Vous pouvez constater un manque d'efficacité dans la réalisation de vos tâches.",
+        "Votre sommeil n'est pas réparateur et induit une <strong>fatigue dés le réveil</strong>, ou des maux de tête : <strong>céphalées</strong> ainsi que des <strong>ronflements</strong> et/ou des interruptions de la respiration observée par l'entourage.",
+        "Vous pouvez également souffrir de sensation d'étouffement ou de <strong>suffocation</strong> pendant votre nuit.",
+        "Si vous ressentez des besoins d'uriner plusieurs fois par nuit (<strong>nycturie</strong>), il peut s'agir également d'un symptôme d'apnée."
+      ]
+    },
+    {
+      "id": "impact",
+      "iconName": "Heart",
+      "title": "Comment l'apnée du sommeil impacte votre vie au quotidien ?",
+      "type": "danger",
+      "paragraphs": [
+        "En raison de la baisse de la vigilance, le <strong>taux d'accidents de voiture et d'accidents du travail est plus élevé</strong> chez les personnes présentant une apnée du sommeil que chez les autres: ceci est lié à la somnolence anormale en journée.",
+        "À long terme, le syndrome d'apnées-hypopnées obstructives du sommeil <strong>augmente la mortalité</strong> et particulièrement celle <strong>de cause cardiovasculaire</strong>. Le SAOS favorise la survenue de maladies cardiovasculaires :"
+      ],
+      "complications": [
+        "Hypertension artérielle",
+        "Maladie coronarienne",
+        "Insuffisance cardiaque",
+        "Troubles du rythme cardiaque",
+        "Accident vasculaire cérébral",
+        "Les troubles du métabolisme : anomalies des graisses dans le sang ou diabète"
+      ]
+    },
+    {
+      "id": "diagnostic",
+      "iconName": "Stethoscope",
+      "title": "Comment faire le diagnostic ?",
+      "type": "default",
+      "paragraphs": [
+        "Il faut réaliser une <strong>polygraphie nocturne</strong> ou une <strong>polysomnographie nocturne</strong> : Il s’agit d’un enregistrement de plusieurs paramètres pendant le sommeil, qui se réalise soit à domicile soit dans un centre du sommeil polysomnographie"
+      ],
+      "imageAfterParagraphs": "/prevention/apné-sommeil/diagnostic.jpg",
+      "imageAfterParagraphsAlt": "Diagnostic de l'apnée du sommeil",
+      "paragraphsAfterImage": [
+        "Ces examens peuvent être réalisés par différents médecins : les <strong>somnologues</strong> mais également les <strong>ORL</strong>, les <strong>pneumologues</strong>, les <strong>cardiologues</strong> et certains <strong>médecins généralistes</strong> qui se sont spécialisés dans l'apnée de sommeil."
+      ],
+      "exams": [
+        {
+          "title": "La polygraphie ventilatoire nocturne",
+          "description": "La polygraphie ventilatoire nocturne enregistre, sur une durée d'au moins 6 heures, la fréquence cardiaque, les mouvements respiratoires et le débit d'air entrant et sortant par les narines. Un capteur placé au niveau d'un doigt permet d'analyser la saturation du sang en oxygène et donc de détecter des baisses de saturation lors des apnées et des hypopnées."
+        },
+        {
+          "title": "La polysomnographie",
+          "description": "La polysomnographie, plus complète que la polygraphie, est un examen complexe qui n'est pas systématiquement prescrit et se réalise en passant une nuit dans un centre du sommeil."
+        }
+      ],
+      "additionalInfo": [
+        "Le dernier examen permet, en plus des enregistrements précédents, d'analyser la qualité du sommeil, grâce à l'enregistrement de plusieurs paramètres, obtenu à l'aide d'électrodes placées au niveau du crâne et de différentes parties du corps."
+      ],
+      "studies": [
+        "L'activité cérébrale (par électro-encéphalogramme)",
+        "L'activité musculaire du menton et des jambes (électromyogramme)",
+        "Les mouvements oculaires (électro-oculogramme)"
+      ],
+      "conclusion": "Ces données vont permettre de suivre et d'identifier les différentes phases du sommeil et sa qualité : micro réveils, sommeil perturbé et fragmenté, présence de pauses respiratoires, mouvements périodiques des membres inférieurs…"
+    },
+    {
+      "id": "traitements",
+      "number": "7",
+      "title": "Quelles sont les prises en charges possibles ?",
+      "type": "success",
+      "paragraphs": [
+        "La prise en charge du syndrome d'apnées est nécessaire pour améliorer votre qualité de vie et vous éviter certaines maladies."
+      ],
+      "introText": "Elle comprend des mesures hygiéno-diététiques :",
+      "treatments": [
+        {
+          "title": "Mesures hygiéno-diététiques",
+          "description": "Le suivi de mesures hygiéno-diététiques constitue un premier traitement indispensable de l'apnée du sommeil. Dans les formes légères, cela peut suffire. Ces mesures consistent à :",
+          "items": [
+            "Perdre du poids en cas de surpoids ou d'obésité",
+            "Adopter une activité physique régulière",
+            "Arrêter la consommation de tabac",
+            "Réduire sa consommation d'alcool surtout le soir, car l'alcool diminue le tonus des muscles des voies aériennes supérieures",
+            "Adopter des horaires réguliers de sommeil et modifier sa position pour dormir. En cas d'apnée du sommeil modérée, le fait de dormir sur le côté, et non sur le dos, peut réduire de moitié le nombre d'obstructions pendant la nuit. Si vous n'y arrivez pas, il existe des dispositifs comme des orthèses de mousse à placer dans le dos"
+          ],
+          "additionalInfo": "Il peut être nécessaire de revoir certains de vos médicaments et de les arrêter car ils aggravent le syndrome d'apnées du sommeil : anxiolytiques, médicaments relaxant les muscles comme les somnifères et les médicaments contenant de la morphine."
+        },
+        {
+          "title": "Orthèses d'avancée mandibulaire",
+          "description": "Elles poussent la mâchoire inférieure en avant et empêchent la langue de se replier et de bloquer la voie aérienne. Ces appareils, constitués de deux gouttières, augmentent l'espace compris entre la base de la langue et le pharynx. Les orthèses doivent être réalisées sur mesure ou thermoformées. La denture doit être en bon état car elles doivent être portées toutes les nuits. Ces appareils conviennent surtout pour les apnées du sommeil de moyenne gravité (indice apnées-hypopnées ou IAH compris entre 15 et 30) en l'absence de maladie cardiovasculaire. Ils peuvent aussi être utilisés en cas d'apnée du sommeil sévère, après échec ou intolérance d'un traitement par pression positive continue."
+        },
+        {
+          "title": "Pression Positive Continue (PPC)",
+          "description": "Ce traitement des apnées du sommeil consiste en l'utilisation d'un appareil qui, pendant la nuit, envoie l'air dans les voies respiratoires avec une légère surpression. L'application d'une PPC dans les voies aériennes supérieures évite le blocage de l'inspiration et prévient la survenue de l'apnée. Le débit d'air est fourni par une machine, reliée à un masque nasal par un tuyau souple. Le masque est appliqué sur le visage par un système de harnais. Ce traitement est contraignant, mais il permet d'obtenir d'excellents résultats en cas d'apnées du sommeil sévères (IAH supérieur ou égal à 30).",
+          "image": "/prevention/apné-sommeil/pression-continue-positive.jpg",
+          "imageAlt": "Appareil de Pression Positive Continue"
+        },
+        {
+          "title": "Traitement chirurgical",
+          "description": "Il est réservé à des anomalies anatomiques de la sphère ORL ou en cas d'échec des autres traitements. Son but est de lever un obstacle ORL qui gêne le passage de l'air. L'intervention peut porter sur le voile du palais, les végétations, les amygdales, le maxillaire inférieur (chirurgie d'avancée maxillo-mandibulaire) ou la structure du nez."
+        }
+      ]
+    },
+    {
+      "id": "enfants",
+      "iconName": "Baby",
+      "title": "Votre enfant peut-il faire de l'apnée de sommeil ?",
+      "type": "children",
+      "image": "/prevention/apné-sommeil/enfant-apnée.jpg",
+      "imageAlt": "Apnée du sommeil chez l'enfant",
+      "paragraphs": [
+        "<strong>2% des enfants</strong> souffrent d'apnées de sommeil.",
+        "Si votre enfant présente des <strong>ronflements nocturnes</strong> et qu'il fait des <strong>pauses respiratoires</strong> et une <strong>respiration bruyante</strong> qui termine la pause, il est fort probable que votre enfant fasse de l'apnée de sommeil.",
+        "Il peut avoir un <strong>sommeil agité</strong> et une <strong>transpiration abondante</strong> ; l'enfant apnéique a parfois une respiration bruyante en journée et peut respirer bouche ouverte.",
+        "Il se plaint de <strong>fatigue</strong> et il <strong>s'endort en classe</strong> et les résultats scolaires s'en ressentent."
+      ],
+      "causes": {
+        "title": "80% de cas d'apnées chez l'enfant sont dus à :",
+        "items": [
+          "Chez les plus petits : de trop grosses amygdales",
+          "Chez les plus âgés : des amygdales hypertrophiées mais aussi du surpoids et un rétrécissement maxillaire"
+        ]
+      },
+      "treatmentTitle": "Comment traite-t-on les syndromes d'apnées chez les enfants ?",
+      "childTreatments": [
+        "Dans les troubles légers : un spray nasal à base de cortisone anti-inflammatoire peut être utilisé",
+        "Le traitement peut aussi consister à une ablation des amygdales",
+        "Une rééducation faciale auprès d'un kinésithérapeute spécialisé peut être très complémentaire",
+        "Chez certains enfants, il peut être proposé une intervention chirurgicale au niveau du massif facial si l'apnée est causée par un rétrécissement congénital",
+        "Enfin, une assistance respiratoire type CPAP n'est que très rarement nécessaire"
+      ]
+    }
+  ]
+}

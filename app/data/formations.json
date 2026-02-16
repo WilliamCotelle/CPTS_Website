@@ -1,0 +1,133 @@
+{
+  "formationsSimairlec2025": [
+    {
+      "id": "damage-control-jan",
+      "title": "Gestion d'une Situation Sanitaire Exceptionnelle (Damage control)",
+      "date": "13 janvier 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H"
+    },
+    {
+      "id": "detresses-vitales-jan",
+      "title": "Prise en charge des détresses vitales et situations d'urgence en équipe pluriprofessionnelle (simulation)",
+      "date": "16 janvier 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H",
+      "location": "Pôle Santé Robinson à Mérignac"
+    },
+    {
+      "id": "afgsu2-mars",
+      "title": "AFGSU 2",
+      "date": "10 au 12 mars 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "21H"
+    },
+    {
+      "id": "damage-control-mars",
+      "title": "Gestion d'une Situation Sanitaire Exceptionnelle (Damage control)",
+      "date": "17 mars 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H"
+    },
+    {
+      "id": "detresses-vitales-juin",
+      "title": "Prise en charge des détresses vitales et situations d'urgence en équipe pluriprofessionnelle (simulation)",
+      "date": "12 juin 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H"
+    },
+    {
+      "id": "afgsu2-oct",
+      "title": "AFGSU 2",
+      "date": "13 au 15 octobre 2025",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "21H"
+    }
+  ],
+  "formationsSimairlec2024": [
+    {
+      "id": "afgsu2-mars-2024",
+      "title": "AFGSU 2",
+      "date": "11/12/13 mars 2024",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "21H"
+    },
+    {
+      "id": "damage-control-avril-2024",
+      "title": "Gestion d'une Situation Sanitaire Exceptionnelle (Damage control)",
+      "date": "29 avril 2024",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H"
+    },
+    {
+      "id": "detresses-vitales-oct-2024",
+      "title": "Prise en charge des détresses vitales et situations d'urgence en équipe pluriprofessionnelle (simulation)",
+      "date": "3 octobre 2024",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "7H"
+    },
+    {
+      "id": "afgsu2-nov-2024",
+      "title": "AFGSU 2",
+      "date": "12/13/14 novembre 2024",
+      "status": "past",
+      "category": "Simairlec",
+      "duration": "21H"
+    }
+  ],
+  "autresFormations": [
+    {
+      "id": "dpc-sport-mai",
+      "title": "DPC Sport Santé - Comment prescrire l'activité physique",
+      "date": "22 mai 2025",
+      "status": "past",
+      "category": "Autres"
+    },
+    {
+      "id": "dpc-sport-sept",
+      "title": "DPC Sport Santé - Comment prescrire l'activité physique",
+      "date": "25 septembre 2025",
+      "status": "past",
+      "category": "Autres"
+    },
+    {
+      "id": "dpc-sport-nov",
+      "title": "DPC Sport Santé - Comment prescrire l'activité physique",
+      "date": "27 novembre 2025",
+      "status": "past",
+      "category": "Autres"
+    },
+    {
+      "id": "pathologies-sommeil",
+      "title": "Les pathologies du sommeil",
+      "date": "Second semestre 2025",
+      "status": "past",
+      "category": "Autres"
+    },
+    {
+      "id": "violences-intrafamiliales",
+      "title": "Violences intra familiales",
+      "date": "27 mars 2025",
+      "status": "past",
+      "category": "Autres",
+      "duration": "3H (soirée) ou journée complète"
+    },
+    {
+      "id": "prevention-epuisement",
+      "title": "Prévention de l'épuisement chez les soignants",
+      "date": "2ème semestre 2025",
+      "status": "past",
+      "category": "Autres",
+      "link": "https://www.association-mots.org/"
+    }
+  ]
+}

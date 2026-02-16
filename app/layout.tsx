@@ -1,0 +1,71 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import { GeistMono } from "geist/font/mono"
+import { Analytics } from "@vercel/analytics/next"
+import { Suspense } from "react"
+import "./globals.css"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+})
+
+export const metadata: Metadata = {
+  title: "CPTS Ouest Gironde - Communauté Professionnelle Territoriale de Santé",
+  description: "La CPTS Ouest Gironde réunit les professionnels de santé de votre territoire pour améliorer l'accès aux soins. Découvrez nos services et actualités santé.",
+  keywords: ["CPTS", "santé", "Gironde", "médecins", "soins", "territoire", "professionnels de santé"],
+  authors: [{ name: "CPTS Ouest Gironde" }],
+  creator: "CPTS Ouest Gironde",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    title: "CPTS Ouest Gironde",
+    description: "Une santé accessible pour tous",
+    siteName: "CPTS Ouest Gironde",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CPTS Ouest Gironde",
+    description: "Une santé accessible pour tous",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="fr">
+      <head>
+        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
+        <link rel="dns-prefetch" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
+      </head>
+      <body className={`font-sans ${inter.variable} ${GeistMono.variable} antialiased`}>
+        <Suspense fallback={<div>Loading...</div>}>
+          {children}
+          <Analytics />
+        </Suspense>
+      </body>
+    </html>
+  )
+}

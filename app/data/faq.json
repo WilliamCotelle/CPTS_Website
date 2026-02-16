@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "FAQ",
+    "subtitle": "Questions fréquemment posées"
+  },
+  "questions": [
+    {
+      "id": "cpts-signification",
+      "question": "Que signifie CPTS ?",
+      "answer": "CPTS signifie Communauté Professionnelle Territoriale de Santé. Il s'agit d'une nouvelle forme d'exercice coordonné proposée aux professionnels de santé, à l'échelle d'un territoire."
+    },
+    {
+      "id": "qui-peut-integrer",
+      "question": "Qui peut intégrer une CPTS ?",
+      "answer": "Au départ, une CPTS émerge de la volonté des professionnels de santé libéraux d'un territoire de travailler ensemble, pour mieux organiser les parcours de soins des patients. Dans un second temps, elle peut associer d'autres acteurs de santé tels que des établissements sanitaires et médico-sociaux, des établissements d'hospitalisation à domicile, des acteurs de prévention…"
+    },
+    {
+      "id": "pourquoi-integrer",
+      "question": "Pourquoi intégrer une CPTS ?",
+      "answer": "Pour améliorer la prise en charge des patients et la qualité de ses propres conditions de travail. Pour les professionnels de santé, la CPTS peut aider à : mieux connaître les autres acteurs de santé du territoire et leurs pratiques, mieux gérer la prise en charge des soins non programmés, faciliter l'accompagnement des patients fragiles, mieux prendre en charge les maladies chroniques, développer de nouveaux outils, notamment numériques, rendre le territoire plus attractif et ainsi lutter contre la désertification médicale, agir sur la prévention…"
+    },
+    {
+      "id": "financement",
+      "question": "Comment est financée une CPTS ?",
+      "answer": "Une CPTS fonctionne grâce à l'attribution de subventions par l'Assurance Maladie, dans le cadre d'un Accord Conventionnel Interprofessionnel signé entre la CPTS, l'Assurance Maladie et l'ARS. L'accord prévoit un financement annuel variant selon la taille du territoire de la CPTS (nombre d'habitants) et la mise en œuvre de différentes missions. Des aides complémentaires peuvent être allouées ponctuellement par d'autres partenaires tels que l'ARS et les URPS (par exemple, dans le cadre d'appels à projets)."
+    },
+    {
+      "id": "difference-msp",
+      "question": "Quelle différence y-a-t-il entre une MSP et une CPTS ?",
+      "answer": "Une MSP permet d'apporter une réponse coordonnée de proximité, centrée sur le patient. La coordination est organisée à l'échelle d'une patientèle. Une CPTS permet d'apporter une réponse coordonnée collective aux besoins de santé de la population d'un territoire. La coordination est alors organisée à l'échelle d'un territoire."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "L'annuaire des professionnels de santé adhérents de la CPTS",
+    "subtitle": "Pour accéder à l'annuaire des professionnels de santé adhérents à la CPTS Ouest Gironde sur votre commune, nous vous remercions d'envoyer un mail à",
+    "email": "info@cpts-ouest-gironde.fr"
+  },
+  "features": [
+    {
+      "id": "1",
+      "title": "Trouvez un professionnel",
+      "description": "Accédez à la liste des médecins, infirmiers, pharmaciens et autres professionnels de santé de votre commune"
+    },
+    {
+      "id": "2",
+      "title": "Informations complètes",
+      "description": "Coordonnées, horaires et spécialités de chaque professionnel adhérent"
+    },
+    {
+      "id": "3",
+      "title": "À jour régulièrement",
+      "description": "L'annuaire est mis à jour pour vous garantir des informations fiables"
+    }
+  ]
+}
