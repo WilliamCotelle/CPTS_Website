@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   keywords: ["CPTS", "santé", "Gironde", "médecins", "soins", "territoire", "professionnels de santé"],
   authors: [{ name: "CPTS Ouest Gironde" }],
   creator: "CPTS Ouest Gironde",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
