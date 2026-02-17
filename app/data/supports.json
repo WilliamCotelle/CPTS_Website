@@ -3,97 +3,97 @@
     {
       "id": "certificats-medicaux",
       "name": "Affiche Certificats médicaux",
-      "image": "/supports/CERTIFICAT MÉDICAL.jpg",
+      "image": "/supports/CERTIFICAT MÉDICAL.webp",
       "description": "2 exemplaires"
     },
     {
       "id": "vaccination-seniors",
       "name": "Affiche vaccination seniors",
-      "image": "/supports/Affiche Vaccination-seniors.jpg",
+      "image": "/supports/Affiche Vaccination-seniors.webp",
       "description": "2 exemplaires"
     },
     {
       "id": "motricite-libre",
       "name": "Affiche Motricité libre",
-      "image": "/supports/AFFICHE MOTRICITE.jpg",
+      "image": "/supports/AFFICHE MOTRICITE.webp",
       "description": "2 exemplaires"
     },
     {
       "id": "vaccination",
       "name": "Affiche Vaccination professionnels petite enfance",
-      "image": "/supports/Affiche vaccin personnel petite enfance.png",
+      "image": "/supports/Affiche vaccin personnel petite enfance.webp",
       "description": "2 exemplaires"
     },
     {
       "id": "cpts",
       "name": "Affiche CPTS",
-      "image": "/supports/Flyer usagers CPTS_OuestGironde.jpg",
+      "image": "/supports/Flyer usagers CPTS_OuestGironde.webp",
       "description": "1 exemplaire (A3)"
     },
     {
       "id": "patient-sans-medecin",
       "name": "Affiche patient sans médecin traitant",
-      "image": "/supports/Affiche CPTS Medecin Traitant.jpg",
+      "image": "/supports/Affiche CPTS Medecin Traitant.webp",
       "description": "4 exemplaires (A3)"
     },
     {
       "id": "violences-intrafamiliales",
       "name": "Dépliant sur les Violences intrafamiliales",
-      "image": "/supports/Depliant VIF.jpg",
+      "image": "/supports/Depliant VIF.webp",
       "description": "5 exemplaires"
     },
     {
       "id": "flyer-cpts",
       "name": "Flyer CPTS",
-      "image": "/supports/Flyer usagers CPTS_OuestGironde.jpg",
+      "image": "/supports/Flyer usagers CPTS_OuestGironde.webp",
       "description": "5 exemplaires (A5)"
     },
     {
       "id": "guide-pro-zero-ecran",
       "name": "Guide Pratique professionnels - Zéro écran 0-2ans",
-      "image": "/supports/livret-zero-ecran-professionnels-sante.jpg",
+      "image": "/supports/livret-zero-ecran-professionnels-sante.webp",
       "description": "1 exemplaire"
     },
     {
       "id": "guide-parents-zero-ecran",
       "name": "Guide Pratique parents - Zéro écran 0-2ans",
-      "image": "/supports/livret-zero-ecran-parents.jpg",
+      "image": "/supports/livret-zero-ecran-parents.webp",
       "description": "5 exemplaires"
     },
     {
       "id": "livret-pro-ic",
       "name": "Livret professionnel IC",
-      "image": "/supports/livret IC version professionnels_page.jpg",
+      "image": "/supports/livret IC version professionnels_page.webp",
       "description": "10 exemplaires"
     },
     {
       "id": "livret-patient-ic",
       "name": "Livret patient IC",
-      "image": "/supports/carnet IC version patient.jpg",
+      "image": "/supports/carnet IC version patient.webp",
       "description": "10 exemplaires"
     },
     {
       "id": "livret-diversification",
       "name": "Livret diversification alimentaire",
-      "image": "/supports/diversification-alimentaire.jpg",
+      "image": "/supports/diversification-alimentaire.webp",
       "description": "10 exemplaires"
     },
     {
       "id": "reglette-epof",
       "name": "Réglette EPOF testez vous",
-      "image": "/supports/reglette-EPOF.jpg",
+      "image": "/supports/reglette-EPOF.webp",
       "description": "10 exemplaires"
     },
     {
       "id": "marque-page-violentometre",
       "name": "Marque page violentomètre",
-      "image": "/supports/MARQUE-PAGE CPTS OUEST GIRONDE.jpg",
+      "image": "/supports/MARQUE-PAGE CPTS OUEST GIRONDE.webp",
       "description": "20 exemplaires"
     },
     {
       "id": "sachet-violentometre",
       "name": "Sachet pharmacie Violentomètre",
-      "image": "/supports/Affiche vaccin personnel petite enfance.png",
+      "image": "/supports/Affiche vaccin personnel petite enfance.webp",
       "description": "500 exemplaires"
     }
   ]

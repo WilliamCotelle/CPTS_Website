@@ -146,14 +146,14 @@ export default function SupportsPage() {
                               </p>
                             </div>
                           ) : (
-                            <img
+                            <Image
                               src={support.image}
                               alt={support.name}
-                              className="w-full h-full object-contain px-6 pb-6 pt-2"
-                              onError={(e) => {
-                                const target = e.target as HTMLImageElement
-                                target.src = "/placeholder.svg"
-                              }}
+                              fill
+                              className="object-contain px-6 pb-6 pt-2"
+                              loading="lazy"
+                              quality={75}
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                           )}
 

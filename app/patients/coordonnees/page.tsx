@@ -424,7 +424,7 @@ export default function CoordonneesPage() {
           <h2 className="text-3xl font-bold text-center mb-12">
             Infos du territoire
           </h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {coordonneesData.territoireInfos.map((info) => {
               const iconMap: Record<string, React.ElementType> = {
                 laboratoires: FlaskConical,
@@ -443,7 +443,7 @@ export default function CoordonneesPage() {
                       <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
-                      <div className="space-y-2">
+                      <div className="space-y-2 min-w-0">
                         <h3
                           className="font-bold text-foreground"
                           dangerouslySetInnerHTML={{
