@@ -1,0 +1,88 @@
+{
+  "title": "VACCINATION ANTI GRIPPALE 2025",
+  "date": "4 septembre 2025",
+  "image": "/prevention/sante-famille/vaccination.jpg",
+  "backLink": {
+    "label": "Retour à Santé familiale",
+    "href": "/prevention/sante-familiale"
+  },
+  "intro": {
+    "text": "La grippe est une maladie particulièrement grave pour les personnes à risque.",
+    "paragraphs": [
+      "Elle touche chaque hiver entre 2 et 6 millions de personnes. Or, la couverture vaccinale en France est très insuffisante.",
+      "La saison 2024/2025 a été marquée par un nombre très élevé de signalements de cas graves de grippe admis en réanimation : 1 849 cas entre début novembre et mi-avril.",
+      "14 100 décès ont été imputés à la grippe et inscrit la saison dernière parmi les plus sévères de la dernière décennie en terme de mortalité !!",
+      "L'épidémie en France peut démarrer dès fin novembre et peut durer plusieurs mois à cause des différents sérotypes grippaux : en 2024/2025 l'épidémie a duré 12 semaines jusqu'en mi-avril 2025."
+    ]
+  },
+  "chiffres": [
+    {
+      "value": "14 100",
+      "label": "décès imputés à la grippe la saison dernière",
+      "color": "#c0392b"
+    },
+    {
+      "value": "1 849",
+      "label": "cas graves admis en réanimation en 2024/2025",
+      "color": "#e67e22"
+    },
+    {
+      "value": "48,3 %",
+      "label": "taux de couverture vaccinale en Gironde en 2023/2024 (en baisse vs 50,9 % l'année précédente)",
+      "color": "#2980b9"
+    }
+  ],
+  "engagement": "La CPTS s'engage pour faciliter l'accès au vaccin antigrippal, pour tous. Pharmaciens, IDE, médecins collaborent ensemble à améliorer cette couverture et des plages de vaccination seront mises à disposition des patients.",
+  "pdfLinks": [
+    {
+      "label": "C'est quoi la grippe ?",
+      "url": "https://drive.google.com/file/d/1mhd498s4sU7mBRG0DEPkdkc0Ui8anufC/view?usp=drive_link"
+    },
+    {
+      "label": "Mieux comprendre la vaccination",
+      "url": "https://drive.google.com/file/d/1rPHQsLj390_KhOCRObDiLqSTzIZx6jPz/view?usp=drive_link"
+    }
+  ],
+  "campagne": {
+    "title": "La vaccination antigrippale, qui est concerné ?",
+    "intro": "À partir du 14 octobre 2025, la campagne de vaccination en métropole pour protéger les personnes à risque de faire une forme grave de la grippe démarre. La vaccination est concomitante à la vaccination COVID.",
+    "cibles": [
+      "Les personnes âgées de 65 ans et plus",
+      "Les personnes de moins de 65 ans souffrant de certaines maladies chroniques (liste des personnes éligibles dans le calendrier des vaccinations)",
+      "Les femmes enceintes",
+      "Les personnes souffrant d'obésité (IMC supérieur ou égal à 40)",
+      "L'entourage des nourrissons de moins de 6 mois à risque de complication grave de la grippe",
+      "L'entourage des personnes immunodéprimées",
+      "Les professionnels de santé et les professionnels des établissements médico-sociaux au contact des patients à risque",
+      "Les aides à domicile des particuliers employeurs vulnérables bénéficiaires d'exonération"
+    ]
+  },
+  "saviezVous": {
+    "title": "Le saviez-vous ?",
+    "intro": "Toutes les personnes de 65 ans et + sont concernées par :",
+    "items": [
+      "La vaccination grippe, Covid-19",
+      "La vaccination zona : se fera par SHINGRINX en 2 doses : M0/M2",
+      "Les rappels DTPcoq sont à effectuer tous les 10 ans à partir de 65 ans",
+      "Les adultes atteints de maladies chroniques, quel que soit leur âge, sont aussi concernés par la vaccination pneumocoque avec le vaccin conjugué 20-valent",
+      "La vaccination contre le VRS est actuellement recommandée"
+    ]
+  },
+  "memo": {
+    "title": "LE MÉMO GRIPPE 2025",
+    "url": "https://www.omedit-nag.fr/sites/default/files/public/2025-04/M%C3%A9mo%20-%20Prescription%20et%20administration%20des%20vaccins.pdf",
+    "label": "Consulter le mémo grippe 2025 (PDF)"
+  },
+  "gestesBarrieres": {
+    "title": "Quels sont les gestes barrières ?",
+    "text": "L'Assurance Maladie, le ministère des Solidarités et de la santé et Santé publique France rappellent l'importance des gestes barrières contre le Covid-19, la grippe et les virus de l'hiver. Ces gestes sont recommandés pour tous, que l'on soit en bonne santé, malade, jeune, âgé, vacciné ou non contre la grippe ou contre le Covid-19.",
+    "image": "/prevention/sante-famille/grippe/geste-barriére.png",
+    "imageAlt": "Gestes barrières contre la grippe et le Covid-19"
+  },
+  "ouSeVacciner": {
+    "title": "OÙ SE FAIRE VACCINER ?",
+    "text": "Chez votre pharmacien, muni de votre bon de vaccination ou chez votre médecin généraliste ou dans un centre de vaccination.",
+    "image": "/prevention/sante-famille/grippe/CHU-BDX-vaccination.jpg",
+    "imageAlt": "CHU Bordeaux - Vaccination anti-Covid et anti-grippe"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "title": "LA PRÉVENTION DU CANCER COLORECTAL : MARS BLEU 2025",
+  "date": "27 février 2025",
+  "image": "/prevention/sante-famille/mars-bleu.jpeg",
+  "backLink": {
+    "label": "Santé familiale",
+    "href": "/prevention/sante-familiale"
+  },
+  "intro": {
+    "text": "En France, le cancer colorectal représente la 2ème cause de décès par cancer. Il est le 3ème cancer le plus fréquent chez l'homme et le 2ème chez la femme.",
+    "paragraphs": [
+      "Chaque année, le cancer du côlon touche 47 000 personnes : 130 cas sont diagnostiqués par jour, et plus de 11 000 cancers ont été détectés grâce au programme de dépistage.",
+      "Dans plus de 80 % des cas, il provient d'une tumeur bénigne qui évolue lentement en se transformant en cancer.",
+      "17,9 millions de personnes sont éligibles au test en France, mais seulement 34,2 % ont participé au test en 2022/2023.",
+      "Ce cancer, dépisté à un stade précoce, peut être guéri dans 9 cas sur 10."
+    ]
+  },
+  "chiffresClés": [
+    { "value": "47 000", "label": "personnes touchées chaque année", "color": "#1e3a8a" },
+    { "value": "9/10", "label": "guéris si détecté tôt", "color": "#1d4ed8" },
+    { "value": "34,2 %", "label": "de participation au test en 2022/2023", "color": "#2563eb" }
+  ],
+  "facteurs": {
+    "title": "Quels sont les facteurs de risque ?",
+    "intro": "Des facteurs de risque liés au mode de vie ont été identifiés. Ces facteurs sont en partie évitables.",
+    "items": [
+      "Tabagisme",
+      "Alcool",
+      "Alimentation pauvre en fibres, ou riche en viande rouge ou en viandes transformées",
+      "Sédentarité et obésité",
+      "Facteurs de risque familiaux (ATCD personnels ou familiaux de polype ou de cancer colique)",
+      "Particules fines dont la DIOXINE : impact en exposition aiguë ou chronique, sans aucun seuil limite inférieur"
+    ]
+  },
+  "depistage": {
+    "title": "Comment le cancer colique se dépiste-t-il ?",
+    "intro": "Il peut être découvert grâce à la recherche de sang occulte dans les selles. Ce test de dépistage est proposé à partir de 50 ans et jusqu'à 74 ans. Avec ou sans invitation de la CPAM, vous pouvez réaliser ce test.",
+    "avantages": [
+      "Totalement pris en charge à 100 % par la CPAM",
+      "Se fait chez soi dans la plus grande intimité",
+      "Se réalise tous les 2 ans"
+    ],
+    "hemoccult": "Le test HEMOCCULT est positif dans 4,7 % des cas : dans 50 % des cas la coloscopie exploratrice est négative, 40 % des patients présentent des adénomes ou des polypes et 10 % sont porteurs de cancers.",
+    "coloscopie": "Si le test est positif, le patient est invité à réaliser une coloscopie afin de rechercher des lésions précancéreuses ou cancéreuses ou d'autres étiologies de saignement. 3,8 % des personnes testées ont un test positif."
+  },
+  "participation": {
+    "title": "Les Français participent-ils à ce dépistage de masse ?",
+    "gironde": "Seulement 31,7 % de la population en Gironde a réalisé ce test en 2022-2023, contre 34,5 % pour la campagne précédente !",
+    "europe": "En Europe, en 2021-2022, 45 % de la population éligible s'est fait dépister.",
+    "conclusion": "Ce recul du dépistage est préoccupant : les événements de sensibilisation aspirent à éveiller les consciences de prévention dans la population à risque."
+  },
+  "commentSeFaireDepister": {
+    "title": "Vous avez plus de 50 ans, comment pouvez-vous vous faire dépister ?",
+    "intro": "Désormais, si vous êtes éligibles au dépistage, que vous ayez reçu ou non l'invitation, le test peut vous être remis par :",
+    "sources": [
+      {
+        "label": "Votre médecin généraliste",
+        "text": "peut vous le donner et vous l'expliquer lors d'une consultation dédiée."
+      },
+      {
+        "label": "Votre gynécologue, votre hépato-gastro-entérologue",
+        "text": "sont aussi disponibles pour vous fournir le test."
+      },
+      {
+        "label": "Votre pharmacien",
+        "text": "peut, depuis le 02 nov. 2022, vous donner le test. Pensez à lui demander lors de votre passage à l'officine."
+      },
+      {
+        "label": "Commander en ligne",
+        "text": "Vous pouvez commander et recevoir directement votre test à domicile depuis le 1er mars 2022, muni de votre invitation.",
+        "url": "https://monkit.depistage-colorectal.fr",
+        "urlLabel": "monkit.depistage-colorectal.fr"
+      }
+    ],
+    "affiche": "/prevention/sante-famille/cancer-colorectal/vous-faire-depister.png",
+    "afficheAlt": "Affiche Mars Bleu - Devenez un héros, sauvez une vie : la vôtre !",
+    "kitImage": "/prevention/sante-famille/cancer-colorectal/commande-kit.jpg",
+    "kitImageAlt": "Commander son kit de dépistage en ligne - Programme national de dépistage du cancer colorectal",
+    "tutoTitle": "Un tuto vidéo de la réalisation de votre test",
+    "videoUrl": "https://drive.google.com/file/d/18uOM22U6gbLBa7miU2niZ7o8FerdYRmL/preview"
+  },
+  "exclus": {
+    "title": "Quid des exclus au test ?",
+    "items": [
+      "Ce test ne peut suffire pour les patients dits à « haut risque » de développer un cancer du côlon. Il s'agit de patients qui ont des ATCD personnels ou familiaux de polype ou de cancer colique, ou des patients atteints de maladie auto-immune (Crohn, RCH, etc.). Ces patients sont éligibles à la coloscopie préventive régulière.",
+      "Sont exclus également les patients qui ont déjà des symptômes suspects : présence de sang dans les selles, douleurs abdominales, troubles du transit, amaigrissement inexpliqué, etc.",
+      "Dans tous ces cas, il suffit de retourner le verso de l'invitation et de cocher la raison de la non-réalisation du test."
+    ]
+  },
+  "evenements": {
+    "title": "Votre région s'engage pour Mars Bleu !",
+    "items": [
+      {
+        "label": "Institut Bergonié",
+        "text": "En 2025, l'institut Bergonié s'engage dans une campagne de sensibilisation : stand d'information dans son hall A, demi-journées de sensibilisation par des membres du PRISME les lundis 10 mars et 31 mars de 09h à 14h, exposition de photos « tout le bleu… » dans la passerelle du bâtiment, course RUN in blue les 10 et 31 mars, animation section foot en bleu. Le BERGO BUS est également présent sur le territoire."
+      },
+      {
+        "label": "Clinique Bagatelle – Côlon Tour",
+        "text": "La clinique Bagatelle vous accueille le jeudi 06 mars de 10h à 16h pour le COLON TOUR : vous pourrez visiter l'intérieur d'un colon géant et échanger avec des professionnels, des conseils vous seront prodigués.",
+        "image": "/prevention/sante-famille/cancer-colorectal/colon-tour-2025.jpeg",
+        "imageAlt": "Côlon Tour – Jeudi 6 mars 2025 à la Fondation Bagatelle"
+      }
+    ]
+  },
+  "instagram": {
+    "title": "Le dépistage vu par Danièle, créatrice de contenu",
+    "text": "Le dépistage du cancer colorectal vu par Danièle créatrice de contenu : faites comme elle, allez vous tester !",
+    "url": "https://www.instagram.com/reel/CpkFogwgVup/?utm_source=ig_embed",
+    "thumbnail": "/prevention/sante-famille/cancer-colorectal/migna-insta.jpg",
+    "thumbnailAlt": "Miniature du reel Instagram - Je suis Danielle, Studio Danielle",
+    "account": "crcdc.na",
+    "accountLocation": "Bordeaux, France"
+  }
+}

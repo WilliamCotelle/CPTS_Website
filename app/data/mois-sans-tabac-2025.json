@@ -1,0 +1,136 @@
+{
+  "title": "10-ème édition de MOI(S) SANS TABAC NOVEMBRE 2025",
+  "date": "2 novembre 2025",
+  "image": "/prevention/sante-famille/mois-sans-tabac.jpg",
+  "backLink": {
+    "label": "Retour à Santé familiale",
+    "href": "/prevention/sante-familiale"
+  },
+  "intro": {
+    "text": "L'opération Mois sans tabac est un défi collectif et solidaire qui invite tous les fumeurs à passer 30 jours sans fumer.",
+    "paragraphs": [
+      "Le tabagisme favorise certains cancers, maladies cardiovasculaires et respiratoires. Il a des impacts sur la grossesse et la qualité de vie. Il est la première cause de décès évitable en France.",
+      "Arrêter de fumer, c'est améliorer sa qualité de vie, sa santé et celle de son entourage."
+    ]
+  },
+  "stats": [
+    "1/4 des Français fume tous les jours.",
+    "1 fumeur sur 4 a fait une tentative d'arrêt en 2022.",
+    "En 2023, 14 976 néo-aquitains motivés pour arrêter de fumer avec 157 576 inscrits à la campagne nationale."
+  ],
+  "sections": [
+    {
+      "id": "chiffres",
+      "number": "1",
+      "title": "LES CHIFFRES",
+      "image": "/prevention/sante-famille/mois-sans-tabac-page/les-chiffres-tabac.jpg",
+      "imageAlt": "Les chiffres du tabac en France",
+      "stats": [
+        "26,5% de fumeuses en France",
+        "22,9% des fumeuses enceintes en Nouvelle Aquitaine continuent à fumer pendant la grossesse",
+        "1/4 des 18/75 ans fume quotidiennement en France",
+        "1 décès sur 8 serait aujourd'hui dû au tabac en France, 66 000 décès par an"
+      ]
+    },
+    {
+      "id": "pourquoi",
+      "number": "2",
+      "title": "POURQUOI ARRÊTER DE FUMER ?",
+      "image": "/prevention/sante-famille/mois-sans-tabac-page/poney-image.jpg",
+      "imageAlt": "La marche n'est pas si haute pour remonter en selle",
+      "reasons": [
+        {
+          "iconName": "Heart",
+          "label": "POUR MA SANTÉ",
+          "text": "Après 1 an sans tabac le risque d'infarctus du myocarde diminue de moitié et le risque d'AVC rejoint celui du non fumeur !"
+        },
+        {
+          "iconName": "Wind",
+          "label": "POUR ÊTRE EN FORME",
+          "text": "Retrouver les goûts, les odeurs, mon souffle etc."
+        },
+        {
+          "iconName": "Users",
+          "label": "POUR LES AUTRES",
+          "text": "Protéger la santé de mes proches"
+        },
+        {
+          "iconName": "Wallet",
+          "label": "POUR MON PORTE MONNAIE",
+          "text": "Fumer coûte cher !"
+        }
+      ]
+    },
+    {
+      "id": "outils",
+      "number": "3",
+      "title": "QUELS OUTILS POUR ARRÊTER DE FUMER ?",
+      "tools": [
+        {
+          "title": "Consultez votre médecin traitant",
+          "text": "Le conseil d'un professionnel augmente de 70 % vos chances d'arrêter de fumer."
+        },
+        {
+          "title": "Prenez rdv avec un tabacologue",
+          "text": "Possible consultation gratuite au 3989."
+        },
+        {
+          "title": "Consultez votre pharmacien",
+          "text": "En tant que professionnels de santé de proximité, nombreux sont les pharmaciens qui participent au mois sans tabac et se mobilisent dans leur officine. Différents outils sont mis à leur disposition, tels que des affiches, brochures, flyers ou fiches de suivi. Pour accompagner les fumeurs souhaitant relever le challenge du « Mois sans Tabac », les pharmaciens peuvent également distribuer gratuitement des kits d'aide à l'arrêt durant le mois de novembre."
+        }
+      ],
+      "kitImage": "/prevention/sante-famille/mois-sans-tabac-page/kit-arret-tabac.jpg",
+      "kitImageAlt": "Kit d'aide à l'arrêt du tabac",
+      "tabacInfoService": {
+        "title": "Tabac info service",
+        "intro": "Tabac info service est un dispositif d'information et d'aide à l'arrêt qui répond à toutes les questions sur le tabagisme et le sevrage. En s'inscrivant avant le 1er novembre sur le site « tabac info service », les participants bénéficieront d'outils et de nombreux conseils pour réussir à franchir le Mois sans tabac :",
+        "items": [
+          "Une consultation avec un professionnel de l'arrêt du tabac",
+          "Des divertissements pour tenir bon (vidéos, podcasts, exercices de relaxation et de sport)",
+          "L'entraide des autres participants grâce à toute une communauté fédérée via les réseaux sociaux (Facebook, Twitter et Instagram)",
+          "Un kit d'aide à l'arrêt"
+        ],
+        "subtitle": "« Tabac info service, 1 outil, 3 moyens »",
+        "moyens": [
+          "Par téléphone au 39 89 pour échanger avec un tabacologue et disposer d'un accompagnement gratuit",
+          "Sur l'application Tabac info service qui offre un e-coaching personnalisé",
+          "Sur le web : site internet et Facebook"
+        ],
+        "image": "/prevention/sante-famille/mois-sans-tabac-page/outils-moyens-tabac-info-service.png",
+        "imageAlt": "Tabac info service - 1 outil, 3 moyens"
+      },
+      "links": [
+        {
+          "label": "Prise en charge des substituts nicotiniques (CPAM)",
+          "url": "https://www.ameli.fr/assure/remboursements/rembourse/medicaments-vaccins-dispositifs-medicaux/prise-charge-substituts-nicotiniques",
+          "description": "La CPAM met en place une prise en charge des substituts nicotiniques à 65% sur prescription médicale et paramédicale."
+        },
+        {
+          "label": "Campagne Nouvelle-Aquitaine - Mois sans tabac",
+          "url": "https://www.moisanstabac-na.com/",
+          "description": "Toutes les informations concernant la campagne en Nouvelle-Aquitaine : les activités mises en place, les outils, le guide des consultations auprès des spécialistes de votre secteur."
+        }
+      ],
+      "podcast": {
+        "title": "Clope de fin",
+        "text": "Le podcast où l'on apporte des conseils et des informations à l'entourage des fumeurs et des fumeuses mais pas que… Retrouvez chaque jeudi (à partir du 21 sept.) Marjorie, infirmière tabacologue pour présenter Clope de fin.",
+        "image": "/prevention/sante-famille/mois-sans-tabac-page/Affiche-Podcast.png",
+        "imageAlt": "Affiche podcast Clope de fin"
+      }
+    },
+    {
+      "id": "dependance",
+      "number": "4",
+      "title": "ÊTES-VOUS RÉELLEMENT DÉPENDANT ?",
+      "image": "/prevention/sante-famille/mois-sans-tabac-page/reelement-dependant-test.jpg",
+      "imageAlt": "Test de dépendance au tabac",
+      "glowUp": {
+        "text": "Vous pouvez participer au challenge GLOW UP : challenge bien-être d'un mois. Il est 100% en ligne sur Instagram et TikTok et il s'adresse aux 16/25 ans.",
+        "images": [
+          "/prevention/sante-famille/mois-sans-tabac-page/Glow-Up-presentation-1.gif",
+          "/prevention/sante-famille/mois-sans-tabac-page/Glow-Up-presentation-2.gif"
+        ]
+      }
+    }
+  ]
+}

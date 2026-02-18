@@ -1,7 +1,37 @@
 {
-  "formationsSimairlec2025": [
+  "formationsSimairlec2026": [
     {
-      "id": "damage-control-jan",
+      "id": "detresses-vitales-mars-2026",
+      "title": "Prise en charge des détresses vitales en équipe pluriprofessionnelle",
+      "date": "19 mars 2026",
+      "status": "complete",
+      "category": "Simairlec",
+      "duration": "7H",
+      "location": "Pôle santé Robinson"
+    },
+    {
+      "id": "afgsu2-mai-2026",
+      "title": "AFGSU 2",
+      "date": "18, 19 et 21 mai 2026",
+      "status": "available",
+      "category": "Simairlec",
+      "duration": "21H",
+      "link": "https://app.digiforma.com/guest/7023431928/training_sessions/2659484/register"
+    },
+    {
+      "id": "afgsu2-recyclage-oct-2026",
+      "title": "Recyclage AFGSU 2",
+      "date": "9 octobre 2026",
+      "status": "available",
+      "category": "Simairlec",
+      "duration": "7H",
+      "link": "https://app.digiforma.com/guest/7023431928/training_sessions/2681740/register",
+      "note": "Valable pour les personnes dont l'AFGSU2 date de moins de 4 ans"
+    }
+  ],
+  "formationsSimairlecArchives": [
+    {
+      "id": "damage-control-jan-2025",
       "title": "Gestion d'une Situation Sanitaire Exceptionnelle (Damage control)",
       "date": "13 janvier 2025",
       "status": "past",
@@ -9,7 +39,7 @@
       "duration": "7H"
     },
     {
-      "id": "detresses-vitales-jan",
+      "id": "detresses-vitales-jan-2025",
       "title": "Prise en charge des détresses vitales et situations d'urgence en équipe pluriprofessionnelle (simulation)",
       "date": "16 janvier 2025",
       "status": "past",
@@ -18,7 +48,7 @@
       "location": "Pôle Santé Robinson à Mérignac"
     },
     {
-      "id": "afgsu2-mars",
+      "id": "afgsu2-mars-2025",
       "title": "AFGSU 2",
       "date": "10 au 12 mars 2025",
       "status": "past",
@@ -26,7 +56,7 @@
       "duration": "21H"
     },
     {
-      "id": "damage-control-mars",
+      "id": "damage-control-mars-2025",
       "title": "Gestion d'une Situation Sanitaire Exceptionnelle (Damage control)",
       "date": "17 mars 2025",
       "status": "past",
@@ -34,7 +64,7 @@
       "duration": "7H"
     },
     {
-      "id": "detresses-vitales-juin",
+      "id": "detresses-vitales-juin-2025",
       "title": "Prise en charge des détresses vitales et situations d'urgence en équipe pluriprofessionnelle (simulation)",
       "date": "12 juin 2025",
       "status": "past",
@@ -42,15 +72,13 @@
       "duration": "7H"
     },
     {
-      "id": "afgsu2-oct",
+      "id": "afgsu2-oct-2025",
       "title": "AFGSU 2",
       "date": "13 au 15 octobre 2025",
       "status": "past",
       "category": "Simairlec",
       "duration": "21H"
-    }
-  ],
-  "formationsSimairlec2024": [
+    },
     {
       "id": "afgsu2-mars-2024",
       "title": "AFGSU 2",
@@ -84,37 +112,86 @@
       "duration": "21H"
     }
   ],
-  "autresFormations": [
+  "autresFormations2026": [
     {
-      "id": "dpc-sport-mai",
+      "id": "endometriose-mars-2026",
+      "title": "Endométriose",
+      "date": "4 mars 2026",
+      "status": "available",
+      "category": "Autres",
+      "duration": "3H (soirée)",
+      "speakers": "Dr Adrien Crestani et association Dis Dame Donc"
+    },
+    {
+      "id": "cardiologie-mars-2026",
+      "title": "Cardiologie",
+      "date": "19 mars 2026",
+      "status": "available",
+      "category": "Autres",
+      "duration": "3H (soirée)",
+      "speakers": "Drs Erick Aouizerate, Joel Ohayon, Marie Nelson-Veinard, Xavier Dechenne"
+    },
+    {
+      "id": "perinatalite-sante-mentale-2026",
+      "title": "Soirée sur les Vulnérabilités en périnatalité et leurs conséquences en santé Mentale",
+      "date": "28 avril 2026",
+      "status": "available",
+      "category": "Autres",
+      "duration": "3H (soirée)",
+      "location": "Salle Roger Cohé, 33600 Pessac",
+      "speakers": "Pr Anne Laure Sutter",
+      "partners": "Maison de Santé Les Pins, Réseau RPBNA"
+    },
+    {
+      "id": "sante-mentale-tnd-2026",
+      "title": "Santé mentale — TND et habituation aux soins",
+      "subtitle": "Soirée d'(in)formation",
+      "date": "À venir",
+      "status": "upcoming",
+      "category": "Autres",
+      "duration": "3H (soirée)"
+    },
+    {
+      "id": "copil-ville-hop-2026",
+      "title": "COPIL VILLE HOP",
+      "date": "8 juin 2026",
+      "status": "available",
+      "category": "Autres",
+      "duration": "2H",
+      "location": "Lieu non défini"
+    }
+  ],
+  "autresFormationsArchives": [
+    {
+      "id": "dpc-sport-mai-2025",
       "title": "DPC Sport Santé - Comment prescrire l'activité physique",
       "date": "22 mai 2025",
       "status": "past",
       "category": "Autres"
     },
     {
-      "id": "dpc-sport-sept",
+      "id": "dpc-sport-sept-2025",
       "title": "DPC Sport Santé - Comment prescrire l'activité physique",
       "date": "25 septembre 2025",
       "status": "past",
       "category": "Autres"
     },
     {
-      "id": "dpc-sport-nov",
+      "id": "dpc-sport-nov-2025",
       "title": "DPC Sport Santé - Comment prescrire l'activité physique",
       "date": "27 novembre 2025",
       "status": "past",
       "category": "Autres"
     },
     {
-      "id": "pathologies-sommeil",
+      "id": "pathologies-sommeil-2025",
       "title": "Les pathologies du sommeil",
       "date": "Second semestre 2025",
       "status": "past",
       "category": "Autres"
     },
     {
-      "id": "violences-intrafamiliales",
+      "id": "violences-intrafamiliales-2025",
       "title": "Violences intra familiales",
       "date": "27 mars 2025",
       "status": "past",
@@ -122,7 +199,7 @@
       "duration": "3H (soirée) ou journée complète"
     },
     {
-      "id": "prevention-epuisement",
+      "id": "prevention-epuisement-2025",
       "title": "Prévention de l'épuisement chez les soignants",
       "date": "2ème semestre 2025",
       "status": "past",

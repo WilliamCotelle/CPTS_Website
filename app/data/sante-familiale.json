@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "title": "Santé familiale",
+    "subtitle": "Ressources, conseils et campagnes de prévention pour toute la famille"
+  },
+  "articlesPerPage": 8,
+  "articles": [
+    {
+      "id": "mois-sans-tabac-2025",
+      "title": "10-ème édition de MOI(S) SANS TABAC NOVEMBRE 2025",
+      "date": "2025-11-02",
+      "dateLabel": "2 novembre 2025",
+      "image": "/prevention/sante-famille/mois-sans-tabac.jpg",
+      "slug": "mois-sans-tabac-novembre-2025",
+      "href": "/prevention/sante-familiale/mois-sans-tabac-novembre-2025"
+    },
+    {
+      "id": "octobre-rose-2025",
+      "title": "OCTOBRE ROSE 2025",
+      "date": "2025-09-29",
+      "dateLabel": "29 septembre 2025",
+      "image": "/prevention/sante-famille/octobre-rose.png",
+      "slug": "octobre-rose-2025",
+      "href": "/prevention/sante-familiale/octobre-rose-2025"
+    },
+    {
+      "id": "vaccination-anti-grippale-2025",
+      "title": "VACCINATION ANTI GRIPPALE 2025",
+      "date": "2025-09-04",
+      "dateLabel": "4 septembre 2025",
+      "image": "/prevention/sante-famille/vaccination.jpg",
+      "slug": "vaccination-anti-grippale-2025",
+      "href": "/prevention/sante-familiale/vaccination-anti-grippale-2025"
+    },
+    {
+      "id": "sante-mentale-jeunes",
+      "title": "SANTE MENTALE DES JEUNES",
+      "date": "2025-07-05",
+      "dateLabel": "5 juillet 2025",
+      "image": "/prevention/sante-famille/sante-mentale-jeune.jpeg",
+      "slug": "sante-mentale-des-jeunes",
+      "href": "/prevention/sante-familiale/sante-mentale-des-jeunes"
+    },
+    {
+      "id": "prevention-cancer-colorectal-2025",
+      "title": "LA PREVENTION DU CANCER COLORECTAL : MARS BLEU 2025",
+      "date": "2025-02-27",
+      "dateLabel": "27 février 2025",
+      "image": "/prevention/sante-famille/mars-bleu.jpeg",
+      "slug": "prevention-cancer-colorectal-mars-bleu-2025",
+      "href": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2025"
+    },
+    {
+      "id": "vaccination-covid-2025",
+      "title": "LA VACCINATION ANTI COVID 2025",
+      "date": "2024-11-04",
+      "dateLabel": "4 novembre 2024",
+      "image": "/prevention/sante-famille/anti-covid.jpg",
+      "slug": "vaccination-anti-covid-2025"
+    },
+    {
+      "id": "syndrome-apnee-sommeil",
+      "title": "Le Syndrome d'Apnée obstructive du Sommeil",
+      "date": "2025-01-21",
+      "dateLabel": "21 janvier 2025",
+      "image": "/prevention/apnée-sommeil.jpg",
+      "slug": "syndrome-apnee-obstructive-sommeil"
+    },
+    {
+      "id": "ecrans-jeunes-enfants",
+      "title": "ÉCRANS ET JEUNES ENFANTS SOYONS PRUDENTS",
+      "date": "2024-09-19",
+      "dateLabel": "19 septembre 2024",
+      "image": "/prevention/sante-famille/écrans-jeune.jpg",
+      "imagePosition": "center 30%",
+      "slug": "ecrans-jeunes-enfants-soyons-prudents"
+    },
+    {
+      "id": "sante-mentale-guide",
+      "title": "LA SANTÉ MENTALE",
+      "date": "2024-09-19",
+      "dateLabel": "19 septembre 2024",
+      "image": "/prevention/sante-famille/sante-mentale.jpg",
+      "slug": "la-sante-mentale"
+    },
+    {
+      "id": "vaccination-papillomavirus",
+      "title": "LA VACCINATION CONTRE LE PAPILLOMAVIRUS DES 11 ANS : NOUVELLE CAMPAGNE SCOLAIRE 2025 !",
+      "date": "2024-09-02",
+      "dateLabel": "2 septembre 2024",
+      "image": "/prevention/sante-famille/papillomavirus.png",
+      "slug": "vaccination-papillomavirus-campagne-scolaire-2025"
+    }
+  ]
+}

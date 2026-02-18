@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
@@ -12,6 +12,12 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 })
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export const metadata: Metadata = {
   title: "CPTS Ouest Gironde - Communauté Professionnelle Territoriale de Santé",
@@ -34,11 +40,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CPTS Ouest Gironde",
     description: "Une santé accessible pour tous",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
   },
   robots: {
     index: true,

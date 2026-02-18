@@ -1,0 +1,157 @@
+{
+  "title": "SANTE MENTALE DES JEUNES",
+  "date": "5 juillet 2025",
+  "image": "/prevention/sante-famille/sante-mentale-jeune.jpeg",
+  "backLink": {
+    "label": "Retour à Santé familiale",
+    "href": "/prevention/sante-familiale"
+  },
+  "intro": {
+    "text": "La santé mentale des jeunes s'est fortement dégradée en quelques années et a donc été érigée en GRANDE CAUSE NATIONALE depuis le 17 janvier 2024.",
+    "paragraphs": [
+      "Quatre ans après le COVID, les effets du confinement sur la psyché des jeunes se font encore ressentir. Une étude de l'Université de Bordeaux s'est intéressée à la santé mentale des jeunes : 42 % des étudiants souffraient de symptômes dépressifs en 2023. Ils étaient 26% avant la Covid !",
+      "1 adolescent sur 7 présente de graves risques de DEPRESSION (ENCLASS 2022 publié le 09 avril 2024) !",
+      "Au CH de Charles PERRENS, la file active des enfants et adolescents pris en charge a augmenté de + 44 % entre 2020 et 2023 !",
+      "SANTE PUBLIQUE FRANCE alerte sur le doublement des tentatives de suicide déclarées chez les 18-24 ans entre 2017 et 2021."
+    ]
+  },
+  "troublesPsy": {
+    "title": "QUELS SONT LES PRINCIPAUX TROUBLES PSYCHIQUES CHEZ LES JEUNES ?",
+    "image": "/prevention/sante-famille/sante-mentale-jeune/trouble-psy.jpg",
+    "imageAlt": "Illustration des troubles psychiques chez les jeunes",
+    "items": [
+      { "label": "L'ANXIETE GENERALISEE", "text": "état d'inquiétude constant, durable et difficilement contrôlable." },
+      { "label": "LE TROUBLE PANIQUE", "text": "" },
+      { "label": "LA PHOBIE", "text": "elle peut être sociale." },
+      { "label": "LE TROUBLE OBSESSIONNEL COMPULSIF (TOC)", "text": "" },
+      { "label": "LES TROUBLES DU COMPORTEMENT", "text": "alimentaire, état délirant etc." },
+      { "label": "LA DEPRESSION", "text": "avec possible passage à l'acte suicidaire." }
+    ],
+    "conclusion": "La dégradation psychique concerne particulièrement les adolescents de 11 à 17 ans et les jeunes adultes de 18 à 24 ans. Les filles semblent plus touchées que les garçons."
+  },
+  "pourquoi": {
+    "title": "POURQUOI LES JEUNES SONT-ILS DE PLUS EN PLUS EN DIFFICULTES PSYCHIQUES ?",
+    "intro": "La crise SANITAIRE a pu être un facteur aggravant de la dégradation de la psyché des jeunes.",
+    "causes": [
+      "LES CONFINEMENTS à répétitions",
+      "l'INCERTITUDE SUR LE FUTUR : sentiment de perte de sens",
+      "RESTRICTIONS DE LA VIE SOCIALE et INQUIETUDE ECONOMIQUE"
+    ],
+    "environnement": "L'environnement joue un rôle important : Le stress (scolaire, familial avec conflits ou violences familiales), les événements de vie, l'alimentation, l'inactivité physique, l'exposition des substances psychoactives.",
+    "extras": [
+      "Les jeunes en situation de précarité sont 3 fois plus susceptibles de développer des idées suicidaires.",
+      "Les minorités sexuelles présentent également un sur risque d'idées suicidaires.",
+      "Enfin, on peut avancer d'autres causes anxiogènes comme les conflits armés, la crise climatique."
+    ]
+  },
+  "reconnaitre": {
+    "title": "COMMENT RECONNAITRE UNE DEGRADATION PSYCHIQUE CHEZ UN JEUNE ?",
+    "intro": "L'entourage familial est souvent démuni et peut croire, à tord, que le jeune est en simple crise d'adolescence alors qu'il est en mal être profond avec possiblement le danger de conduites suicidaires ou de troubles du comportement alimentaire ou des risques d'automutilations etc. La véritable crise psychique peut être brutale : « un coup de tonnerre dans un ciel serein » ou parfois lente et insidieuse : la santé mentale demeure un tabou où le silence tue….",
+    "signesTitle": "LES SIGNES D'ALERTE d'un jeune en souffrance peuvent être :",
+    "signes": [
+      { "label": "L'incapacité à faire face aux tâches de la vie quotidienne", "text": "difficulté à se rendre à son établissement scolaire ou à son lieu de stage avec ABSENTEISME accru." },
+      { "label": "Isolement", "text": "et difficultés à rentrer en contact avec les autres." },
+      { "label": "Plaintes somatiques répétées", "text": "répétitions de symptômes identiques avec possibles douleurs multiples (maux de ventre, maux de tête) fatigue répétée, manque d'énergie pour toute activité etc." },
+      { "label": "Sommeil perturbé", "text": "insomnies répétées ou cauchemars ou réveils répétés dans la nuit." },
+      { "label": "Agressivité inhabituelle", "text": "contre soi même (scarifications, troubles alimentaires restrictives anorexiques ou excessive boulimique) ou contre les autres." },
+      { "label": "Répétitions des situations d'échec", "text": "" },
+      { "label": "Trouble addictif", "text": "usage de toxiques multiples (tabac, cannabis, alcool…)" }
+    ]
+  },
+  "queFaire": {
+    "title": "QUE FAIRE SI JE CONSTATE UNE DEGRADATION PSYCHIQUE CHEZ UN JEUNE ?",
+    "alert": "Si les signaux d'alerte se répètent et durent plus de 6 mois, il est capital de chercher de l'aide. Il est donc IMPERATIF de consulter.",
+    "actions": [
+      { "label": "BRISER L'ISOLEMENT", "text": "« tu m'inquiètes…que se passe t'il ? Je peux t'aider ? Je suis là pour t'écouter et te soutenir sans jugement «" },
+      { "label": "PARTAGER SES INQUIETUDES", "text": "avec ses amis ou le corps enseignant pour les valider." },
+      { "label": "NE PAS JOUER AU THERAPEUTE — RéFéRER", "text": "Le jeune en état psychique dégradé n'a pas la capacité de réagir face à sa situation et ne peut chercher seul du soutien. En tant que parent, ami, enseignant votre MISSION EST DONC DE L'ACCOMPAGNER et de le GUIDER vers un SOIGNANT." }
+    ]
+  },
+  "dispositifs": {
+    "title": "QUELS DISPOSITIFS POUR AIDER UN JEUNE EN SOUFFRANCE ?",
+    "lignesEcoute": {
+      "title": "1. LIGNES D'ECOUTE",
+      "subtitle": "Destinées aux jeunes en détresse mais aussi à l'entourage.",
+      "items": [
+        {
+          "label": "3114",
+          "text": "Depuis 2021, il propose une écoute anonyme de prévention du suicide. Il est gratuit et des professionnels de santé apportent des réponses adaptées à chaque situation.",
+          "image": "/prevention/sante-famille/sante-mentale-jeune/3114.jpg",
+          "imageAlt": "3114 - Numéro national de prévention du suicide"
+        },
+        {
+          "label": "QUESTION PSY",
+          "text": "Nouveau dispositif qui fonctionne du lundi au vendredi, de 10h à 17H30. Des infirmiers expérimentés sont joignables au 0800 71 08 90.",
+          "image": "/prevention/sante-famille/sante-mentale-jeune/question-psy.jpg",
+          "imageAlt": "Questions Psy - 0 800 710 890"
+        },
+        {
+          "label": "FIL SANTE JEUNES",
+          "text": "0 800 235 236 : espace de discussion et de chat pour les 12/25 ans. Anonyme et accessible de 09h à 23h et ce 24H SUR 24H.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "NIGHTLINE",
+          "text": "Service d'écoute confidentiel et anonyme tenu par des étudiants de 21h à 02H20. Possibilité de s'exprimer en anglais.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "SOS AMITIE",
+          "text": "09 72 39 40 50. 24h sur 24. Service gratuit.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "ECOUTE-famille UNAFAM",
+          "text": "Pour les personnes qui doivent faire face à la maladie psychique d'un proche. Des psychologues répondent de 09h à 13h et de 14h à 18h au 01 42 63 03 03.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "PHARE ENFANTS PARENTS",
+          "text": "Bénévoles à l'écoute des jeunes ou de leurs proches au 01 43 46 00 62 du lundi au vendredi de 10H à 17H.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "SUICIDE ECOUTE",
+          "text": "Au 01 45 39 40 00 tous les jours, 24H/24 avec coût d'une communication locale.",
+          "image": null,
+          "imageAlt": null
+        },
+        {
+          "label": "DROGUES INFO SERVICE",
+          "text": "Pour les jeunes en difficultés en lien avec des ADDICTIONS : 0 800 23 13 13 tous les jours de 08H à 02H.",
+          "image": null,
+          "imageAlt": null
+        }
+      ]
+    },
+    "professionnels": {
+      "title": "2. DES PROFESSIONNELS A L'ECOUTE",
+      "subtitle": "Si le jeune en souffrance préfère être pris en charge en présentiel :",
+      "items": [
+        { "label": "INFIRMIERE SCOLAIRE ou ASSISTANCE SOCIALE", "text": "Au sein de l'établissement scolaire." },
+        { "label": "INFIRMIERE, ASSISTANT SOCIAL, PSYCHOLOGUE ou MEDECIN DE TRAVAIL", "text": "Sur le lieu de travail." },
+        { "label": "LE MEDECIN TRAITANT", "text": "Souvent en première ligne et peut orienter vers un psychologue ou un psychiatre, faire connaître les dispositifs d'écoute mis en place comme QUESTION PSY. Il peut également prescrire des séances de prise en charge en psychologie (santé psy étudiant et Mon soutien psy)." },
+        { "label": "MON SOUTIEN PSY", "text": "Des séances prises en charge par l'assurance maladie. Avec accord du médecin, une PRESCRIPTION d'un accompagnement psychologique comprendra 1 bilan et de 1 à 7 séances de suivi psychologique." },
+        { "label": "SANTE PSY ETUDIANTS", "text": "Un étudiant peut bénéficier de 8 séances gratuites avec un psychologue partenaire. Une prescription de votre médecin vous permettra de choisir votre psychologue sur le site SantéPsy.Etudiants qui prendra en charge le jeune sur 8 séances gratuite sans avance de frais.", "url": "https://santepsy.etudiant.gouv.fr/" },
+        { "label": "LES POINTS D'ACCUEIL D'ECOUTE JEUNES (PAEJ)", "text": "Entretiens gratuits chez des jeunes majeurs de 12 à 25 ans sur des problématiques de conflits familiaux, violences, délinquances ou consommations de produits psycho actifs, décrochage scolaire, souffrance psychologique ou difficultés relationnelles." },
+        { "label": "LES CMP", "text": "Regroupe des infirmiers psychologues et des psychiatres avec des assistances sociales et des professionnels de santé comme ergothérapeute, psychométricien, éducateur spécialisé etc. Les CMP sont sectorisés et les consultations sont entièrement prises en charge par la CPAM." },
+        { "label": "LES CMPP — CENTRE MEDICO PSYCHO PEDAGOGIQUE", "text": "De la naissance jusqu'à 20 ans." },
+        { "label": "LES SERVICES DE SANTE ETUDIANTE (SSE)", "text": "Soins de premier recours avec diagnostic, soins et prévention. Missions renforcées sur la santé mentale, la santé sexuelle, les addictions, la nutrition et le sport Santé." },
+        { "label": "BAPU — BUREAU D'AIDE PSYCHOLOGIQUE UNIVERSITAIRE", "text": "Établissement médico-social qui propose des consultations médico-psychologiques pour les élèves de Terminales et les étudiants. Consultations prises en charge par la CPAM." }
+      ]
+    }
+  },
+  "livres": {
+    "title": "DES LIVRES POUR PARLER DE LA SOUFFRANCE DES JEUNES",
+    "items": [
+      { "title": "Derrière les masques, la souffrance mentale des jeunes", "authors": "Cynthia MORGNY, Pierre CHALMETON, Bérénice LAMBERT et Céline LECLERC", "date": "mai 2022" },
+      { "title": "Ado désemparé cherche société vivante", "authors": "Marion ROBIN", "date": "Septembre 2017" },
+      { "title": "En souffrance : adolescence et entrée dans la vie", "authors": "David LE BRETON", "date": "Octobre 2007" }
+    ]
+  }
+}

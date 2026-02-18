@@ -3,29 +3,34 @@
 import { useState } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Calendar, Clock, MapPin, CheckCircle2, ExternalLink } from "lucide-react";
+import { Calendar, Clock, MapPin, CheckCircle2, ExternalLink, Users, Info } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import data from "@/app/data/formations.json";
 
-type FormationStatus = "available" | "complete" | "past";
+type FormationStatus = "available" | "complete" | "past" | "upcoming";
 
 interface Formation {
   id: string;
   title: string;
+  subtitle?: string;
   date: string;
   status: FormationStatus;
   category: string;
   duration?: string;
   location?: string;
   link?: string;
+  note?: string;
+  speakers?: string;
+  partners?: string;
 }
 
 export default function FormationsPage() {
   const [activeTab, setActiveTab] = useState<"simairlec" | "autres">("simairlec");
 
-  const formationsSimairlec2025: Formation[] = data.formationsSimairlec2025 as Formation[];
-  const formationsSimairlec2024: Formation[] = data.formationsSimairlec2024 as Formation[];
-  const autresFormations: Formation[] = data.autresFormations as Formation[];
+  const formationsSimairlec2026: Formation[] = data.formationsSimairlec2026 as Formation[];
+  const formationsSimairlecArchives: Formation[] = data.formationsSimairlecArchives as Formation[];
+  const autresFormations2026: Formation[] = data.autresFormations2026 as Formation[];
+  const autresFormationsArchives: Formation[] = data.autresFormationsArchives as Formation[];
 
   const getStatusBadge = (status: FormationStatus) => {
     switch (status) {
@@ -43,6 +48,13 @@ export default function FormationsPage() {
             Complet
           </span>
         );
+      case "upcoming":
+        return (
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold">
+            <Calendar className="w-3.5 h-3.5" />
+            À venir
+          </span>
+        );
       case "past":
         return (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-500 text-xs font-semibold">
@@ -56,6 +68,8 @@ export default function FormationsPage() {
     <Card className={`border-2 rounded-2xl overflow-hidden transition-all hover:shadow-lg ${
       formation.status === "available"
         ? "border-primary/20 bg-primary/5"
+        : formation.status === "upcoming"
+        ? "border-amber-200 bg-amber-50/30"
         : formation.status === "complete"
         ? "border-gray-200 bg-muted/30"
         : "border-gray-200 bg-gray-50/50"
@@ -63,9 +77,14 @@ export default function FormationsPage() {
       <CardContent className="p-6">
         <div className="flex flex-col gap-4">
           <div className="flex items-start justify-between gap-3">
-            <h3 className="text-lg font-bold text-foreground leading-tight flex-1">
-              {formation.title}
-            </h3>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-foreground leading-tight">
+                {formation.title}
+              </h3>
+              {formation.subtitle && (
+                <p className="text-sm text-muted-foreground mt-0.5 italic">{formation.subtitle}</p>
+              )}
+            </div>
             {getStatusBadge(formation.status)}
           </div>
 
@@ -88,6 +107,27 @@ export default function FormationsPage() {
             )}
           </div>
 
+          {formation.speakers && (
+            <div className="flex items-start gap-2 text-sm text-muted-foreground">
+              <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+              <span>{formation.speakers}</span>
+            </div>
+          )}
+
+          {formation.partners && (
+            <div className="text-sm text-muted-foreground">
+              <span className="font-medium">Partenaires : </span>
+              {formation.partners}
+            </div>
+          )}
+
+          {formation.note && (
+            <div className="flex items-start gap-2 text-sm text-muted-foreground bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
+              <Info className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+              <span className="italic">{formation.note}</span>
+            </div>
+          )}
+
           {formation.link && (
             <a
               href={formation.link}
@@ -95,7 +135,7 @@ export default function FormationsPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold text-sm transition-colors"
             >
-              En savoir plus
+              S&apos;inscrire sur Digiforma
               <ExternalLink className="w-4 h-4" />
             </a>
           )}
@@ -146,7 +186,7 @@ export default function FormationsPage() {
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
                 }`}
               >
-                Simairlec 2025
+                Simairlec 2026
               </button>
               <button
                 onClick={() => setActiveTab("autres")}
@@ -156,7 +196,7 @@ export default function FormationsPage() {
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
                 }`}
               >
-                Autres formations
+                Soirées thématiques
               </button>
             </div>
           </div>
@@ -167,32 +207,32 @@ export default function FormationsPage() {
           <section className="py-16 lg:py-20">
             <div className="container mx-auto px-4 lg:px-8">
               <div className="max-w-5xl mx-auto space-y-12">
-                {/* Formations 2025 */}
+                {/* Formations 2026 */}
                 <div>
                   <div className="flex items-center gap-3 mb-8">
                     <h2 className="text-3xl font-bold text-foreground">
-                      Formations 2025
+                      Formations 2026
                     </h2>
                     <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-                      {formationsSimairlec2025.filter(f => f.status === "available").length} disponibles
+                      {formationsSimairlec2026.filter(f => f.status === "available").length} disponibles
                     </span>
                   </div>
                   <div className="grid gap-4">
-                    {formationsSimairlec2025.map((formation) => (
+                    {formationsSimairlec2026.map((formation) => (
                       <FormationCard key={formation.id} formation={formation} />
                     ))}
                   </div>
                 </div>
 
-                {/* Formations 2024 - Archives */}
+                {/* Archives */}
                 <div>
                   <div className="flex items-center gap-3 mb-8">
                     <h2 className="text-3xl font-bold text-muted-foreground">
-                      Archives 2024
+                      Archives
                     </h2>
                   </div>
                   <div className="grid gap-4 opacity-60">
-                    {formationsSimairlec2024.map((formation) => (
+                    {formationsSimairlecArchives.map((formation) => (
                       <FormationCard key={formation.id} formation={formation} />
                     ))}
                   </div>
@@ -202,67 +242,43 @@ export default function FormationsPage() {
           </section>
         )}
 
-        {/* Autres Formations */}
+        {/* Soirées thématiques */}
         {activeTab === "autres" && (
           <section className="py-16 lg:py-20">
             <div className="container mx-auto px-4 lg:px-8">
-              <div className="max-w-5xl mx-auto space-y-8">
-                <div className="flex items-center gap-3 mb-8">
-                  <h2 className="text-3xl font-bold text-foreground">
-                    Autres formations 2025
-                  </h2>
-                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-                    {autresFormations.length} formations
-                  </span>
-                </div>
-                <div className="grid gap-4">
-                  {autresFormations.map((formation) => (
-                    <FormationCard key={formation.id} formation={formation} />
-                  ))}
+              <div className="max-w-5xl mx-auto space-y-12">
+
+                {/* Formations 2026 */}
+                <div>
+                  <div className="flex items-center gap-3 mb-8">
+                    <h2 className="text-3xl font-bold text-foreground">
+                      Soirées thématiques 2026
+                    </h2>
+                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+                      {autresFormations2026.length} soirées
+                    </span>
+                  </div>
+                  <div className="grid gap-4">
+                    {autresFormations2026.map((formation) => (
+                      <FormationCard key={formation.id} formation={formation} />
+                    ))}
+                  </div>
                 </div>
 
-                {/* Additional info sections */}
-                <div className="mt-12 space-y-6">
-                  <Card className="border-2 border-primary/20 bg-primary/5 rounded-2xl">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-foreground mb-3">
-                        DPC Sport Santé
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-4">
-                        Formation des médecins généraliste « COMMENT PRESCRIRE L'ACTIVITE PHYSIQUE » en reprenant les bienfaits de l'activité physique, les différents niveaux et les éléments de prescription.
-                      </p>
-                      <div className="text-sm text-muted-foreground">
-                        Dates 2025 : 22 mai / 25 septembre / 27 novembre
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-2 border-primary/20 bg-primary/5 rounded-2xl">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-foreground mb-3">
-                        Les pathologies du sommeil
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        Formation délivrée par Le Dr Sabrina Carlier, Médecin du sommeil et Endocrinologue et Thierry Gouzland, Rééducateur maxillofacial sur le sommeil et ses pathologies en pratique libérale.
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-2 border-primary/20 bg-primary/5 rounded-2xl">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-foreground mb-3">
-                        Violences intra familiales
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-4">
-                        La CPTS Ouest Gironde vous propose une sensibilisation avec 2 formats:
-                      </p>
-                      <ul className="space-y-2 text-muted-foreground text-sm ml-4">
-                        <li>• Format journée : comprendre cette problématique, détecter ces victimes à travers différents outils et connaître les structures vers qui orienter (VICT'AID, CAUVA, RPBNA)</li>
-                        <li>• Format soirée (3H) : avec la Maison des Femmes de Mérignac et le Pôle Territorial de Solidarité Porte du Médoc</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
+                {/* Archives */}
+                <div>
+                  <div className="flex items-center gap-3 mb-8">
+                    <h2 className="text-3xl font-bold text-muted-foreground">
+                      Archives
+                    </h2>
+                  </div>
+                  <div className="grid gap-4 opacity-60">
+                    {autresFormationsArchives.map((formation) => (
+                      <FormationCard key={formation.id} formation={formation} />
+                    ))}
+                  </div>
                 </div>
+
               </div>
             </div>
           </section>
