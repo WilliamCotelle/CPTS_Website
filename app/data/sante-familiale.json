@@ -6,6 +6,15 @@
   "articlesPerPage": 12,
   "articles": [
     {
+      "id": "movember-2026",
+      "title": "MOVEMBER 2026",
+      "date": "2026-02-27",
+      "dateLabel": "27 février 2026",
+      "image": "/prevention/sante-famille/movember-2026.png",
+      "slug": "movember-2026",
+      "href": "/prevention/sante-familiale/movember-2026"
+    },
+    {
       "id": "mois-sans-tabac-2025",
       "title": "10-ème édition de MOI(S) SANS TABAC NOVEMBRE 2025",
       "date": "2025-11-02",
@@ -51,13 +60,13 @@
       "href": "/prevention/sante-familiale/insomnie"
     },
     {
-      "id": "prevention-cancer-colorectal-2025",
-      "title": "LA PREVENTION DU CANCER COLORECTAL : MARS BLEU 2025",
-      "date": "2025-02-27",
-      "dateLabel": "27 février 2025",
-      "image": "/prevention/sante-famille/mars-bleu.jpeg",
-      "slug": "prevention-cancer-colorectal-mars-bleu-2025",
-      "href": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2025"
+      "id": "prevention-cancer-colorectal-2026",
+      "title": "LA PREVENTION DU CANCER COLORECTAL : MARS BLEU 2026",
+      "date": "2026-03-01",
+      "dateLabel": "1 mars 2026",
+      "image": "/prevention/sante-famille/mars-bleu-2026.png",
+      "slug": "prevention-cancer-colorectal-mars-bleu-2026",
+      "href": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2026"
     },
     {
       "id": "vaccination-covid-2025",

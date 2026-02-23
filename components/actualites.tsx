@@ -12,9 +12,9 @@ import {
 
 const actualites = [
   {
-    title: "Diabète : Prévention et accompagnement",
-    image: "/supports/diabete.webp",
-    link: "/actualites/diabete",
+    title: "Besoin d'un medecin ? suivez le bon chemin.",
+    image: "/actu/acces-aux-soins/Acces-Aux-Soins-1.jpg",
+    link: "/actualites/acces-aux-soins",
   },
   {
     title: "Rappel sur la bonne utilisation des certificats médicaux",

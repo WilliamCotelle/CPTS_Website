@@ -93,12 +93,31 @@ export function BackgroundGradient1() {
       style={{
         background: `
           radial-gradient(
-            ellipse 2000px 500px at 50% 0%,
-            rgba(20, 184, 166, 0.25) 0%,
-            rgba(45, 212, 191, 0.15) 40%,
+            ellipse 1500px 1050px at 92% 4%,
+            rgba(78, 196, 90, 0.24) 0%,
+            rgba(16, 185, 129, 0.14) 34%,
+            rgba(16, 185, 129, 0.06) 54%,
+            transparent 74%
+          ),
+          radial-gradient(
+            ellipse 1350px 980px at 8% 96%,
+            rgba(20, 184, 166, 0.20) 0%,
+            rgba(13, 148, 136, 0.11) 36%,
+            rgba(13, 148, 136, 0.05) 56%,
+            transparent 76%
+          ),
+          radial-gradient(
+            circle 900px at 50% 38%,
+            rgba(167, 243, 208, 0.08) 0%,
             transparent 70%
           ),
-          linear-gradient(to bottom, rgba(236, 253, 245, 0.5), white)
+          linear-gradient(
+            180deg,
+            rgba(240, 253, 244, 0.30) 0%,
+            rgba(255, 255, 255, 0.56) 35%,
+            rgba(255, 255, 255, 0.56) 70%,
+            rgba(236, 253, 245, 0.24) 100%
+          )
         `,
       }}
     />

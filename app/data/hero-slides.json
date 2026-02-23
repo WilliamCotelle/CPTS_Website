@@ -7,22 +7,22 @@
       "link": "/sante-mental"
     },
     {
-      "image": "/insomnie.jpg",
-      "title": "L'insomnie : la comprendre et la traiter",
-      "alt": "Comprendre l'insomnie",
-      "link": "/l-insomnie-la-comprendre-et-la-traiter"
+      "image": "/prevention/sante-famille/mars-bleu-2026.png",
+      "title": "Mars Bleu 2026 : prévention du cancer colorectal",
+      "alt": "Mars Bleu 2026",
+      "link": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2026"
     },
     {
-      "image": "/femme-floue-face-anxiete-vue-f.png",
-      "title": "FACE AUX VIOLENCES, VOUS N'ÊTES PAS SEULES !",
-      "alt": "Aide aux victimes de violences",
-      "link": "/face-aux-violences-vous-n-etes-pas-seules"
+      "image": "/prevention/sante-famille/movember-2026.png",
+      "title": "Movember 2026 : santé masculine et prévention",
+      "alt": "Movember 2026",
+      "link": "/prevention/sante-familiale/movember-2026"
     },
     {
       "image": "/mon-espace-santé.png",
       "title": "Mon espace santé : TOUT SAVOIR, TOUT COMPRENDRE et S'EN SERVIR !",
       "alt": "Mon espace santé",
-      "link": "/mon-espace-sante-tout-savoir-tout-comprendre-et-sen-servir"
+      "link": "/patients/mon-espace-sante"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "title": "LA PRÉVENTION DU CANCER COLORECTAL : MARS BLEU 2025",
-  "date": "27 février 2025",
-  "image": "/prevention/sante-famille/mars-bleu.jpeg",
+  "title": "LA PRÉVENTION DU CANCER COLORECTAL : MARS BLEU 2026",
+  "date": "1 mars 2026",
+  "image": "/prevention/sante-famille/mars-bleu-2026.png",
   "backLink": {
     "label": "Santé familiale",
     "href": "/prevention/sante-familiale"
@@ -9,15 +9,15 @@
   "intro": {
     "text": "En France, le cancer colorectal représente la 2ème cause de décès par cancer. Il est le 3ème cancer le plus fréquent chez l'homme et le 2ème chez la femme.",
     "paragraphs": [
-      "Chaque année, le cancer du côlon touche 47 000 personnes : 130 cas sont diagnostiqués par jour, et plus de 11 000 cancers ont été détectés grâce au programme de dépistage.",
+      "Chaque année, le cancer du côlon touche + de 47 000 personnes : 130 cas sont diagnostiqués par jour, et plus de 11 000 cancers ont été détectés grâce au programme de dépistage.",
       "Dans plus de 80 % des cas, il provient d'une tumeur bénigne qui évolue lentement en se transformant en cancer.",
       "17,9 millions de personnes sont éligibles au test en France, mais seulement 34,2 % ont participé au test en 2022/2023.",
       "Ce cancer, dépisté à un stade précoce, peut être guéri dans 9 cas sur 10."
     ]
   },
   "chiffresClés": [
-    { "value": "47 000", "label": "personnes touchées chaque année", "color": "#1e3a8a" },
-    { "value": "9/10", "label": "guéris si détecté tôt", "color": "#1d4ed8" },
+    { "value": "+ de 47 000", "label": "personnes touchées chaque année", "color": "#1e3a8a" },
+    { "value": "9/10", "label": "guéris si détectés tôt", "color": "#1d4ed8" },
     { "value": "34,2 %", "label": "de participation au test en 2022/2023", "color": "#2563eb" }
   ],
   "facteurs": {
@@ -80,9 +80,9 @@
     "videoUrl": "https://drive.google.com/file/d/18uOM22U6gbLBa7miU2niZ7o8FerdYRmL/preview"
   },
   "exclus": {
-    "title": "Quid des exclus au test ?",
+    "title": "Quid des exclus aux tests ?",
     "items": [
-      "Ce test ne peut suffire pour les patients dits à « haut risque » de développer un cancer du côlon. Il s'agit de patients qui ont des ATCD personnels ou familiaux de polype ou de cancer colique, ou des patients atteints de maladie auto-immune (Crohn, RCH, etc.). Ces patients sont éligibles à la coloscopie préventive régulière.",
+      "Ce test ne peut suffire pour les patients à hauts risques de développer un cancer du côlon. Il s'agit de patients qui ont des ATCD personnels ou familiaux de polype ou de cancer colique, ou des patients atteints de maladie auto-immune (Crohn, RCH, etc.). Ces patients sont éligibles à la coloscopie préventive régulière.",
       "Sont exclus également les patients qui ont déjà des symptômes suspects : présence de sang dans les selles, douleurs abdominales, troubles du transit, amaigrissement inexpliqué, etc.",
       "Dans tous ces cas, il suffit de retourner le verso de l'invitation et de cocher la raison de la non-réalisation du test."
     ]

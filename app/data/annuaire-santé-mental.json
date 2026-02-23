@@ -333,22 +333,6 @@
               "source": "email"
             }
           ]
-        },
-        {
-          "section_title": "Mémoire",
-          "resources": [
-            {
-              "name": "Centre Mémoire CHU",
-              "type": "Consultation mémoire",
-              "address": "non précisé",
-              "phone": "non précisé",
-              "website": "non précisé",
-              "coverage": "non précisé",
-              "access": "non précisé",
-              "notes": "Pour les moins de 65 ans",
-              "source": "email"
-            }
-          ]
         }
       ]
     },
@@ -398,9 +382,10 @@
           "resources": [
             {
               "name": "CS Mémoire - Fontaines de Monjous",
-              "type": "Consultation mémoire",
+              "type": "Consultation et hôpital de jour",
               "address": "non précisé",
-              "phone": "non précisé",
+              "phone": "05 57 35 28 44",
+              "email": "cmp.lesfontainesdemonjous@probtp.com",
               "website": "non précisé",
               "coverage": "non précisé",
               "access": "non précisé",
@@ -431,18 +416,37 @@
       "age_group": "Tous âges",
       "sections": [
         {
-          "section_title": "Aidants en psychiatrie",
+          "section_title": "Annuaire des aidants",
           "resources": [
             {
-              "name": "à venir",
-              "type": "Aidants en psychiatrie",
-              "address": "à venir",
-              "phone": "à venir",
-              "website": "à venir",
-              "coverage": "non précisé",
+              "name": "Maison des seniors",
+              "type": "Accompagnement des aidants",
+              "address": "non précisé",
+              "phone": "05 57 93 64 44",
+              "website": "non précisé",
+              "coverage": "locale",
+              "access": "Sur inscription",
+              "notes": "Structure accueillant les personnes âgées retraitées du territoire pessacais"
+            },
+            {
+              "name": "Soutenir les Aidants - Secteur des Graves",
+              "type": "Plateforme de répit",
+              "address": "2 allée Jeanne-Chanay, 33600 Pessac",
+              "phone": "06 81 26 78 89",
+              "website": "https://soutenirlesaidants.fr/",
+              "coverage": "locale",
+              "access": "Du lundi au vendredi de 09h00 à 17h",
+              "notes": "Contact mail disponible via la plateforme"
+            },
+            {
+              "name": "Relais des Aidants - Mérignac",
+              "type": "Administration municipale",
+              "address": "29 Rue Alphonse Daudet, 33700 Mérignac",
+              "phone": "05 56 97 86 24",
+              "website": "https://www.merignac.com",
+              "coverage": "locale",
               "access": "non précisé",
-              "notes": "Rubrique créée - noms et coordonnées à venir",
-              "source": "email"
+              "notes": "non précisé"
             }
           ]
         },

@@ -4,12 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function CertificatsMedicauxPage() {
+export default function AccesAuxSoinsPage() {
   return (
     <main className="min-h-screen">
       <Header />
 
-      {/* Hero Section */}
       <section className="relative pt-24 lg:pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/10 to-background" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -23,24 +22,35 @@ export default function CertificatsMedicauxPage() {
             </Link>
 
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Rappel sur la bonne utilisation des certificats médicaux
+              Besoin d&apos;un medecin ? suivez le bon chemin.
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Affiche Section */}
       <section className="pb-20 lg:pb-32">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-8">
             <div className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
               <div className="relative w-full aspect-[3/4]">
                 <Image
-                  src="/actu/Affiche-BESOIN-DUN-CERTIFICAT-MEDICAL-15-pdf.jpg"
-                  alt="Affiche Certificats Médicaux - Rappel sur la bonne utilisation"
+                  src="/actu/acces-aux-soins/Acces-Aux-Soins-1.jpg"
+                  alt="Affiche accès aux soins 1"
                   fill
                   className="object-contain"
                   priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
+                />
+              </div>
+            </div>
+
+            <div className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
+              <div className="relative w-full aspect-[3/4]">
+                <Image
+                  src="/actu/acces-aux-soins/Acces-Aux-Soins-2.jpg"
+                  alt="Affiche accès aux soins 2"
+                  fill
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                 />
               </div>

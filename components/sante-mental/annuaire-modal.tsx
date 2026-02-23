@@ -26,6 +26,7 @@ import {
   HeartHandshake,
   Shield,
   PhoneCall,
+  Mail,
 } from "lucide-react";
 import Image from "next/image";
 import annuaireData from "@/app/data/annuaire-santé-mental.json";
@@ -42,6 +43,7 @@ interface Resource {
   type: string;
   address: string;
   phone: string;
+  email?: string;
   website: string;
   coverage: string;
   access: string;
@@ -223,6 +225,7 @@ function AgeSelectionForm({
 // Resource card component
 function ResourceCard({ resource }: { resource: Resource }) {
   const hasAddress = resource.address !== "non précisé" && resource.address !== "à venir";
+  const hasEmail = !!resource.email && resource.email !== "non précisé" && resource.email !== "à venir";
   const hasWebsite = resource.website !== "non précisé" && resource.website !== "à venir";
   const hasNotes = resource.notes !== "non précisé" && resource.notes !== "à venir";
   const isComingSoon = resource.name === "à venir";
@@ -254,6 +257,19 @@ function ResourceCard({ resource }: { resource: Resource }) {
       )}
 
       <PhoneLink phone={resource.phone} />
+
+      {hasEmail && (
+        <div className="flex items-center gap-2 text-xs">
+          <Mail className="w-3 h-3 text-muted-foreground flex-shrink-0" />
+          <a
+            href={`mailto:${resource.email}`}
+            className="text-primary hover:underline font-medium break-all"
+            title="Envoyer un email"
+          >
+            {resource.email}
+          </a>
+        </div>
+      )}
 
       {hasWebsite && (
         <a
@@ -402,6 +418,8 @@ function AnnuaireContent({
   onBack: () => void;
 }) {
   const ageGroups = annuaireData.age_groups as AgeGroup[];
+  const isEmergencySection = (sectionTitle: string) =>
+    sectionTitle.toLowerCase().includes("urgence");
 
   // Filter age groups based on selection
   // "Tous âges" shows ALL resources from ALL categories
@@ -412,6 +430,12 @@ function AnnuaireContent({
   // Always show "Tous âges" section (emergency numbers) for specific age categories
   const tousAgesGroup = ageGroups.find(g => g.age_group === "Tous âges");
   const showTousAges = category !== null && category !== "Tous âges" && tousAgesGroup;
+  const tousAgesAidantsSections = (tousAgesGroup?.sections || []).filter(
+    (s) => !isEmergencySection(s.section_title)
+  );
+  const tousAgesEmergencyResources =
+    tousAgesGroup?.sections.find((s) => isEmergencySection(s.section_title))
+      ?.resources || [];
 
   return (
     <div className="space-y-6">
@@ -451,8 +475,12 @@ function AnnuaireContent({
 
         // Special handling for "Tous âges" - use EmergencyNumbersSection
         if (group.age_group === "Tous âges") {
-          const emergencySection = group.sections.find(s => s.section_title.includes("urgence"));
-          const otherSections = group.sections.filter(s => !s.section_title.includes("urgence"));
+          const emergencySection = group.sections.find((s) =>
+            isEmergencySection(s.section_title)
+          );
+          const otherSections = group.sections.filter(
+            (s) => !isEmergencySection(s.section_title)
+          );
 
           return (
             <div key={group.age_group} className="space-y-4">
@@ -523,7 +551,27 @@ function AnnuaireContent({
 
       {/* Show emergency numbers for all categories */}
       {showTousAges && (
-        <EmergencyNumbersSection resources={tousAgesGroup.sections.find(s => s.section_title.includes("urgence"))?.resources || []} />
+        <div className="space-y-4 pt-2">
+          {tousAgesAidantsSections.map((section) => (
+            <Card
+              key={section.section_title}
+              className="border-border rounded-2xl overflow-hidden bg-card"
+            >
+              <CardContent className="p-5">
+                <h4 className="text-base font-bold text-card-foreground mb-4">
+                  {section.section_title}
+                </h4>
+                <div className="grid md:grid-cols-2 gap-3">
+                  {section.resources.map((resource, idx) => (
+                    <ResourceCard key={idx} resource={resource} />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+
+          <EmergencyNumbersSection resources={tousAgesEmergencyResources} />
+        </div>
       )}
     </div>
   );

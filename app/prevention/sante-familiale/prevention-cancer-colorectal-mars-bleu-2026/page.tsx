@@ -13,10 +13,32 @@ import {
 } from "lucide-react";
 import { InstagramEmbed } from "@/components/instagram-embed";
 import { Card, CardContent } from "@/components/ui/card";
-import data from "@/app/data/cancer-colorectal-mars-bleu-2025.json";
+import data from "@/app/data/cancer-colorectal-mars-bleu-2026.json";
 
 export default function CancerColorectalPage() {
   const { intro, chiffresClés, facteurs, depistage, participation, commentSeFaireDepister, exclus, evenements, instagram } = data;
+  const exclusHighlights = ["patients à hauts risques", "symptômes suspects"];
+
+  const renderExclusItem = (text: string) => {
+    const escapedTerms = exclusHighlights.map((term) =>
+      term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    );
+    const regex = new RegExp(`(${escapedTerms.join("|")})`, "gi");
+
+    return text.split(regex).map((part, index) => {
+      const isHighlighted = exclusHighlights.some(
+        (term) => term.toLowerCase() === part.toLowerCase()
+      );
+
+      return isHighlighted ? (
+        <strong key={index} className="font-semibold text-foreground">
+          {part}
+        </strong>
+      ) : (
+        <span key={index}>{part}</span>
+      );
+    });
+  };
 
 
   return (
@@ -144,7 +166,9 @@ export default function CancerColorectalPage() {
                   {depistage.hemoccult}
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  {depistage.coloscopie}
+                  <strong className="font-semibold text-foreground">
+                    {depistage.coloscopie}
+                  </strong>
                 </p>
               </CardContent>
             </Card>
@@ -259,7 +283,7 @@ export default function CancerColorectalPage() {
                   {exclus.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <ChevronRight className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
-                      <span>{item}</span>
+                      <span>{renderExclusItem(item)}</span>
                     </li>
                   ))}
                 </ul>

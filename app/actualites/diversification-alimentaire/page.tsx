@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
+const DOCTOLIB_URL =
+  "https://www.doctolib.fr/dieteticien/merignac/celine-maillard-merignac/booking/availabilities?specialityId=414&telehealth=false&placeId=practice-161680&motiveCategoryIds%5B%5D=391618&motiveIds%5B%5D=13383386&pid=practice-161680&bookingFunnelSource=profile";
+
 export default function DiversificationAlimentairePage() {
   return (
     <main className="min-h-screen">
@@ -25,6 +28,24 @@ export default function DiversificationAlimentairePage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Jeunes parents? Inscrivez vous
             </h1>
+
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-5 lg:p-6 space-y-3">
+              <p className="text-base lg:text-lg font-semibold text-foreground">
+                L&apos;atelier du 05 mars 2026 est complet.
+              </p>
+              <p className="text-muted-foreground">
+                Prochain atelier le <strong className="text-foreground">7 mai 2026</strong>.
+                Inscriptions en scannant le QR code sur l&apos;affiche ou directement sur Doctolib.
+              </p>
+              <a
+                href={DOCTOLIB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:bg-primary/90 transition-colors"
+              >
+                S&apos;inscrire sur Doctolib
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -33,7 +54,7 @@ export default function DiversificationAlimentairePage() {
       <section className="pb-20 lg:pb-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
+            <div className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
               <div className="relative w-full aspect-[3/4]">
                 <Image
                   src="/actu/Affiche-divers-alimentaire-20.11.25-pdf.jpg"

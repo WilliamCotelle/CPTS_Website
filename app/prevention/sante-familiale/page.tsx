@@ -32,12 +32,15 @@ const typedData = data as SanteFamilialeData;
 
 export default function SanteFamilialePage() {
   const [displayedCount, setDisplayedCount] = useState(typedData.articlesPerPage);
+  const sortedArticles = [...typedData.articles].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   const perPage = typedData.articlesPerPage;
-  const total = typedData.articles.length;
+  const total = sortedArticles.length;
   const hasMore = displayedCount < total;
 
-  const articles = typedData.articles.slice(0, displayedCount);
+  const articles = sortedArticles.slice(0, displayedCount);
 
   const loadMore = () => {
     setDisplayedCount((prev) => Math.min(prev + perPage, total));
