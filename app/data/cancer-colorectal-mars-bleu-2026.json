@@ -92,13 +92,51 @@
     "items": [
       {
         "label": "Institut Bergonié",
-        "text": "En 2025, l'institut Bergonié s'engage dans une campagne de sensibilisation : stand d'information dans son hall A, demi-journées de sensibilisation par des membres du PRISME les lundis 10 mars et 31 mars de 09h à 14h, exposition de photos « tout le bleu… » dans la passerelle du bâtiment, course RUN in blue les 10 et 31 mars, animation section foot en bleu. Le BERGO BUS est également présent sur le territoire."
+        "title": "MARS BLEU 2026 : MOBILISONS-NOUS POUR LE DÉPISTAGE DU CANCER COLORECTAL",
+        "text": "À l'occasion de Mars Bleu, l'Institut Bergonié se mobilise pour sensibiliser au dépistage du cancer colorectal, un test simple, gratuit et accessible dès 50 ans.",
+        "link": "https://www.bergonie.fr/mars-bleu-2026-mobilisons-nous-pour-le-depistage-du-cancer-colorectal/",
+        "linkLabel": "Voir le programme complet Bergonié",
+        "image": "/prevention/sante-famille/movember/bergo-bus.svg",
+        "imageAlt": "Bergo'Bus - prévention des cancers et promotion de la santé",
+        "program": [
+          {
+            "date": "Mardi 3 mars",
+            "location": "Institut Bergonié – Hall A (9h à 11h30) puis Cafétéria (11h30 à 14h)",
+            "details": [
+              "Stand de prévention animé par l'équipe Prévention et des médecins du Groupe Digestif de l'Institut Bergonié.",
+              "Distribution de kits de dépistage et de supports d'information."
+            ]
+          },
+          {
+            "date": "Mardi 3 mars",
+            "location": "Place Pey-Berland – 11h à 14h",
+            "details": [
+              "Stand de prévention animé par l'équipe Prévention et des médecins du Groupe Digestif, avec le Bergo'Bus, en partenariat avec la Ligue contre le cancer de la Gironde.",
+              "Distribution de kits de dépistage et de documentation d'information."
+            ]
+          },
+          {
+            "date": "Jeudi 5 mars",
+            "location": "Hôpital Charles Perrens",
+            "details": [
+              "L'équipe Prévention de l'Institut Bergonié se déplacera avec le Bergo'Bus pour une action de sensibilisation au cancer colorectal."
+            ]
+          },
+          {
+            "date": "Lundi 9 mars",
+            "location": "Mairie de Bordeaux – 18h à 19h30",
+            "details": [
+              "Sous l'impulsion de Bordeaux Colorectal Institute, une conférence réunira professionnels de santé et acteurs institutionnels autour des enjeux du dépistage et du parcours de soins du cancer colorectal.",
+              "L'Institut sera représenté par le Dr Simon Pernot pour un échange sur « Comprendre la chimiothérapie : Pourquoi et pour quels patients ? » et par Mme Céline Etchetto, Directrice Générale adjointe."
+            ]
+          }
+        ]
       },
       {
         "label": "Clinique Bagatelle – Côlon Tour",
-        "text": "La clinique Bagatelle vous accueille le jeudi 06 mars de 10h à 16h pour le COLON TOUR : vous pourrez visiter l'intérieur d'un colon géant et échanger avec des professionnels, des conseils vous seront prodigués.",
+        "text": "Les dates 2026 du Côlon Tour de la clinique Bagatelle seront communiquées dès qu'elles seront connues. En attendant, nous conservons le visuel de l'édition 2025.",
         "image": "/prevention/sante-famille/cancer-colorectal/colon-tour-2025.jpeg",
-        "imageAlt": "Côlon Tour – Jeudi 6 mars 2025 à la Fondation Bagatelle"
+        "imageAlt": "Visuel Côlon Tour 2025 à la Fondation Bagatelle"
       }
     ]
   },

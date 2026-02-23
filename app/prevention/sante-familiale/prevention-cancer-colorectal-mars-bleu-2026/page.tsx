@@ -302,26 +302,105 @@ export default function CancerColorectalPage() {
                   </h2>
                 </div>
                 <div className="space-y-6">
-                  {evenements.items.map((evt, i) => (
-                    <div key={i} className="space-y-3">
-                      <p className="text-sm text-muted-foreground">
-                        <span className="font-bold text-foreground">{evt.label} — </span>
-                        {evt.text}
-                      </p>
-                      {"image" in evt && evt.image && (
-                        <div className="relative w-full rounded-2xl overflow-hidden shadow-md">
-                          <Image
-                            src={evt.image}
-                            alt={evt.imageAlt ?? ""}
-                            width={900}
-                            height={500}
-                            className="w-full h-auto"
-                            quality={85}
-                          />
+                  {evenements.items.map((evt, i) => {
+                    const hasProgram = "program" in evt && Array.isArray(evt.program);
+
+                    if (hasProgram) {
+                      const program = evt.program ?? [];
+
+                      return (
+                        <div key={i} className="space-y-5">
+                          <div className="flex flex-col lg:flex-row gap-5 lg:gap-6">
+                            <div className="flex-1 space-y-3 min-w-0">
+                              <p className="inline-flex rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-800">
+                                Acteur local
+                              </p>
+                              <h3 className="text-xl lg:text-2xl font-bold text-foreground">
+                                {"title" in evt && evt.title ? evt.title : evt.label}
+                              </h3>
+                              <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
+                                {evt.text}
+                              </p>
+                              {"link" in evt && evt.link && (
+                                <a
+                                  href={evt.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 rounded-full bg-cyan-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-cyan-800"
+                                >
+                                  {"linkLabel" in evt && evt.linkLabel ? evt.linkLabel : "Voir le détail"}
+                                  <ExternalLink className="w-3.5 h-3.5" />
+                                </a>
+                              )}
+                            </div>
+
+                            {"image" in evt && evt.image && (
+                              <div className="w-full lg:w-72 rounded-2xl border border-cyan-100 bg-white p-3 self-start">
+                                <Image
+                                  src={evt.image}
+                                  alt={evt.imageAlt ?? ""}
+                                  width={1000}
+                                  height={520}
+                                  className="w-full h-auto"
+                                  quality={85}
+                                />
+                              </div>
+                            )}
+                          </div>
+
+                          <div className="grid gap-3">
+                            {program.map((event, eventIndex) => (
+                              <div key={`${event.date}-${event.location}-${eventIndex}`}>
+                                <div className="rounded-xl border border-cyan-100 bg-cyan-50/40 p-4 space-y-2">
+                                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+                                    <span className="inline-flex w-fit rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">
+                                      {event.date}
+                                    </span>
+                                    <p className="text-sm font-medium text-foreground">
+                                      {event.location}
+                                    </p>
+                                  </div>
+                                  {"details" in event && Array.isArray(event.details) && (
+                                    <ul className="space-y-1.5">
+                                      {event.details.map((detail, detailIndex) => (
+                                        <li
+                                          key={`${event.date}-${detailIndex}`}
+                                          className="text-sm text-muted-foreground"
+                                        >
+                                          • {detail}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                      )}
-                    </div>
-                  ))}
+                      );
+                    }
+
+                    return (
+                      <div key={i} className="space-y-3">
+                        <p className="text-sm text-muted-foreground">
+                          <span className="font-bold text-foreground">{evt.label} — </span>
+                          {evt.text}
+                        </p>
+                        {"image" in evt && evt.image && (
+                          <div className="relative w-full rounded-2xl overflow-hidden shadow-md">
+                            <Image
+                              src={evt.image}
+                              alt={evt.imageAlt ?? ""}
+                              width={900}
+                              height={500}
+                              className="w-full h-auto"
+                              quality={85}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>
