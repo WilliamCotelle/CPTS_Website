@@ -62,7 +62,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen [--home-header-height:7rem]">
       <BackgroundGradient0 />
 
       {/* Wrapper z-10 pour mettre tout le contenu au-dessus du background */}

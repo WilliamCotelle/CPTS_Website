@@ -30,7 +30,7 @@ export function FeaturedCarousel() {
   };
 
   return (
-    <section className="pt-8 pb-12 md:pb-14 lg:pb-16 bg-background">
+    <section className="pt-8 pb-12 md:pb-14 lg:pb-16 bg-background overflow-x-clip">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-8 md:mb-8 lg:mb-10">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3 md:mb-3">
