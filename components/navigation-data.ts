@@ -43,7 +43,7 @@ export const navigationItems = [
       { label: "Votre prévention du mois", href: "/prevention/du-mois" },
       { label: "Éducation thérapeutique", href: "/prevention/education-therapeutique" },
       { label: "Mémos de suivi", href: "/prevention/memos-suivi" },
-      { label: "Santé familiale", href: "/prevention/sante-familiale" },
+      { label: "Articles santé familiale", href: "/prevention/sante-familiale" },
     ],
   },
   {

@@ -9,6 +9,8 @@ export function BreathingExercise() {
   const [countdown, setCountdown] = useState(5);
   const [totalBreaths, setTotalBreaths] = useState(0);
   const [showIntro, setShowIntro] = useState(false);
+  const [preparationCount, setPreparationCount] = useState(0);
+  const [isPreparingToStart, setIsPreparingToStart] = useState(false);
   const [guidanceIndex, setGuidanceIndex] = useState(0);
 
   const breathingData = {
@@ -20,7 +22,8 @@ export function BreathingExercise() {
       expire: "Expirez par la bouche"
     },
     guidance: {
-      intro: "Installez-vous confortablement. 5 minutes, 30 respirations.",
+      intro: "Installez-vous confortablement",
+      preparation: "Préparez-vous, l'exercice va commencer",
       during: [
         "Concentrez-vous sur votre respiration",
         "Laissez votre rythme cardiaque se stabiliser",
@@ -32,6 +35,26 @@ export function BreathingExercise() {
       outro: "Exercice terminé. Prenez quelques instants pour ressentir les effets."
     }
   };
+
+  // Compte à rebours de préparation (3, 2, 1)
+  useEffect(() => {
+    if (!isPreparingToStart) return;
+
+    const interval = setInterval(() => {
+      setPreparationCount((prev) => {
+        if (prev <= 1) {
+          setIsPreparingToStart(false);
+          setIsBreathing(true);
+          setCountdown(5);
+          setBreathPhase("inspire");
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isPreparingToStart]);
 
   // 1. Timer pur - décompte chaque seconde
   useEffect(() => {
@@ -67,33 +90,36 @@ export function BreathingExercise() {
   }, [countdown, isBreathing, breathPhase, totalBreaths, breathingData.guidance.during.length]);
 
   const toggleBreathing = () => {
-    if (!isBreathing) {
+    if (!isBreathing && !isPreparingToStart) {
       if (totalBreaths === 0) {
+        // Premier démarrage : intro → compte à rebours → exercice
         setShowIntro(true);
         setTimeout(() => {
           setShowIntro(false);
-          setCountdown(5);
-          setBreathPhase("inspire");
+          setPreparationCount(3);
+          setIsPreparingToStart(true);
           setTotalBreaths(0);
           setGuidanceIndex(0);
-          setIsBreathing(true);
-        }, 3000);
+        }, 2500);
       } else {
-        setCountdown(5);
-        setBreathPhase("inspire");
-        setIsBreathing(true);
+        // Reprise : compte à rebours → exercice
+        setPreparationCount(3);
+        setIsPreparingToStart(true);
       }
     } else {
       setIsBreathing(false);
+      setIsPreparingToStart(false);
     }
   };
 
   const resetExercise = () => {
     setIsBreathing(false);
+    setIsPreparingToStart(false);
     setBreathPhase("inspire");
     setCountdown(5);
     setTotalBreaths(0);
     setShowIntro(false);
+    setPreparationCount(0);
     setGuidanceIndex(0);
   };
 
@@ -126,7 +152,7 @@ export function BreathingExercise() {
         >
           <div
             className={`w-56 h-56 lg:w-72 lg:h-72 rounded-full border-4 transition-all duration-1000 ease-in-out ${
-              isBreathing || showIntro
+              isBreathing || showIntro || isPreparingToStart
                 ? breathPhase === "inspire"
                   ? "border-primary shadow-lg shadow-primary/50"
                   : "border-secondary shadow-lg shadow-secondary/50"
@@ -141,6 +167,10 @@ export function BreathingExercise() {
                         : 1.25 - (5 - countdown) * 0.1
                     })`,
                   }
+                : isPreparingToStart
+                ? {
+                    transform: `scale(${0.9 + Math.sin(Date.now() / 300) * 0.05})`,
+                  }
                 : {}
             }
           />
@@ -152,6 +182,21 @@ export function BreathingExercise() {
                   <p className="text-sm text-muted-foreground leading-snug">
                     {breathingData.guidance.intro}
                   </p>
+                  <p className="text-xs text-muted-foreground/70">
+                    5 minutes • 30 respirations
+                  </p>
+                </div>
+              ) : isPreparingToStart ? (
+                <div className="text-center space-y-4">
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {breathingData.guidance.preparation}
+                  </p>
+                  <span className="text-7xl lg:text-8xl font-bold text-primary animate-pulse">
+                    {preparationCount}
+                  </span>
+                  <p className="text-xs text-muted-foreground">
+                    Prêt ? C'est parti !
+                  </p>
                 </div>
               ) : totalBreaths >= 30 ? (
                 <div className="text-center space-y-3">
@@ -159,15 +204,15 @@ export function BreathingExercise() {
                   <p className="text-sm text-muted-foreground leading-snug">
                     {breathingData.guidance.outro}
                   </p>
-                  <button
+                  <span
                     onClick={(e) => {
                       e.stopPropagation();
                       resetExercise();
                     }}
-                    className="mt-4 text-xs text-primary hover:underline font-medium"
+                    className="mt-4 text-xs text-primary hover:underline font-medium cursor-pointer inline-block"
                   >
                     Recommencer
-                  </button>
+                  </span>
                 </div>
               ) : isBreathing ? (
                 <>
@@ -204,7 +249,7 @@ export function BreathingExercise() {
         </button>
 
         {/* Progress & Guidance */}
-        {(isBreathing || totalBreaths > 0) && totalBreaths < 30 && !showIntro && (
+        {(isBreathing || totalBreaths > 0) && totalBreaths < 30 && !showIntro && !isPreparingToStart && (
           <div className="mt-6 text-center space-y-3">
             {isBreathing && (
               <p className="text-sm text-primary/70 italic min-h-[2rem] flex items-center justify-center">

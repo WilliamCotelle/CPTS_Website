@@ -13,7 +13,7 @@ import {
 const actualites = [
   {
     title: "Diabète : Prévention et accompagnement",
-    image: "/supports/diabéte.png",
+    image: "/supports/diabete.webp",
     link: "/actualites/diabete",
   },
   {
@@ -32,7 +32,7 @@ function ActuCard({ actu }: { actu: (typeof actualites)[0] }) {
   return (
     <a href={actu.link} className="block w-full group">
       <div className="rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary/50 flex flex-col h-full">
-        <div className="p-4 lg:p-3 relative aspect-[3/4] lg:aspect-[4/5]">
+        <div className="p-4 lg:p-3 relative aspect-[3/4] lg:aspect-[4/5] overflow-hidden">
           <Image
             src={actu.image}
             alt={actu.title}

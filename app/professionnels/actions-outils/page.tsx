@@ -84,7 +84,7 @@ export default function ActionsOutilsPage() {
             <div className="absolute bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-primary/15 to-transparent rounded-full blur-3xl" />
 
             {/* Illustration - Parcours pluriprofessionnels */}
-            <div className="absolute top-0 left-0 w-64 lg:w-79.5 lg:block">
+            <div className="absolute top-0 left-0 w-64 lg:w-79.5 hidden lg:block">
               <Image
                 src="/actions-outils/parcour-pluripro.svg"
                 alt=""

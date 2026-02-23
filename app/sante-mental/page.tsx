@@ -104,22 +104,22 @@ export default function SanteMentalPage() {
       </section>
 
       {/* Section Ressources Bento Grid */}
-      <section className="py-12 lg:py-20 bg-secondary/20">
+      <section className="py-12 lg:py-16 bg-secondary/20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
+          <div className="text-center space-y-3 mb-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
               Ressources et outils
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               Des outils pratiques pour prendre soin de vous
             </p>
           </div>
 
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             {/* Bento Grid Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5">
               {/* Exercice de Respiration */}
-              <div className="lg:col-span-5 rounded-[2rem] bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-border p-6 lg:p-8 shadow-sm relative overflow-hidden">
+              <div className="lg:col-span-5 rounded-2xl lg:rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-border p-4 lg:p-6 shadow-sm relative overflow-hidden">
                 {/* Background illustration */}
                 <div className="absolute inset-0 z-0 opacity-40">
                   <Image
@@ -138,14 +138,17 @@ export default function SanteMentalPage() {
               {/* Vidéo */}
               <button
                 onClick={() => setIsVideoModalOpen(true)}
-                className="lg:col-span-7 group relative overflow-hidden rounded-[2rem] aspect-video lg:aspect-auto bg-gradient-to-br from-primary via-primary to-primary/80 cursor-pointer hover:shadow-2xl transition-all duration-500"
+                className="lg:col-span-7 group relative overflow-hidden rounded-2xl lg:rounded-3xl aspect-video bg-gradient-to-br from-primary via-primary to-primary/80 cursor-pointer hover:shadow-xl transition-all duration-500"
               >
                 {/* Miniature YouTube */}
                 <div className="absolute inset-0 z-0">
-                  <img
-                    src="https://img.youtube.com/vi/LD1hk0OVt8Y/maxresdefault.jpg"
+                  <Image
+                    src="/santé-mental/video-thumbnail-cosmos-mental.jpg"
                     alt="Miniature vidéo santé mentale"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 58vw"
+                    priority
                   />
                 </div>
 
@@ -154,9 +157,9 @@ export default function SanteMentalPage() {
 
                 {/* Play icon */}
                 <div className="absolute inset-0 flex items-center justify-center z-15">
-                  <div className="w-16 h-16 lg:w-20 lg:h-20 bg-primary-foreground/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-primary-foreground/40 group-hover:scale-110 group-hover:bg-primary-foreground/30 transition-all duration-300">
+                  <div className="w-14 h-14 lg:w-16 lg:h-16 bg-primary-foreground/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-primary-foreground/40 group-hover:scale-110 group-hover:bg-primary-foreground/30 transition-all duration-300">
                     <Video
-                      size={28}
+                      size={24}
                       className="text-primary-foreground ml-1"
                       fill="currentColor"
                     />
@@ -164,21 +167,21 @@ export default function SanteMentalPage() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-20 text-primary-foreground p-6 lg:p-8 flex flex-col justify-between h-full min-h-[300px]">
-                  <div className="w-12 h-12 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground rounded-xl flex items-center justify-center border border-primary-foreground/20">
-                    <Video size={20} />
+                <div className="relative z-20 text-primary-foreground p-4 lg:p-6 flex flex-col justify-between h-full">
+                  <div className="w-10 h-10 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground rounded-lg flex items-center justify-center border border-primary-foreground/20">
+                    <Video size={18} />
                   </div>
 
-                  <div className="space-y-3">
-                    <h3 className="text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
+                  <div className="space-y-2">
+                    <h3 className="text-xl lg:text-2xl font-bold tracking-tight leading-tight">
                       Vidéos pédagogiques
                     </h3>
-                    <p className="text-primary-foreground/70 text-sm font-light leading-relaxed ">
+                    <p className="text-primary-foreground/70 text-xs lg:text-sm font-light leading-relaxed">
                       Un clip Psycom pour comprendre la santé mentale et ce qui
                       l'influence
                     </p>
-                    <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest pt-2 group-hover:gap-4 transition-all">
-                      Visionner <Video size={14} strokeWidth={3} />
+                    <div className="flex items-center gap-2 text-[9px] lg:text-[10px] font-bold uppercase tracking-widest pt-1 group-hover:gap-3 transition-all">
+                      Visionner <Video size={12} strokeWidth={3} />
                     </div>
                   </div>
                 </div>
@@ -189,17 +192,17 @@ export default function SanteMentalPage() {
                 href="https://www.santementale-info-service.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lg:col-span-6 group relative overflow-hidden rounded-[2rem] bg-secondary border border-border p-6 lg:p-8 hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-between gap-4"
+                className="lg:col-span-6 group relative overflow-hidden rounded-2xl lg:rounded-3xl bg-secondary border border-border p-4 lg:p-5 hover:shadow-lg transition-all duration-500 flex flex-col items-center justify-between gap-3"
               >
-                <div className="space-y-4 text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto">
-                    <Brain className="w-6 h-6 text-primary" />
+                <div className="space-y-3 text-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
+                    <Brain className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-bold tracking-tight leading-tight mb-2">
+                    <h3 className="text-lg lg:text-xl font-bold tracking-tight leading-tight mb-1.5">
                       Santé Mentale Info Service
                     </h3>
-                    <p className="text-muted-foreground text-sm font-light leading-relaxed">
+                    <p className="text-muted-foreground text-xs lg:text-sm font-light leading-relaxed">
                       Le portail national propose des outils validés par l'ARS
                       et des lignes d'écoute anonymes
                     </p>
@@ -207,23 +210,23 @@ export default function SanteMentalPage() {
                 </div>
 
                 {/* Logo ARS */}
-                <div className="relative w-28 h-28 lg:w-32 lg:h-32 bg-background border border-border rounded-2xl p-4 shadow-sm flex-shrink-0">
+                <div className="relative w-20 h-20 lg:w-24 lg:h-24 bg-background border border-border rounded-xl p-3 shadow-sm flex-shrink-0">
                   <Image
                     src="/ARS-logo.jpg"
                     alt="Logo ARS"
                     fill
-                    className="object-contain p-2"
-                    sizes="128px"
+                    className="object-contain p-1.5"
+                    sizes="96px"
                   />
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                <div className="flex items-center gap-2">
+                  <span className="text-[9px] lg:text-[10px] font-bold uppercase tracking-widest text-primary">
                     Accéder au portail
                   </span>
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <svg
-                      className="w-4 h-4 text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                      className="w-3.5 h-3.5 text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -244,17 +247,17 @@ export default function SanteMentalPage() {
                 href="https://www.ameli.fr/assure/actualites/sante-mentale-mon-soutien-psy-pour-un-accompagnement-psychologique-accessible-tous"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lg:col-span-6 group relative overflow-hidden rounded-[2rem] bg-secondary border border-border p-6 lg:p-8 hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-between gap-4"
+                className="lg:col-span-6 group relative overflow-hidden rounded-2xl lg:rounded-3xl bg-secondary border border-border p-4 lg:p-5 hover:shadow-lg transition-all duration-500 flex flex-col items-center justify-between gap-3"
               >
-                <div className="space-y-4 text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto">
-                    <Brain className="w-6 h-6 text-primary" />
+                <div className="space-y-3 text-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
+                    <Brain className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-bold tracking-tight leading-tight mb-2">
+                    <h3 className="text-lg lg:text-xl font-bold tracking-tight leading-tight mb-1.5">
                       Mon soutien psy
                     </h3>
-                    <p className="text-muted-foreground text-sm font-light leading-relaxed">
+                    <p className="text-muted-foreground text-xs lg:text-sm font-light leading-relaxed">
                       Un accompagnement psychologique accessible à tous, proposé
                       par l'Assurance Maladie
                     </p>
@@ -262,23 +265,23 @@ export default function SanteMentalPage() {
                 </div>
 
                 {/* Logo CPAM */}
-                <div className="relative w-28 h-28 lg:w-32 lg:h-32 bg-background border border-border rounded-2xl p-4 shadow-sm flex-shrink-0">
+                <div className="relative w-20 h-20 lg:w-24 lg:h-24 bg-background border border-border rounded-xl p-3 shadow-sm flex-shrink-0">
                   <Image
                     src="/AM-logo.png"
                     alt="Logo Assurance Maladie"
                     fill
-                    className="object-contain p-2"
-                    sizes="128px"
+                    className="object-contain p-1.5"
+                    sizes="96px"
                   />
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                <div className="flex items-center gap-2">
+                  <span className="text-[9px] lg:text-[10px] font-bold uppercase tracking-widest text-primary">
                     En savoir plus
                   </span>
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <svg
-                      className="w-4 h-4 text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                      className="w-3.5 h-3.5 text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -313,7 +316,7 @@ export default function SanteMentalPage() {
           <div className="aspect-video w-full">
             {isVideoModalOpen && (
               <iframe
-                src="https://www.youtube.com/embed/LD1hk0OVt8Y?autoplay=1"
+                src="https://www.youtube-nocookie.com/embed/LD1hk0OVt8Y?autoplay=1&rel=0&modestbranding=1"
                 title="Vidéo santé mentale"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

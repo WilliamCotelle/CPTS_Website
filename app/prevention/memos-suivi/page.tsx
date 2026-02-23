@@ -7,7 +7,10 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import memosData from "@/app/data/memos-suivi.json";
 
-const colorVariants: Record<string, { bg: string; border: string; text: string }> = {
+const colorVariants: Record<
+  string,
+  { bg: string; border: string; text: string }
+> = {
   emerald: {
     bg: "bg-emerald-50",
     border: "border-emerald-200 hover:border-emerald-400",
@@ -106,7 +109,11 @@ function renderFormattedText(content: string | TextSegment[]) {
         </span>
       );
     }
-    return <span key={index} className="text-muted-foreground">{segment.text}</span>;
+    return (
+      <span key={index} className="text-muted-foreground">
+        {segment.text}
+      </span>
+    );
   });
 }
 
@@ -146,7 +153,9 @@ function FlipCard({ memo, onClick }: { memo: Memo; onClick: () => void }) {
             />
           </div>
           <div className="flex-1 flex items-center justify-center pt-3">
-            <h3 className={`text-xs lg:text-sm font-bold text-center ${colors.text} uppercase tracking-wide leading-tight`}>
+            <h3
+              className={`text-xs lg:text-sm font-bold text-center ${colors.text} uppercase tracking-wide leading-tight`}
+            >
               {memo.title}
             </h3>
           </div>
@@ -175,7 +184,7 @@ function ClickableImage({
   src,
   alt,
   onImageClick,
-  thumbnail = false
+  thumbnail = false,
 }: {
   src: string;
   alt: string;
@@ -196,13 +205,23 @@ function ClickableImage({
             width={400}
             height={800}
             className="w-auto h-auto max-w-[50%] mx-auto"
-            style={{ maxWidth: '50%' }}
+            style={{ maxWidth: "50%" }}
             sizes="400px"
           />
           <div className="mt-3 flex justify-center">
             <span className="bg-pink-600 text-white text-xs px-4 py-2 rounded-full font-semibold flex items-center gap-2 shadow-md">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                />
               </svg>
               Cliquer pour voir en grand
             </span>
@@ -314,7 +333,9 @@ function MemoModal({
           </button>
 
           <div className="p-6 lg:p-10">
-            <div className={`inline-block px-3 py-1 rounded-full ${colors.bg} ${colors.text} text-xs font-semibold uppercase tracking-wide mb-4`}>
+            <div
+              className={`inline-block px-3 py-1 rounded-full ${colors.bg} ${colors.text} text-xs font-semibold uppercase tracking-wide mb-4`}
+            >
               Mémo de suivi
             </div>
 
@@ -347,7 +368,10 @@ function MemoModal({
                   {memo.content.points && memo.content.points.length > 0 && (
                     <ul className="space-y-2">
                       {memo.content.points.map((point, index) => (
-                        <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <li
+                          key={index}
+                          className="text-sm text-muted-foreground flex items-start gap-2"
+                        >
                           <span className={`${colors.text} opacity-40`}>•</span>
                           <span>{point}</span>
                         </li>
@@ -359,115 +383,162 @@ function MemoModal({
                       {memo.content.subtitle}
                     </p>
                   )}
-                  {memo.content.images && memo.content.images.length > 0 && !memo.content.sections && (
-                    <div className="space-y-4 pt-4">
-                      {memo.content.images.map((img, index) => (
-                        <ClickableImage
-                          key={index}
-                          src={img}
-                          alt={`${memo.title} - Image ${index + 1}`}
-                          onImageClick={handleImageClick}
-                        />
-                      ))}
-                    </div>
-                  )}
-                  {memo.content.sections && memo.content.sections.length > 0 && (
-                    <div className="space-y-10">
-                      {memo.content.sections.map((section, sectionIndex) => (
-                        <div key={sectionIndex} className="group">
-                          <div className="relative mb-6">
-                            <h4 className={`text-base font-black ${colors.text} uppercase tracking-wider mb-1 flex items-center gap-3`}>
-                              <span className={`w-1.5 h-8 ${colors.bg.replace('50', '600')} rounded-full`} />
-                              {section.title}
-                            </h4>
-                            <div className={`h-[2px] w-full ${colors.bg} rounded-full mt-3`} />
-                          </div>
-                          <ul className="space-y-5 pl-6">
-                            {section.points.map((point, pointIndex) => (
-                              <li key={pointIndex} className="relative flex items-start gap-4 group/item">
-                                <span className={`${colors.text} opacity-40 text-lg leading-none`}>•</span>
-                                <span className="text-[15px] leading-loose tracking-wide flex-1">
-                                  {renderFormattedText(point)}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
-                          {/* Image après la section */}
-                          {section.image && (
-                            <div className="mt-6">
-                              {section.imageLink ? (
-                                <a
-                                  href={section.imageLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="block relative w-full max-w-xs mx-auto cursor-pointer hover:scale-[1.02] transition-all duration-200 rounded-2xl border-2 border-rose-200 hover:border-rose-400 shadow-md hover:shadow-xl overflow-hidden"
+                  {memo.content.images &&
+                    memo.content.images.length > 0 &&
+                    !memo.content.sections && (
+                      <div className="space-y-4 pt-4">
+                        {memo.content.images.map((img, index) => (
+                          <ClickableImage
+                            key={index}
+                            src={img}
+                            alt={`${memo.title} - Image ${index + 1}`}
+                            onImageClick={handleImageClick}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  {memo.content.sections &&
+                    memo.content.sections.length > 0 && (
+                      <div className="space-y-10">
+                        {memo.content.sections.map((section, sectionIndex) => (
+                          <div key={sectionIndex} className="group">
+                            <div className="relative mb-6">
+                              <h4
+                                className={`text-base font-black ${colors.text} uppercase tracking-wider mb-1 flex items-center gap-3`}
+                              >
+                                <span
+                                  className={`w-1.5 h-8 ${colors.bg.replace("50", "600")} rounded-full`}
+                                />
+                                {section.title}
+                              </h4>
+                              <div
+                                className={`h-[2px] w-full ${colors.bg} rounded-full mt-3`}
+                              />
+                            </div>
+                            <ul className="space-y-5 pl-6">
+                              {section.points.map((point, pointIndex) => (
+                                <li
+                                  key={pointIndex}
+                                  className="relative flex items-start gap-4 group/item"
                                 >
-                                  <Image
-                                    src={section.image}
-                                    alt={`${memo.title} - ${section.title}`}
-                                    width={300}
-                                    height={300}
-                                    className="w-full h-auto"
-                                    sizes="300px"
-                                  />
-                                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-rose-600 text-white text-xs px-3 py-1.5 rounded-full font-semibold whitespace-nowrap flex items-center gap-1.5">
-                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                    </svg>
-                                    En savoir plus
-                                  </div>
-                                </a>
-                              ) : section.imageNoClick ? (
-                                <div className={`${section.imageHalfSize ? 'max-w-[50%] mx-auto' : 'w-full'}`}>
-                                  <Image
-                                    src={section.image}
-                                    alt={`${memo.title} - ${section.title}`}
-                                    width={800}
-                                    height={600}
-                                    className="w-full h-auto rounded-xl"
-                                    sizes={section.imageHalfSize ? "400px" : "(max-width: 768px) 100vw, 800px"}
-                                  />
-                                </div>
-                              ) : (
-                                <ClickableImage
-                                  src={section.image}
-                                  alt={`${memo.title} - ${section.title}`}
-                                  onImageClick={handleImageClick}
-                                />
-                              )}
-                            </div>
-                          )}
-                          {/* Images multiples après la section */}
-                          {section.images && section.images.length > 0 && (
-                            <div className="mt-6 space-y-4">
-                              {section.images.map((img, imgIndex) => (
-                                <ClickableImage
-                                  key={imgIndex}
-                                  src={img}
-                                  alt={`${memo.title} - ${section.title} - Image ${imgIndex + 1}`}
-                                  onImageClick={handleImageClick}
-                                  thumbnail={img === "/grossesse/2-grossesse.png"}
-                                />
+                                  <span
+                                    className={`${colors.text} opacity-40 text-lg leading-none`}
+                                  >
+                                    •
+                                  </span>
+                                  <span className="text-[15px] leading-loose tracking-wide flex-1">
+                                    {renderFormattedText(point)}
+                                  </span>
+                                </li>
                               ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                            </ul>
+                            {/* Image après la section */}
+                            {section.image && (
+                              <div className="mt-6">
+                                {section.imageLink ? (
+                                  <a
+                                    href={section.imageLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block relative w-full max-w-xs mx-auto cursor-pointer hover:scale-[1.02] transition-all duration-200 rounded-2xl border-2 border-rose-200 hover:border-rose-400 shadow-md hover:shadow-xl overflow-hidden"
+                                  >
+                                    <Image
+                                      src={section.image}
+                                      alt={`${memo.title} - ${section.title}`}
+                                      width={300}
+                                      height={300}
+                                      className="w-full h-auto"
+                                      sizes="300px"
+                                    />
+                                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-rose-600 text-white text-xs px-3 py-1.5 rounded-full font-semibold whitespace-nowrap flex items-center gap-1.5">
+                                      <svg
+                                        className="w-3.5 h-3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          strokeWidth={2}
+                                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                        />
+                                      </svg>
+                                      En savoir plus
+                                    </div>
+                                  </a>
+                                ) : section.imageNoClick ? (
+                                  <div
+                                    className={`${section.imageHalfSize ? "max-w-[25%] mx-auto" : "w-full"}`}
+                                  >
+                                    <Image
+                                      src={section.image}
+                                      alt={`${memo.title} - ${section.title}`}
+                                      width={800}
+                                      height={600}
+                                      className="w-full h-auto rounded-xl"
+                                      sizes={
+                                        section.imageHalfSize
+                                          ? "280px"
+                                          : "(max-width: 768px) 100vw, 800px"
+                                      }
+                                    />
+                                  </div>
+                                ) : (
+                                  <ClickableImage
+                                    src={section.image}
+                                    alt={`${memo.title} - ${section.title}`}
+                                    onImageClick={handleImageClick}
+                                  />
+                                )}
+                              </div>
+                            )}
+                            {/* Images multiples après la section */}
+                            {section.images && section.images.length > 0 && (
+                              <div className="mt-6 space-y-4">
+                                {section.images.map((img, imgIndex) => (
+                                  <ClickableImage
+                                    key={imgIndex}
+                                    src={img}
+                                    alt={`${memo.title} - ${section.title} - Image ${imgIndex + 1}`}
+                                    onImageClick={handleImageClick}
+                                    thumbnail={
+                                      img === "/grossesse/2-grossesse.png"
+                                    }
+                                  />
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   {memo.content.links && memo.content.links.length > 0 && (
                     <div className="flex flex-wrap gap-4 pt-4">
                       {memo.content.links.map((link, index) => {
-                        const isInternal = link.url.startsWith('/');
+                        const isInternal = link.url.startsWith("/");
                         return (
                           <a
                             key={index}
                             href={link.url}
-                            {...(!isInternal && { target: "_blank", rel: "noopener noreferrer" })}
+                            {...(!isInternal && {
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            })}
                             className={`group inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 text-white text-sm font-semibold hover:from-pink-700 hover:to-pink-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 border border-pink-500/20`}
                           >
-                            <svg className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            <svg
+                              className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2.5}
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                              />
                             </svg>
                             <span className="tracking-wide">{link.label}</span>
                           </a>
@@ -562,23 +633,35 @@ export default function MemosSuiviPage() {
             <div className="space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
               <p>
                 Si vous êtes porteur{" "}
-                <strong className="text-foreground">d'une maladie chronique</strong>{" "}
-                (Diabète, Hypertension, Insuffisance Cardiaque…) vous justifiez d'un{" "}
-                <span className="text-primary font-semibold">suivi régulier</span>{" "}
+                <strong className="text-foreground">
+                  d'une maladie chronique
+                </strong>{" "}
+                (Diabète, Hypertension, Insuffisance Cardiaque…) vous justifiez
+                d'un{" "}
+                <span className="text-primary font-semibold">
+                  suivi régulier
+                </span>{" "}
                 auprès de votre médecin référent et de vos spécialistes.
               </p>
               <p>
                 Il en est de même au moment de{" "}
                 <strong className="text-foreground">votre grossesse</strong> ou{" "}
-                <strong className="text-foreground">à certains âges clefs</strong>{" "}
-                (petite enfance, adolescence, âge senior). Un mémo vous est proposé
-                pour résumer ces suivis et ainsi les faciliter.
+                <strong className="text-foreground">
+                  à certains âges clefs
+                </strong>{" "}
+                (petite enfance, adolescence, âge senior). Un mémo vous est
+                proposé pour résumer ces suivis et ainsi les faciliter.
               </p>
               <p>
-                <strong className="text-foreground">Soyez acteur de votre soin</strong>{" "}
+                <strong className="text-foreground">
+                  Soyez acteur de votre soin
+                </strong>{" "}
                 : un suivi rapproché permet de{" "}
-                <strong className="text-foreground">mieux contrôler votre maladie</strong>{" "}
-                ou votre état clinique et évite, voire repousse, ses complications.
+                <strong className="text-foreground">
+                  mieux contrôler votre maladie
+                </strong>{" "}
+                ou votre état clinique et évite, voire repousse, ses
+                complications.
               </p>
             </div>
           </div>

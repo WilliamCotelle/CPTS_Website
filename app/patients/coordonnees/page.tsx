@@ -38,6 +38,7 @@ import {
   Copy,
 } from "lucide-react";
 import coordonneesData from "@/app/data/coordonnees.json";
+import { AnnuaireModal } from "@/components/sante-mental/annuaire-modal";
 
 const iconMap: Record<string, React.ElementType> = {
   Phone,
@@ -62,6 +63,7 @@ const iconMap: Record<string, React.ElementType> = {
 export default function CoordonneesPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("tous");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const copyPhone = async (phone: string) => {
     try {
@@ -223,9 +225,23 @@ export default function CoordonneesPage() {
 
               {filteredContacts.length === 0 && (
                 <div className="text-center py-12">
-                  <p className="text-muted-foreground">
-                    Aucun contact trouvé pour votre recherche
-                  </p>
+                  {activeFilter === "sante-mentale" ? (
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground text-lg">
+                        Pour consulter l'annuaire complet des professionnels de santé mentale
+                      </p>
+                      <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:shadow-lg"
+                      >
+                        Accéder à l'annuaire santé mentale
+                      </button>
+                    </div>
+                  ) : (
+                    <p className="text-muted-foreground">
+                      Aucun contact trouvé pour votre recherche
+                    </p>
+                  )}
                 </div>
               )}
             </CardContent>
@@ -457,7 +473,15 @@ export default function CoordonneesPage() {
                         <p className="text-sm text-muted-foreground leading-relaxed">
                           {info.description}
                         </p>
-                        {info.link && (
+                        {info.id === "sante-mentale" ? (
+                          <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="text-primary hover:underline flex items-center gap-2 text-sm mt-2"
+                          >
+                            En savoir plus
+                            <ExternalLink className="w-4 h-4" />
+                          </button>
+                        ) : info.link ? (
                           <Link
                             href={info.link}
                             target="_blank"
@@ -467,7 +491,7 @@ export default function CoordonneesPage() {
                             En savoir plus
                             <ExternalLink className="w-4 h-4" />
                           </Link>
-                        )}
+                        ) : null}
                         {info.link2 && (
                           <Link
                             href={info.link2}
@@ -490,6 +514,11 @@ export default function CoordonneesPage() {
       </section>
 
       <Footer />
+
+      <AnnuaireModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </main>
   );
 }

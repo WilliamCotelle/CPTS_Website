@@ -116,10 +116,13 @@ export function Header() {
 
               {/* Présentation de la CPTS Dropdown */}
               <div className="relative group">
-                <button className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 whitespace-nowrap">
+                <Link
+                  href="/presentation"
+                  className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 whitespace-nowrap"
+                >
                   Présentation
                   <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
-                </button>
+                </Link>
                 <div className="absolute top-full left-0 mt-2 w-72 bg-background/95 backdrop-blur-xl border border-border/50 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
                   <div className="py-2 px-2">
                     <Link
@@ -180,13 +183,19 @@ export function Header() {
                       href="/prevention/memos-suivi"
                       className="block px-4 py-2.5 text-sm font-medium text-foreground/70 hover:bg-primary/8 hover:text-primary rounded-lg transition-all duration-200"
                     >
-                      Mémos de suivi
+                      Fiches de suivi
                     </Link>
                     <Link
                       href="/prevention/sante-familiale"
                       className="block px-4 py-2.5 text-sm font-medium text-foreground/70 hover:bg-primary/8 hover:text-primary rounded-lg transition-all duration-200"
                     >
-                      Santé familiale
+                      Articles santé familiale
+                    </Link>
+                    <Link
+                      href="/sante-mental"
+                      className="block px-4 py-2.5 text-sm font-medium text-foreground/70 hover:bg-primary/8 hover:text-primary rounded-lg transition-all duration-200"
+                    >
+                      Santé mentale
                     </Link>
                   </div>
                 </div>
@@ -405,14 +414,21 @@ export function Header() {
                       className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-all duration-200"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Mémos de suivi
+                      Fiches de suivi
                     </Link>
                     <Link
                       href="/prevention/sante-familiale"
                       className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-all duration-200"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Santé familiale
+                      Articles santé familiale
+                    </Link>
+                    <Link
+                      href="/sante-mental"
+                      className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-all duration-200"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Santé mentale
                     </Link>
                   </div>
                 )}

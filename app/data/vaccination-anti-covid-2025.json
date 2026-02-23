@@ -1,0 +1,169 @@
+{
+  "backLink": {
+    "href": "/prevention/sante-familiale",
+    "label": "Retour aux articles santé familiale"
+  },
+  "date": "4 novembre 2024",
+  "title": "LA VACCINATION ANTI COVID 2025",
+  "image": "/prevention/sante-famille/anti-covid.jpg",
+  "intro": {
+    "text": "Le département de la Gironde compte 90.7 % de personnes majeures complètement vaccinées avec 3 doses minimum.",
+    "highlight": "À partir du 15 OCTOBRE 2024, les patients sont invités à se faire vacciner contre la GRIPPE ET LA COVID en même temps."
+  },
+  "sections": [
+    {
+      "title": "Quel vaccin est utilisé ?",
+      "vaccine": {
+        "name": "1 dose de Comirnaty® JN.1 + (Pfizer)",
+        "delay": "Avec un délai après la dernière infection ou injection de 3 à 6 mois.",
+        "purpose": "L'injection de cette dose de rappel doit permettre de renforcer leur protection contre les formes graves de la maladie et les décès, dans le contexte actuel de forte circulation du virus et ce TOUTE L'ANNÉE.",
+        "locations": "Ce rappel pourra être effectué soit en centre de vaccination, soit auprès d'un professionnel de santé de ville habilité à prescrire et à administrer le vaccin, dans une officine, un cabinet ou à domicile."
+      }
+    },
+    {
+      "title": "Pour quel public ?",
+      "intro": "Les personnes à risque sont celles qui sont :",
+      "categories": [
+        {
+          "label": "Âgées de 65 ans et plus",
+          "type": "age"
+        },
+        {
+          "label": "Âgées atteintes de maladies chroniques",
+          "details": "hypertension artérielle compliquée, maladies chroniques cardiaques, vasculaires, hépatiques, rénales, pulmonaires, diabète",
+          "type": "condition"
+        },
+        {
+          "label": "Obèses",
+          "type": "condition"
+        },
+        {
+          "label": "Cancéreuses",
+          "details": "personnes ayant subi une greffe d'organe solide ou de cellules souches hématopoïétiques",
+          "type": "condition"
+        },
+        {
+          "label": "Atteintes de trisomie 21, de troubles psychiatriques, de démence",
+          "details": "ou à très haut risque de forme grave",
+          "type": "condition"
+        },
+        {
+          "label": "Immunodéprimées",
+          "type": "condition"
+        },
+        {
+          "label": "Enceintes",
+          "type": "condition"
+        },
+        {
+          "label": "Résidants en établissements",
+          "details": "d'EHPAD et unités de soins de longue durée (USLD) ; vivant dans l'entourage ou en contacts réguliers avec des personnes immunodéprimées ou vulnérables",
+          "type": "residence"
+        },
+        {
+          "label": "Professionnels des secteurs sanitaire et médicosocial",
+          "type": "profession"
+        }
+      ],
+      "note": "Les autres personnes souhaitant se faire vacciner, même si elles ne font pas partie de la cible, le peuvent."
+    },
+    {
+      "title": "Rappels importants",
+      "alerts": [
+        {
+          "type": "warning",
+          "text": "En cas d'infection entre un rappel et la date programmée du n ème rappel, il est recommandé de faire sa dose de rappel, 6 mois après l'infection et 3 mois après pour les personnes immunodéprimées."
+        },
+        {
+          "type": "info",
+          "text": "Une infection = une injection. Ainsi, si vous avez contracté le Covid-19, votre dose de rappel se fait entre 3 à 6 mois."
+        },
+        {
+          "type": "highlight",
+          "text": "Si vous êtes une personne âgée de plus de 80 ans, que vous avez des difficultés à vous déplacer et que vous souhaitez bénéficier d'une vaccination à domicile, un numéro vert spécial a été mis à disposition afin de vous mettre en lien avec les services susceptibles de vous proposer une vaccination à domicile.",
+          "phone": "0800 730 957"
+        }
+      ]
+    },
+    {
+      "title": "En savoir plus sur la vaccination",
+      "resources": [
+        {
+          "label": "Le site du ministère de la Santé et de la Prévention",
+          "description": "pour s'informer sur les politiques vaccinales et le Covid-19",
+          "url": "https://sante.gouv.fr"
+        },
+        {
+          "label": "Le site vaccination-info-service.fr",
+          "description": "pour s'informer sur la vaccination",
+          "url": "https://vaccination-info-service.fr"
+        },
+        {
+          "label": "Le site de l'Agence nationale de sécurité du médicament",
+          "description": "et des produits de santé pour s'informer sur l'autorisation des essais cliniques et la sécurité des vaccins",
+          "url": "https://ansm.sante.fr"
+        },
+        {
+          "label": "Le site l'Institut national de la santé et de la recherche médicale (Inserm)",
+          "description": "pour s'informer sur la recherche médicale",
+          "url": "https://www.inserm.fr"
+        }
+      ]
+    },
+    {
+      "title": "Comment puis-je me protéger contre la Covid ?",
+      "image": "/prevention/sante-famille/vaccination-anti-covid/proteger-covid.jpg",
+      "caption": "Ensemble, restons prudents",
+      "measures": [
+        "Aérons régulièrement les espaces clos",
+        "Lavons-nous fréquemment les mains",
+        "Portons un masque dans les lieux de promiscuité et les espaces clos",
+        "Testons-nous dès les premiers symptômes et isolons-nous immédiatement en cas de positivité"
+      ],
+      "highlight": "Il est impératif de continuer à scrupuleusement respecter les gestes barrières. Lavage des mains, aération, port du masque : ces mesures sont, bien sûr, complémentaires de la vaccination, qui reste efficace contre les formes graves de la maladie.",
+      "imageBottom": "/prevention/sante-famille/vaccination-anti-covid/proteger.jpg"
+    },
+    {
+      "title": "Le résultat de mon test est positif que dois-je faire ?",
+      "image": "/prevention/sante-famille/vaccination-anti-covid/test-covid.jpg",
+      "content": [
+        {
+          "text": "Dans la grande majorité des cas, la COVID est devenue une maladie peu dangereuse souvent sans signes. Les symptômes peuvent être ORL ou DIGESTIFS (diarrhées, vomissements, etc.)"
+        },
+        {
+          "text": "Je protège les autres dès les premiers symptômes de la Covid-19 ; je peux consulter mon médecin traitant en téléconsultation et je surveille mes symptômes cliniques ; j'appelle le 15 en cas de dégradation de mon état général ou de difficultés respiratoires."
+        }
+      ],
+      "rules": [
+        {
+          "type": "info",
+          "date": "Depuis le 01/02/2023",
+          "text": "l'isolement systématique n'est plus obligatoire mais je dois protéger les autres et porter un masque dans les lieux publics et éviter les contacts avec les personnes fragiles."
+        },
+        {
+          "type": "info",
+          "text": "Ainsi, il n'est plus OBLIGATOIRE de faire un arrêt de travail. Si vous ne pouvez pas travailler vous devez contacter votre médecin pour l'arrêt maladie (télé consultation préférable) Le service « contact Covid » a été suspendu."
+        },
+        {
+          "type": "warning",
+          "text": "Le respect des gestes barrières (port du masque et mesures d'hygiène) est à respecter les 7 jours suivant la positivité du test"
+        }
+      ]
+    },
+    {
+      "title": "Je suis cas contact à risque que dois-je faire ?",
+      "intro": "Depuis le 21 mars 2022, conformément à l'avis du Haut Conseil de la santé publique (HCSP) du 11 février 20228, les personnes contacts à risque, quel que soit leur statut vaccinal, ne seront plus tenues d'observer une période d'isolement.",
+      "subtitle": "Néanmoins, elles doivent toujours :",
+      "measures": [
+        "Appliquer de manière stricte les mesures barrières et notamment le port du masque en intérieur et en extérieur au contact d'autres personnes",
+        "Limiter leurs contacts, en particulier avec des personnes fragiles",
+        "Éviter tout contact avec des personnes à risque de forme grave"
+      ]
+    },
+    {
+      "title": "OÙ SE FAIRE VACCINER ?",
+      "image": "/prevention/sante-famille/vaccination-anti-covid/groupe-hospitalier.jpg",
+      "text": "Chez votre pharmacien, muni de votre bon de vaccination ou chez votre médecin généraliste ou dans un centre de vaccination"
+    }
+  ]
+}

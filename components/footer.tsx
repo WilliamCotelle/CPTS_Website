@@ -13,7 +13,8 @@ export function Footer() {
               alt="CPTS Ouest Gironde"
               width={200}
               height={64}
-              className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+              className="h-12 sm:h-14 lg:h-16 object-contain"
+              style={{ width: "auto" }}
               loading="lazy"
               quality={85}
             />

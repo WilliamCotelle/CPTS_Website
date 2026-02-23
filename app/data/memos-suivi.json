@@ -63,7 +63,7 @@
         "links": [
           {
             "label": "Application de suivi HTA",
-            "url": "https://www.depisthta.net/suivihta.html"
+            "url": "https://www.hy-result.com/"
           },
           {
             "label": "Relevé d'accompagnement HTA (PDF)",
@@ -174,7 +174,7 @@
             "title": "EXAMENS BIOLOGIQUES",
             "points": [
               [
-                { "type": "bold", "text": "PROBNP (doseur marqueur minimum une fois /an)" }
+                { "type": "bold", "text": "BNP (doseur marqueur minimum une fois /an)" }
               ],
               [
                 { "type": "bold", "text": "FONCTION RENALE" },
@@ -644,7 +644,15 @@
               [
                 { "type": "bold", "text": "ANNULER LES RDV DE SANTÉ" },
                 { "type": "text", "text": " que vous ne pouvez honorer." }
-              ],
+              ]
+            ],
+            "image": "/systeme-sante/3-systeme-sante.png",
+            "imageNoClick": true,
+            "imageHalfSize": true
+          },
+          {
+            "title": "AUTRES BONS RÉFLEXES À ADOPTER (SUITE)",
+            "points": [
               [
                 { "type": "bold", "text": "APPELER LE 15" },
                 { "type": "text", "text": " en cas d'urgence médicale." }
@@ -662,10 +670,7 @@
                 { "type": "bold", "text": "PRÉPARER VOS PRISES DE SANG ET VOS RÉSULTATS D'EXAMENS" },
                 { "type": "text", "text": " pour toutes vos consultations." }
               ]
-            ],
-            "image": "/systeme-sante/3-systeme-sante.png",
-            "imageNoClick": true,
-            "imageHalfSize": true
+            ]
           }
         ]
       }

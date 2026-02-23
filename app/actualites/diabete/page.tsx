@@ -36,7 +36,7 @@ export default function DiabetePage() {
             <div className="rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
               <div className="relative w-full aspect-[3/4]">
                 <Image
-                  src="/supports/diabéte.png"
+                  src="/supports/diabete.webp"
                   alt="Affiche Diabète - Prévention et accompagnement"
                   fill
                   className="object-contain"

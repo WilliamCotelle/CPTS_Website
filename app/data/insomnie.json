@@ -1,0 +1,179 @@
+{
+  "backLink": {
+    "href": "/prevention/sante-familiale",
+    "label": "Retour à Santé familiale"
+  },
+  "date": "26 mars 2025",
+  "title": "L'INSOMNIE : la comprendre et la traiter",
+  "image": "/insomnie.jpg",
+  "intro": {
+    "text": "Le bon sommeil est essentiel pour une bonne santé : L'insomnie est un MANQUE ou une MAUVAISE QUALITE de votre sommeil. Cela peut découler d'une difficulté d'endormissements, de plusieurs réveils nocturnes ou encore d'un réveil précoce le matin.",
+    "paragraphs": [
+      "L'insomnie peut être ponctuelle ou chronique :",
+      "• on parle d'insomnie chronique si elle se produit plus de 3 fois par semaine pendant 3 mois.",
+      "• Elle est aigüe si elle fait suite à un événement stressant : épreuve, deuil, rupture ..",
+      "En cas de chronicité, elle va entrainer de l'anxiété à aller se coucher, de la peur de ne pas réussir à dormir et de l'hyper-éveil qui correspond à une activité accrue du système nerveux central et vous empêchera de basculer vers le sommeil. De plus, vous ne vous rappellerez que des phases de réveil et pas des phases de sommeil.",
+      "L'insomnie va avoir des répercussions sur votre journée : fatigue, somnolence , difficultés de mémorisation, irritabilité Etc..",
+      "L'insomnie peut aggraver des maladies associées : douleurs, hypertension, dépression etc."
+    ]
+  },
+  "chiffres": {
+    "title": "LES CHIFFRES ?",
+    "stats": [
+      {
+        "value": "1/3",
+        "label": "Depuis la pandémie COVID, 1 Français sur 3 se plaint d'insomnie"
+      },
+      {
+        "value": "x2",
+        "label": "2 fois plus de femmes se plaignent d'insomnie chronique et ce quelque soit l'âge"
+      },
+      {
+        "value": "15%",
+        "label": "Environ 15 % de la population souffre d'insomnie"
+      }
+    ]
+  },
+  "facteurs": {
+    "title": "QUELS FACTEURS AGISSENT SUR VOTRE SOMMEIL ?",
+    "intro": "Ces facteurs sont intéressants à rechercher car, s'ils sont corrigés, le sommeil en sera amélioré:",
+    "image": "/prevention/sante-famille/insomnie/Facteur-insomnie.jpg",
+    "items": [
+      "La sédentarité",
+      "Le café et les boissons contenant de la caféine: l'excès de caféine nuit à la qualité du sommeil",
+      "Le tabac",
+      "La sieste : si elle est pratiquée, elle doit durer moins de 20 min",
+      "La luminosité (agit sur le rythme circadien)",
+      "Le travail : stress ou charge mentale excessive.",
+      "L'alimentation : trop copieuse surtout si repas du soir.",
+      "La température de la chambre à coucher : trop chaude ( pour rappel température idéale entre 16 et 18 degré)",
+      "Le sport pratiqué tardivement dans la journée.",
+      "Les écrans: la lumière bleue perturbe la sécrétion de la mélatonine et donc le sommeil. Le couvre-feu digital s'impose 1h avant d'aller au lit."
+    ]
+  },
+  "traitements": {
+    "title": "QUELS TRAITEMENTS PEUT-ON VOUS PROPOSER contre l'INSOMNIE ?",
+    "intro": "La majorité des prises en charge consistera à rechercher les facteurs de risque et à les corriger.",
+    "images": [
+      "/prevention/sante-famille/insomnie/traitement-insomnie-left.png",
+      "/prevention/sante-famille/insomnie/traitement-insomnie-left-2.png"
+    ],
+    "sections": [
+      {
+        "title": "Corriger ce qui peut perturber votre sommeil :",
+        "subtitle": "Corriger les MAUVAISES HABITUDES :",
+        "items": [
+          "faites de l'activité physique en journée et non tardivement.",
+          "Ne buvez pas trop de boissons caféinées",
+          "N'oubliez pas de vous exposer à la lumière en journée.",
+          "Instaurez un couvre-feu digital 1h avant votre coucher.",
+          "Instaurez un RITUEL de sommeil : relaxation, phytothérapie, sophrologie"
+        ]
+      },
+      {
+        "title": "Modifiez votre comportement au lit :",
+        "items": [
+          "Restreindre le temps passé au lit",
+          "Si une insomnie vous arrive , quittez le lit au bout de 15 min : vous pouvez aller lire et occupez un autre espace de la maison.",
+          "Réduire le temps au lit en mettant une heure de réveil."
+        ]
+      }
+    ]
+  },
+  "therapies": {
+    "title": "Des ateliers de Thérapie cognitivo-comportementales (TCC) :",
+    "image": "/prevention/sante-famille/insomnie/THERAPIE.jpg",
+    "intro": "C'est la seule méthode qui permette de traiter l'insomnie.",
+    "paragraphs": [
+      "Les TCC doivent ainsi être privilégiées.",
+      "Le principe ? Remplacer les comportements inadaptés et les croyances erronées.",
+      "Comment ? Des séances abordent les principaux déterminants du rythme éveil et sommeil, l'angoisse du lit, l'appréhension de l'insomnie."
+    ]
+  },
+  "relaxation": {
+    "title": "Des techniques de relaxation, de cohérence cardiaque et de méditation",
+    "image": "/prevention/sante-famille/insomnie/RELAXATION.png",
+    "paragraphs": [
+      "Elles existent et visent à réduire la tension musculaire et à vous détendre afin de favoriser l'endormissement. Elles requièrent un apprentissage avec un professionnel qualifié.",
+      "Vous pouvez faire des pratiques de détente sportive telles que le yoga ou pratiquer de la sophrologie pour acquérir des outils de relaxation."
+    ]
+  },
+  "medicaments": {
+    "title": "Médicaments",
+    "intro": "Parfois, les médecins peuvent prescrire des médicaments pour vous aider pendant la prise en charge comportementale. Ces médicaments ont vocation d'être prescrits de façon temporaire.",
+    "image": "/prevention/sante-famille/insomnie/TRAITEMENT-MEDICAMENT.jpg",
+    "items": [
+      {
+        "title": "La mélatonine",
+        "content": [
+          "Elle a un effet chrono biologique et a un effet hypnotique c'est à dire qu'elle favorise l'endormissement.",
+          "Elle est à prendre 30 min avant le coucher et 1h avant l'endormissement.",
+          "Le médecin peut prescrire une « préparation magistrale en l'absence de principe existant ou de préparation commerciale existante » : mélatonine en libération prolongée à plus de 2 mg"
+        ]
+      },
+      {
+        "title": "La phytothérapie",
+        "content": [
+          "Certaines plantes peuvent avoir des propriétés sédatives et peuvent vous être délivrées directement après conseil par le pharmacien. Le plus souvent on retrouve la valériane, l'aubépine, la passiflore."
+        ]
+      },
+      {
+        "title": "Les Hypnotiques",
+        "content": [
+          "Si le médecin vous autorise à prendre pendant une courte durée un hypnotique, il peut vous en prescrire : cela dépendra de votre âge, votre état de santé et votre type d'insomnie.",
+          "Ce traitement n'excédera pas 4 semaines : durée indispensable pour éviter une dépendance au produit.",
+          "Ces traitements ont des effets secondaires : somnolence dans la journée, troubles de la mémoire etc. qui peuvent impacter votre quotidien.",
+          "Il sera impératif de vérifier les interactions avec vos traitements de fond.",
+          "Ils seront utilisés prioritairement lors de l'insomnie aigüe suite à une problématique aigüe."
+        ]
+      }
+    ]
+  },
+  "hypnotiques": {
+    "title": "QUELS HYPNOTIQUES ?",
+    "image": "/prevention/sante-famille/insomnie/QUEL-TRAITEMENT-HYPNOSE.jpg",
+    "types": [
+      {
+        "title": "Les benzodiazépines :",
+        "content": [
+          "Elles dont utilisées pour leur effet mixte hypnotique et anxiolytique (RÉVEILS NOCTURNES): soulager l'anxiété peut améliorer le sommeil : son usage ne se fera que sur une COURTE DUREE.",
+          "Il n est pas recommandé chez les personnes AGEES car il est responsable de"
+        ],
+        "risks": [
+          "troubles de la vigilance induisant des accidents de la route",
+          "Risques de chute et de fracture ( col du fémur)",
+          "Troubles de la mémoire et troubles cognitifs ( rôle de ces traitements dans le développement des démences)",
+          "Perte d'autonomie",
+          "Fausses routes"
+        ],
+        "notes": [
+          "Si il est prescrit chez une personne âgée, il sera prescrit préférentiellement en demi dose.",
+          "Son usage sera limité à 4 semaines pou l'insomnie et 12 semaines pour l'anxiété.",
+          "Quelques exemples de benzodiazépines : Oxazépam° , Lorazepam°."
+        ]
+      },
+      {
+        "title": "Les apparentés aux benzodiazépines :",
+        "content": [
+          "Majoritairement représentés par les Imidazopyridines (Zolpidem°) et les Cyclopyrrolones ( Zopiclone°) , ils ont les même effets secondaires et répondent aux mêmes exigences de prescription.",
+          "Ils seront aussi réservés aux insomnies aiguës.",
+          "Il faudra veiller à bien contrôler les INTERACTIONS MEDICAMENTEUSES avec votre traitement de fond."
+        ]
+      },
+      {
+        "title": "Les antihistaminiques hypnotiques :",
+        "content": [
+          "Utilisés pour les allergies, leurs effets sédatifs peuvent être utiles sur les insomnies occasionnelles. Leurs usages doivent se faire avec précaution car ils ont aussi leurs contre indication ( troubles de la prostate et glaucome )",
+          "Un exemple: la Doxylamine °"
+        ]
+      },
+      {
+        "title": "Le Davidorexant°",
+        "content": [
+          "Ce nouveau traitement diminue l'état d'éveil; il ne sera mis en place qu'après avoir mis en place une stratégie de thérapie TCC.",
+          "La prise se fera 30 min avant le coucher."
+        ]
+      }
+    ]
+  }
+}

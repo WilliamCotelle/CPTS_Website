@@ -1,9 +1,9 @@
 {
   "hero": {
-    "title": "Santé familiale",
+    "title": "Articles santé familiale",
     "subtitle": "Ressources, conseils et campagnes de prévention pour toute la famille"
   },
-  "articlesPerPage": 8,
+  "articlesPerPage": 12,
   "articles": [
     {
       "id": "mois-sans-tabac-2025",
@@ -42,6 +42,15 @@
       "href": "/prevention/sante-familiale/sante-mentale-des-jeunes"
     },
     {
+      "id": "insomnie",
+      "title": "L'INSOMNIE : LA COMPRENDRE ET LA TRAITER",
+      "date": "2025-03-26",
+      "dateLabel": "26 mars 2025",
+      "image": "/insomnie.jpg",
+      "slug": "insomnie",
+      "href": "/prevention/sante-familiale/insomnie"
+    },
+    {
       "id": "prevention-cancer-colorectal-2025",
       "title": "LA PREVENTION DU CANCER COLORECTAL : MARS BLEU 2025",
       "date": "2025-02-27",
@@ -56,7 +65,8 @@
       "date": "2024-11-04",
       "dateLabel": "4 novembre 2024",
       "image": "/prevention/sante-famille/anti-covid.jpg",
-      "slug": "vaccination-anti-covid-2025"
+      "slug": "vaccination-anti-covid-2025",
+      "href": "/prevention/sante-familiale/vaccination-anti-covid-2025"
     },
     {
       "id": "syndrome-apnee-sommeil",
@@ -64,7 +74,8 @@
       "date": "2025-01-21",
       "dateLabel": "21 janvier 2025",
       "image": "/prevention/apnée-sommeil.jpg",
-      "slug": "syndrome-apnee-obstructive-sommeil"
+      "slug": "syndrome-apnee-obstructive-sommeil",
+      "href": "/prevention/education-therapeutique/syndrome-apnee-sommeil"
     },
     {
       "id": "ecrans-jeunes-enfants",
@@ -90,6 +101,54 @@
       "dateLabel": "2 septembre 2024",
       "image": "/prevention/sante-famille/papillomavirus.png",
       "slug": "vaccination-papillomavirus-campagne-scolaire-2025"
+    },
+    {
+      "id": "sante-et-prevention",
+      "title": "SANTE ET PREVENTION",
+      "date": "2024-07-26",
+      "dateLabel": "26 juillet 2024",
+      "image": "/prevention/sante-famille/healthy.jpg",
+      "slug": "sante-et-prevention"
+    },
+    {
+      "id": "chute-personne-agee",
+      "title": "CHUTE DE LA PERSONNE ÂGÉE: comment la prévenir ?",
+      "date": "2024-05-02",
+      "dateLabel": "2 mai 2024",
+      "image": "/prevention/sante-famille/chute-personne-agee.jpg",
+      "slug": "chute-personne-agee"
+    },
+    {
+      "id": "insuffisance-cardiaque",
+      "title": "INSUFFISANCE CARDIAQUE (IC)",
+      "date": "2024-04-02",
+      "dateLabel": "2 avril 2024",
+      "image": "/prevention/memo-suivi/IC/coeur-dans-mains.jpg",
+      "slug": "insuffisance-cardiaque"
+    },
+    {
+      "id": "alimentation",
+      "title": "ALIMENTATION",
+      "date": "2024-01-26",
+      "dateLabel": "26 janvier 2024",
+      "image": "/prevention/sante-famille/alimentation.jpeg",
+      "slug": "alimentation"
+    },
+    {
+      "id": "face-aux-violences",
+      "title": "FACE AUX VIOLENCES, VOUS N'ETES PAS SEULES !",
+      "date": "2023-12-01",
+      "dateLabel": "1 décembre 2023",
+      "image": "/femme-floue-face-anxiete-vue-f.png",
+      "slug": "face-aux-violences"
+    },
+    {
+      "id": "avc-reconnaitre",
+      "title": "AVC , comment le reconnaitre et quoi faire",
+      "date": "2022-12-02",
+      "dateLabel": "2 décembre 2022",
+      "image": "/prevention/sante-famille/AVC.jpg",
+      "slug": "avc-reconnaitre-quoi-faire"
     }
   ]
 }

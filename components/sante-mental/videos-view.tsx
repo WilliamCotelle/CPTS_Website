@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Play, ExternalLink, HandHeart } from "lucide-react";
 import Image from "next/image";
+import venezAideData from "@/app/data/venez-on-vous-aide.json";
 
 interface VideoItem {
   id: string;
@@ -52,37 +53,125 @@ interface VideosViewProps {
 export function VideosView({ type }: VideosViewProps) {
   const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(null);
 
-  // Vue "Venez on vous aide" - Texte + lien externe
+  // Vue "Venez on vous aide" - Texte + lien externe + ressources
   if (type === "aide") {
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
     return (
-      <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <HandHeart className="w-10 h-10 text-emerald-600" />
+      <>
+        <div className="max-w-5xl mx-auto">
+          {/* En-tête avec icône et description */}
+          <div className="text-center mb-10">
+            <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <HandHeart className="w-10 h-10 text-emerald-600" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              {venezAideData.title}
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4 max-w-3xl mx-auto">
+              {venezAideData.description}
+            </p>
+            <p className="text-muted-foreground text-base leading-relaxed mb-8 font-medium">
+              {venezAideData.note}
+            </p>
+            <a
+              href={venezAideData.livingPageLink.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl"
+            >
+              <span>{venezAideData.livingPageLink.label}</span>
+              <ExternalLink className="w-5 h-5" />
+            </a>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Venez, on vous aide !
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-            Pour vous accompagner, nous avons créé des supports et questionnaires
-            dédiés aux professionnels de santé pour la gestion de votre santé mentale.
-            Ces outils vous permettront de mieux comprendre votre situation et de
-            trouver les ressources adaptées à vos besoins.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed mb-8 font-medium">
-            Rapprochez-vous d'un professionnel de santé pour remplir le formulaire.
-          </p>
-          <a
-            href="https://cpts.livingpage.fr/ma-livingpage?id=321&nom=sante-mentale-les-dispositifs-du-territoire"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl"
-          >
-            <span>Accéder aux ressources</span>
-            <ExternalLink className="w-5 h-5" />
-          </a>
+
+          {/* Section ressources */}
+          {venezAideData.resources && venezAideData.resources.length > 0 && (
+            <div className="mt-12">
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6 text-center">
+                Supports et programmes disponibles
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {venezAideData.resources.map((resource) => (
+                  <button
+                    key={resource.id}
+                    onClick={() => setSelectedImage(resource.imagePath)}
+                    className="group relative overflow-hidden rounded-2xl bg-card border border-border hover:shadow-xl transition-all duration-300 p-6 text-left"
+                  >
+                    {/* Image miniature */}
+                    <div className="relative aspect-[4/3] mb-4 rounded-xl overflow-hidden bg-muted">
+                      <Image
+                        src={resource.imagePath}
+                        alt={resource.title}
+                        fill
+                        className="object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    {/* Contenu */}
+                    <div className="space-y-2">
+                      {resource.subtitle && (
+                        <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">
+                          {resource.subtitle}
+                        </p>
+                      )}
+                      <h4 className="text-base md:text-lg font-bold text-foreground group-hover:text-emerald-600 transition-colors">
+                        {resource.title}
+                      </h4>
+                      {resource.description && (
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {resource.description}
+                        </p>
+                      )}
+                    </div>
+                    {/* Indicateur cliquable */}
+                    <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600">
+                      <span>Cliquer pour agrandir</span>
+                      <svg
+                        className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+
+        {/* Modal pour afficher l'image en grand */}
+        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+          <DialogContent className="max-w-[95vw] w-full h-[95vh] p-0 overflow-hidden">
+            <DialogHeader className="p-4 pb-2">
+              <DialogTitle className="text-lg md:text-xl">
+                {venezAideData.resources.find((r) => r.imagePath === selectedImage)?.title}
+              </DialogTitle>
+              <DialogDescription className="text-sm">
+                {venezAideData.resources.find((r) => r.imagePath === selectedImage)?.description}
+              </DialogDescription>
+            </DialogHeader>
+            <div className="relative w-full h-[calc(95vh-120px)] bg-muted">
+              {selectedImage && (
+                <Image
+                  src={selectedImage}
+                  alt="Support programme"
+                  fill
+                  className="object-contain p-4"
+                  sizes="95vw"
+                />
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
+      </>
     );
   }
 
@@ -112,6 +201,7 @@ export function VideosView({ type }: VideosViewProps) {
                 alt={video.title}
                 fill
                 className="object-cover"
+                unoptimized
               />
             </div>
 
@@ -148,7 +238,7 @@ export function VideosView({ type }: VideosViewProps) {
           <div className="aspect-video w-full">
             {selectedVideo && (
               <iframe
-                src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1`}
+                src={`https://www.youtube-nocookie.com/embed/${selectedVideo.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
                 title={selectedVideo.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

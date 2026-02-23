@@ -10,7 +10,7 @@ export const accordionItemsAcces: AccordionItem[] = [
   {
     id: "patient-sans-medecin",
     title: "Patient sans médecin traitant",
-    content: `1121 patients en ALD sont sans médecin traitant sur le territoire de la CPTS pour diverses raisons. Départ à la retraite de leur médecin, déménagement, patient éloigné du soin.
+    content: `Pour de multiples raisons (déménagement, départ à la retraite du médecin, éloignement du soin, etc.), des patients peuvent se retrouver sans médecin traitant sur le territoire de la CPTS.
 
 Professionnels de santé, si vous êtes sollicités par un patient à la recherche d'un médecin traitant, La CPTS Ouest Gironde vous propose un outil sous la forme d'un bref questionnaire afin de faciliter cette recherche en 4 étapes.
 
@@ -64,19 +64,67 @@ Comment : Saisir la CPAM de situations d'assurés via un formulaire de saisine �
         <ul className="list-disc pl-6 space-y-4 text-muted-foreground leading-relaxed">
           <li>
             En 2025, mise en place d'un protocole local de coopération « Prise
-            en charge d'une rhinite ou d'une rhino-conjonctivite allergique
-            saisonnière par le pharmacien d'officine » avec une équipe de 5
-            médecins délégants et 12 pharmaciens délégués.
+            en charge d'une{" "}
+            <span className="font-bold text-primary">
+              rhinite ou d'une rhino-conjonctivite allergique saisonnière
+            </span>{" "}
+            par le pharmacien d'officine » avec une équipe de 5 médecins
+            délégants et 12 pharmaciens délégués.
           </li>
           <li>
             En 2024, fonctionnement des protocoles nationaux de coopération
-            Odynophagie et Cystite avec une équipe constituée de 13 médecins
-            généralistes et 13 pharmaciens. Les inclusions ont commencé le 20
-            mars 2024.
+            <span className="font-bold text-primary">
+              {" "}
+              Odynophagie et Cystite
+            </span>{" "}
+            avec une équipe constituée de 13 médecins généralistes et 13
+            pharmaciens. Les inclusions ont commencé le 20 mars 2024.
           </li>
           <li>
-            Organisation d'un focus groupe sur le Service d'Accès aux Soins le
-            26 mars 2024 dans le cadre d'une thèse de médecine générale.
+            Il est désormais possible depuis 2021 sur tout le territoire
+            d'accéder au Service d'Accès aux Soins (SAS): c'est un dispositif
+            qui vise à améliorer l'accès aux soins pour tous les citoyens. Il
+            s'agit d'un service d'orientation médicale accessible via le numéro
+            15, qui répond aux demandes de soins urgents ou non programmés, 24
+            heures sur 24 et 7 jours sur 7.
+            <br />
+            <br />
+            <span className="font-semibold">Objectifs du SAS :</span>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>Réduire les inégalités d'accès aux soins</li>
+              <li>
+                Améliorer la coordination entre la médecine de ville et
+                l'hôpital
+              </li>
+              <li>Désengorger les services d'urgences hospitalières</li>
+            </ul>
+            <br />
+            <span className="font-semibold">Fonctionnement du SAS :</span>
+            <ol className="list-decimal pl-6 mt-2 space-y-1">
+              <li>
+                Un assistant de régulation médicale (ARM) évalue le degré
+                d'urgence de l'appel
+              </li>
+              <li>
+                L'appelant est orienté vers :
+                <ul className="list-disc pl-6 mt-1 space-y-1">
+                  <li>Des secours immédiats (SMUR, pompiers)</li>
+                  <li>Un médecin régulateur (urgentiste ou généraliste)</li>
+                  <li>
+                    Un opérateur de soins non programmés pour trouver un
+                    rendez-vous
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Le SAS propose :
+                <ul className="list-disc pl-6 mt-1 space-y-1">
+                  <li>Un conseil médical</li>
+                  <li>Une téléconsultation</li>
+                  <li>Une consultation en cabinet sous 48h</li>
+                </ul>
+              </li>
+            </ol>
           </li>
         </ul>
       </div>
@@ -203,12 +251,21 @@ export const accordionItemsParcours: AccordionItem[] = [
             <span className="font-bold text-primary text-lg">
               Pour améliorer la détection.
             </span>{" "}
-            Une communication sur l'insuffisance cardiaque est disponible sur le
-            site internet de la CPTS, dans l'onglet Prévention. Les personnes
-            consultant l'article peuvent s'auto évaluer via un questionnaire en
-            ligne. Un QR code a été envoyé aux pharmaciens adhérents afin qu'ils
-            testent les usagers au comptoir et contribuer ainsi à l'amélioration
-            du dépistage.
+            <span className="font-bold">
+              Une communication sur l'insuffisance cardiaque est disponible sur
+              le site internet de la CPTS, dans l'onglet{" "}
+              <Link
+                href="/prevention/memos-suivi"
+                className="font-bold text-primary hover:text-primary/80 underline transition-colors"
+              >
+                Prévention
+              </Link>
+              .
+            </span>{" "}
+            Les personnes consultant l'article peuvent s'auto évaluer via un
+            questionnaire en ligne. Un QR code a été envoyé aux pharmaciens
+            adhérents afin qu'ils testent les usagers au comptoir et contribuer
+            ainsi à l'amélioration du dépistage.
           </p>
         </div>
 
@@ -231,19 +288,20 @@ export const accordionItemsParcours: AccordionItem[] = [
             Pour faciliter la prise en charge pluripro
           </h3>
           <div className="space-y-4">
-            <p className="text-muted-foreground leading-relaxed">
+            {/* <p className="text-muted-foreground leading-relaxed">
               La sensibilisation des cardiologues à une prise en charge rapide
               des patients adressés par les médecins traitants est facilitée par
-              une lettre identifiée CPTS (ICI)
-            </p>
+              une lettre identifiée CPTS
+            </p> */}
             <div className="bg-primary/5 p-5 rounded-lg border-l-4 border-primary">
               <p className="text-foreground leading-relaxed">
                 <span className="font-bold text-primary text-lg">
                   Mise à disposition d'un IPA
                 </span>{" "}
-                depuis janvier 2025. Les consultations se déroulent dans les
-                locaux de la clinique Saint Martin de Pessac les vendredis
-                après-midi.
+                depuis janvier 2025. Les consultations ont lieu les vendredis
+                après-midi dans les locaux de la clinique Saint Martin de Pessac
+                et aussi au domicile sur rdv pour être au plus proche des
+                patients.
               </p>
             </div>
 
@@ -332,6 +390,15 @@ export const accordionItemsParcours: AccordionItem[] = [
           </p>
         </div>
 
+        {/* IPA Diabète */}
+        <div className="bg-primary/5 p-5 rounded-lg border-l-4 border-primary">
+          <p className="text-foreground leading-relaxed">
+            Un IPA se met à disposition sur le territoire pour travailler en
+            collaboration avec vos professionnels de santé pour améliorer votre
+            suivi dans la chronicité.
+          </p>
+        </div>
+
         {/* Carrousel */}
         <ImageCarousel
           images={[1, 2, 3, 4, 5, 6].map((num) => ({
@@ -384,10 +451,10 @@ export const accordionItemsParcours: AccordionItem[] = [
           </div>
         </div>
 
-        {/* Section 3: Organisation de soirées pluri pro */}
+        {/* Section 3: Organisation de soirées pluriprofessionnelles */}
         <div>
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            2/ Organisation de soirées pluri pro
+            2/ Organisation de soirées pluriprofessionnelles
           </h3>
           <p className="text-muted-foreground leading-relaxed">
             Des soirées pluriprofessionnelles sont organisées régulièrement pour
@@ -530,11 +597,10 @@ export const accordionItemsParcours: AccordionItem[] = [
           {/* Calendrier */}
           <div className="bg-white p-6 rounded-xl border-2 border-primary/20">
             <h4 className="text-xl font-bold text-foreground mb-4">
-              Le calendrier 2025:
+              Prochaines réunions 2026:
             </h4>
             <p className="text-muted-foreground">
-              21/01, 18/02, 18/03, 15/04, 13/05, 17/06, 18/11, 16/12 – Autour
-              d'un buffet
+              27 janvier 2026, 24 février 2026 – Autour d'un buffet
             </p>
           </div>
         </div>
@@ -665,20 +731,40 @@ export const accordionItemsPrevention: AccordionItem[] = [
   {
     id: "depistage-organise",
     title: "Des campagnes de dépistage organisé",
-    content: `Une prévention ciblée – vers les patients en retard dans leur dépistage pour leur proposer une solution de proximité.
-
-• Pour le Cancer du Col de l'Utérus
-
-• Pour le Cancer du sein
-
-• Pour le Cancer Colo Rectal
-
-Via des Campagnes d'appels sortants CAPSO : l'Assurance Maladie téléphone aux assurés
-
-Avec des opérations « aller vers » grâce à des professionnels de santé qui se déplacent dans les quartiers
-
-Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac le 29 novembre 2024 (avec 3 Gynécologues, 1 sage femme, 1 médecin généraliste adhérentes de la CPTS)`,
+    content: "",
     files: [],
+    customContent: (
+      <div className="space-y-4">
+        <p className="text-muted-foreground leading-relaxed">
+          Une prévention ciblée – vers les patients en retard dans leur
+          dépistage pour leur proposer une solution de proximité.
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-muted-foreground leading-relaxed">
+          <li>
+            Pour le <span className="font-bold">Cancer du Col de l'Utérus</span>
+          </li>
+          <li>
+            Pour le <span className="font-bold">Cancer du sein</span>
+          </li>
+          <li>
+            Pour le <span className="font-bold">Cancer Colo Rectal</span>
+          </li>
+        </ul>
+        <p className="text-muted-foreground leading-relaxed">
+          Via des Campagnes d'appels sortants CAPSO : l'Assurance Maladie
+          téléphone aux assurés
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Avec des opérations « aller vers » grâce à des professionnels de santé
+          qui se déplacent dans les quartiers
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac
+          le 29 novembre 2024 (avec 3 Gynécologues, 1 sage femme, 1 médecin
+          généraliste adhérentes de la CPTS)
+        </p>
+      </div>
+    ),
   },
   {
     id: "violences-intrafamiliales",
@@ -687,21 +773,27 @@ Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac le 29
     customContent: (
       <ul className="list-disc pl-6 space-y-3 text-muted-foreground leading-relaxed">
         <li>
+          Le mardi 28 avril aura lieu la soirée annuelle sur le thème cette
+          année des vulnérabilités et santé mentale en périnatalité avec la
+          participation de Pr Sutter du CH de Charles Perrens et en partenariat
+          avec le RPNA et la PMI. Un dépliant à destination des professionnels
+          de santé sur les démarches et ressources du territoire est disponible
+          sur commande
+        </li>
+        <li>
           Une soirée d'(in)formation a eu lieu le 27 mars 2025 à la{" "}
           <span className="font-semibold text-fuchsia-600">
             Maison de la Femme à Mérignac
           </span>{" "}
           en partenariat avec le Pôle territorial de solidarité Porte du Médoc
           et le réseau Périnatalité Nouvelle Aquitaine sur le thème Violences
-          intrafamiliales et Périnatalité. Un dépliant à destination des
-          professionnels de santé sur les démarches et ressources du territoire
-          est disponible sur commande
+          intrafamiliales et Périnatalité.
         </li>
         <li>
-          Distribution de sachets dans nos{" "}
+          Distribution de sachets annualisée dans nos{" "}
           <span className="font-semibold text-green-600">pharmacies</span>{" "}
           adhérentes avec le violentomètre en lien avec la Journée mondiale de
-          prévention contre les violences faites aux femmes le 25 novembre 2024.
+          prévention contre les violences faites aux femmes.
         </li>
         <li>
           Une journée de formation a eu lieu le 8 novembre 2023 en partenariat{" "}
@@ -775,19 +867,45 @@ Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac le 29
   {
     id: "sport-sante",
     title: "Le Sport Santé",
-    content: `L'activité physique régulière est un déterminant majeur de l'état de santé des individus et des populations à tous les âges de la vie. De nombreuses solutions existent pour se dépenser au quotidien selon son âge, sa condition physique, son état de santé et ses besoins.
-
-L'activité physique adaptée (APA) est une thérapeutique non médicamenteuse validée. Ses bénéfices sont nombreux. Depuis la loi du 2 mars 2022 tous les médecins peuvent prescrire une activité physique adaptée à leurs patients atteints ou non de pathologie chronique, sédentaires ou non.
-
-La prescription de l'activité physique devient donc un acte médical indispensable qui doit être maîtrisé par l'ensemble du corps médical.
-
-La Maison Sport Santé de Mérignac prend le relais suite à la prescription du médecin. 📞 06 58 55 58 78`,
+    content: "",
     files: [
       {
         name: "Livret MSS",
         url: "/actions-outils/livret-MSS-.pdf",
       },
     ],
+    customContent: (
+      <div className="space-y-4">
+        <p className="text-muted-foreground leading-relaxed">
+          L'activité physique régulière est un déterminant majeur de l'état de
+          santé des individus et des populations à tous les âges de la vie. De
+          nombreuses solutions existent pour se dépenser au quotidien selon son
+          âge, sa condition physique, son état de santé et ses besoins.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          L'
+          <span className="font-bold text-primary">
+            activité physique adaptée
+          </span>{" "}
+          (APA) est une thérapeutique non médicamenteuse validée. Ses bénéfices
+          sont nombreux. Depuis la loi du 2 mars 2022 tous les médecins peuvent
+          prescrire une{" "}
+          <span className="font-bold text-primary">
+            activité physique adaptée
+          </span>{" "}
+          à leurs patients atteints ou non de pathologie chronique, sédentaires
+          ou non.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          La prescription de l'activité physique devient donc un acte médical
+          indispensable qui doit être maîtrisé par l'ensemble du corps médical.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          La Maison Sport Santé de Mérignac prend le relais suite à la
+          prescription du médecin. 📞 06 58 55 58 78
+        </p>
+      </div>
+    ),
   },
   {
     id: "etude-lombalgie",

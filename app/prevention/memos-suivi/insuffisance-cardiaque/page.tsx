@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-
 import { TestezVousModal } from "@/components/testez-vous-modal";
 import {
   ArrowLeft,
@@ -19,6 +18,45 @@ import {
   X,
 } from "lucide-react";
 import { BackgroundGradient0 } from "@/components/background-gradient";
+
+// Interfaces partagées (identiques à memos-suivi/page.tsx)
+interface MemoLink {
+  label: string;
+  url: string;
+}
+
+interface TextSegment {
+  type: "text" | "bold" | "underline";
+  text: string;
+}
+
+interface MemoSection {
+  title: string;
+  points: (string | TextSegment[])[];
+  image?: string;
+  imageLink?: string;
+  imageNoClick?: boolean;
+  imageHalfSize?: boolean;
+  images?: string[];
+}
+
+interface MemoContent {
+  intro?: string | TextSegment[];
+  points?: string[];
+  subtitle?: string;
+  images?: string[];
+  links?: MemoLink[];
+  sections?: MemoSection[];
+  pdfEmbed?: string;
+}
+
+interface Memo {
+  id: string;
+  title: string;
+  image: string;
+  color: string;
+  content?: MemoContent;
+}
 
 export default function InsuffisanceCardiaquePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
