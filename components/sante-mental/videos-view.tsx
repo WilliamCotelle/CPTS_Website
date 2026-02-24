@@ -46,6 +46,18 @@ const videosParlent: VideoItem[] = [
   },
 ];
 
+const bdSanteMentalePages = [
+  {
+    src: "/santé-mental/BD-sante-mentale/BD-sante-mentale_page-0001.jpg",
+    alt: "BD santé mentale - page 1",
+  },
+];
+
+const bdSanteMentalePdfUrl =
+  "https://drive.google.com/file/d/1pETC-P3t7cEPE2R-lw15Yr0gplB8-AR2/view?usp=sharing";
+const bdSanteMentaleSourceUrl = "https://santebd.org/";
+const featuredBdPage = bdSanteMentalePages[0];
+
 interface VideosViewProps {
   type: "aide" | "parlent";
 }
@@ -226,6 +238,74 @@ export function VideosView({ type }: VideosViewProps) {
             </div>
           </button>
         ))}
+      </div>
+
+      <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-primary/15 bg-gradient-to-br from-primary/5 via-card to-secondary/20 p-4 md:p-6">
+        <div className="grid gap-5 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-5">
+            {featuredBdPage ? (
+              <a
+                href={bdSanteMentalePdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-xl border border-primary/20 overflow-hidden bg-background hover:shadow-lg transition-all duration-300 block"
+              >
+                <div className="relative aspect-[3/4] bg-muted">
+                  <Image
+                    src={featuredBdPage.src}
+                    alt={featuredBdPage.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 32vw"
+                  />
+                </div>
+                <div className="p-3 border-t border-border/70">
+                  <p className="text-sm font-semibold text-foreground">Aperçu - Page 1</p>
+                  <p className="text-xs text-primary mt-1 inline-flex items-center gap-1">
+                    Voir la BD <ExternalLink className="w-3 h-3" />
+                  </p>
+                </div>
+              </a>
+            ) : (
+              <div className="rounded-xl border border-border bg-muted/40 p-4 text-sm text-muted-foreground">
+                Aucune miniature BD disponible pour le moment.
+              </div>
+            )}
+          </div>
+
+          <div className="lg:col-span-7 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                BD Santé mentale
+              </h3>
+              <p className="text-muted-foreground">
+                Un format illustré simple à lire pour mieux comprendre la santé mentale.
+              </p>
+              <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-primary to-secondary" />
+            </div>
+
+            <div className="mt-5 flex flex-col sm:flex-row gap-3">
+              <a
+                href={bdSanteMentalePdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
+              >
+                Visualisez la BD
+                <ExternalLink className="w-4 h-4" />
+              </a>
+              <a
+                href={bdSanteMentaleSourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-border text-foreground font-medium hover:bg-muted transition-colors"
+              >
+                Source de la BD : santebd.org
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Modal Video */}

@@ -1,7 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Card } from "@/components/ui/card";
-import { Users, Heart, Shield, MapPin } from "lucide-react";
+import { Users, Heart, Shield, MapPin, ArrowRight } from "lucide-react";
+import Link from "next/link";
 // import { BackgroundGradient1 } from "@/components/background-gradient";
 
 export default function PresentationPage() {
@@ -478,6 +479,28 @@ export default function PresentationPage() {
                     souhaite s'impliquer dans la dynamique territoriale.
                   </p>
                 </Card>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-14 lg:py-18 bg-background">
+            <div className="container mx-auto px-4 lg:px-8">
+              <div className="max-w-5xl mx-auto">
+                <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 via-card to-secondary/20 p-8 lg:p-10 text-center">
+                  <p className="text-base lg:text-lg text-muted-foreground mb-3">
+                    Suivez les actions de la CPTS, au plus près du terrain.
+                  </p>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 text-balance">
+                    Découvrez le suivi de nos activités et de nos événements
+                  </h2>
+                  <Link
+                    href="/presentation/suivi-activites"
+                    className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold hover:bg-primary/90 transition-colors"
+                  >
+                    Accéder au suivi des activités
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
