@@ -611,7 +611,7 @@ export default function MemosSuiviPage() {
             <div className="flex-1 relative w-full max-w-sm lg:max-w-xl h-[280px] lg:h-[500px]">
               <Image
                 src="/prevention/memo-suivi/memo-suivi-hero.svg"
-                alt="Mémos de suivi illustration"
+                alt="Les fiches de suivi illustration"
                 fill
                 className="object-contain"
                 sizes="(max-width: 768px) 100vw, 600px"
@@ -627,7 +627,7 @@ export default function MemosSuiviPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-lg lg:text-xl font-bold text-foreground mb-2 uppercase tracking-wide">
-              Les Mémos de Suivi
+              Les fiches de suivi
             </h2>
             <div className="w-14 h-1 bg-primary rounded-full mb-6" />
 
