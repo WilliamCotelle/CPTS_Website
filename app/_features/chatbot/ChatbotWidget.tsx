@@ -1,9 +1,9 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { MessageCircle, X } from "lucide-react"
 import { useEffect, useState } from "react"
 
-import { ChatWindow } from "./ChatWindow"
 import { chatbotConfig } from "./chatbot.config"
 import {
   createInitialState,
@@ -16,24 +16,26 @@ import {
 import type { QuickReply } from "./types"
 
 const PANEL_ID = "cpts-chatbot-panel"
+const ChatWindow = dynamic(() => import("./ChatWindow").then((module) => module.ChatWindow), {
+  ssr: false,
+})
 
 export function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false)
-  const [hasHydrated, setHasHydrated] = useState(false)
+  const [isHydratedFromStorage, setIsHydratedFromStorage] = useState(false)
   const [state, setState] = useState(() => createInitialState(chatbotConfig))
 
   useEffect(() => {
-    setState(hydrateState(chatbotConfig))
-    setHasHydrated(true)
-  }, [])
-
-  useEffect(() => {
-    if (!hasHydrated) {
+    if (!isHydratedFromStorage) {
       return
     }
 
-    persistState(state)
-  }, [hasHydrated, state])
+    const timeoutId = window.setTimeout(() => {
+      persistState(state)
+    }, 120)
+
+    return () => window.clearTimeout(timeoutId)
+  }, [isHydratedFromStorage, state])
 
   useEffect(() => {
     if (!isOpen) {
@@ -62,6 +64,15 @@ export function ChatbotWidget() {
     setState(restartConversation(chatbotConfig))
   }
 
+  const handleToggleOpen = () => {
+    if (!isOpen && !isHydratedFromStorage) {
+      setState(hydrateState(chatbotConfig))
+      setIsHydratedFromStorage(true)
+    }
+
+    setIsOpen((currentValue) => !currentValue)
+  }
+
   return (
     <>
       {isOpen ? (
@@ -85,7 +96,7 @@ export function ChatbotWidget() {
       <button
         type="button"
         className="fixed bottom-4 right-4 z-[70] inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition-all hover:scale-[1.02] hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        onClick={() => setIsOpen((currentValue) => !currentValue)}
+        onClick={handleToggleOpen}
         aria-haspopup="dialog"
         aria-expanded={isOpen}
         aria-controls={PANEL_ID}

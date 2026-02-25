@@ -14,6 +14,20 @@ const EXACT_MATCH_SCORE = 120
 const CONTAINS_MATCH_SCORE = 85
 const FUZZY_MATCH_SCORE = 55
 
+interface PreparedKeywordEntry {
+  resourceId: string
+  scoreBoost: number
+  normalizedKeyword: string
+  keywordTokens: string[]
+}
+
+interface PreparedKeywordIndex {
+  entries: PreparedKeywordEntry[]
+  tokenMap: Map<string, PreparedKeywordEntry[]>
+}
+
+const preparedIndexCache = new WeakMap<KeywordIndexEntry[], PreparedKeywordIndex>()
+
 function levenshteinDistance(a: string, b: string): number {
   const matrix: number[][] = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0))
 
@@ -39,27 +53,112 @@ function levenshteinDistance(a: string, b: string): number {
   return matrix[a.length][b.length]
 }
 
-function scoreKeywordMatch(input: string, keyword: string, fuzzyDistanceThreshold: number): number {
+function buildPreparedKeywordIndex(keywordIndex: KeywordIndexEntry[]): PreparedKeywordIndex {
+  const cached = preparedIndexCache.get(keywordIndex)
+  if (cached) {
+    return cached
+  }
+
+  const preparedEntries: PreparedKeywordEntry[] = []
+  const tokenMap = new Map<string, PreparedKeywordEntry[]>()
+
+  for (const entry of keywordIndex) {
+    const normalizedKeyword = normalizeText(entry.keyword)
+    if (!normalizedKeyword) {
+      continue
+    }
+
+    const keywordTokens = normalizedKeyword.split(" ").filter(Boolean)
+    const preparedEntry: PreparedKeywordEntry = {
+      resourceId: entry.resourceId,
+      scoreBoost: entry.scoreBoost ?? 0,
+      normalizedKeyword,
+      keywordTokens,
+    }
+
+    preparedEntries.push(preparedEntry)
+
+    for (const token of keywordTokens) {
+      if (token.length < 3) {
+        continue
+      }
+
+      const bucket = tokenMap.get(token)
+      if (bucket) {
+        bucket.push(preparedEntry)
+      } else {
+        tokenMap.set(token, [preparedEntry])
+      }
+    }
+  }
+
+  const prepared = {
+    entries: preparedEntries,
+    tokenMap,
+  }
+
+  preparedIndexCache.set(keywordIndex, prepared)
+  return prepared
+}
+
+function collectCandidateEntries(
+  prepared: PreparedKeywordIndex,
+  normalizedInput: string,
+  inputTokens: string[],
+): PreparedKeywordEntry[] {
+  const deduped = new Set<PreparedKeywordEntry>()
+
+  for (const token of inputTokens) {
+    if (token.length < 3) {
+      continue
+    }
+
+    const entries = prepared.tokenMap.get(token)
+    if (!entries) {
+      continue
+    }
+
+    for (const entry of entries) {
+      deduped.add(entry)
+    }
+  }
+
+  if (deduped.size > 0) {
+    return [...deduped]
+  }
+
+  // Fallback to full scan for short inputs or typo-heavy phrases.
+  if (normalizedInput.length <= 2) {
+    return []
+  }
+
+  return prepared.entries
+}
+
+function scoreKeywordMatch(
+  input: string,
+  inputTokens: string[],
+  keyword: string,
+  keywordTokens: string[],
+  fuzzyDistanceThreshold: number,
+): number {
   if (input === keyword) {
     return EXACT_MATCH_SCORE
   }
 
-  if (input.includes(keyword) || keyword.includes(input)) {
+  if (input.includes(keyword)) {
     return CONTAINS_MATCH_SCORE
   }
-
-  const inputTokens = input.split(" ").filter(Boolean)
-  const keywordTokens = keyword.split(" ").filter(Boolean)
 
   let bestDistance = Number.POSITIVE_INFINITY
 
   for (const inputToken of inputTokens) {
-    if (inputToken.length < 4) {
+    if (inputToken.length < 5) {
       continue
     }
 
     for (const keywordToken of keywordTokens) {
-      if (keywordToken.length < 4) {
+      if (keywordToken.length < 5) {
         continue
       }
 
@@ -91,33 +190,41 @@ export function matchResources({
     return []
   }
 
+  const prepared = buildPreparedKeywordIndex(keywordIndex)
+  const inputTokens = normalizedInput.split(" ").filter(Boolean)
+  const candidates = collectCandidateEntries(prepared, normalizedInput, inputTokens)
+
+  if (!candidates.length) {
+    return []
+  }
+
   const aggregatedScores = new Map<string, { score: number; matchedKeyword: string }>()
 
-  for (const entry of keywordIndex) {
-    const normalizedKeyword = normalizeText(entry.keyword)
-
-    if (!normalizedKeyword) {
-      continue
-    }
-
-    const baseScore = scoreKeywordMatch(normalizedInput, normalizedKeyword, fuzzyDistanceThreshold)
+  for (const entry of candidates) {
+    const baseScore = scoreKeywordMatch(
+      normalizedInput,
+      inputTokens,
+      entry.normalizedKeyword,
+      entry.keywordTokens,
+      fuzzyDistanceThreshold,
+    )
 
     if (baseScore === 0) {
       continue
     }
 
-    const boostedScore = baseScore + (entry.scoreBoost ?? 0)
+    const boostedScore = baseScore + entry.scoreBoost
     const previous = aggregatedScores.get(entry.resourceId)
 
     if (!previous) {
-      aggregatedScores.set(entry.resourceId, { score: boostedScore, matchedKeyword: normalizedKeyword })
+      aggregatedScores.set(entry.resourceId, { score: boostedScore, matchedKeyword: entry.normalizedKeyword })
       continue
     }
 
     const nextScore = Math.max(previous.score, boostedScore) + 4
     aggregatedScores.set(entry.resourceId, {
       score: nextScore,
-      matchedKeyword: boostedScore > previous.score ? normalizedKeyword : previous.matchedKeyword,
+      matchedKeyword: boostedScore > previous.score ? entry.normalizedKeyword : previous.matchedKeyword,
     })
   }
 

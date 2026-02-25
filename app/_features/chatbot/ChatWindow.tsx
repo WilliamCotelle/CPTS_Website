@@ -60,7 +60,7 @@ export function ChatWindow({ messages, onSend, onQuickReply, onRestart, onClose 
           <p id="chatbot-title" className="text-sm font-semibold text-foreground">
             Assistant CPTS
           </p>
-          <p className="text-xs text-muted-foreground">Orientation sans IA, par mots-clés</p>
+          <p className="text-xs text-muted-foreground">Orientation par mots-clés</p>
         </div>
         <div className="flex items-center gap-1">
           <Button

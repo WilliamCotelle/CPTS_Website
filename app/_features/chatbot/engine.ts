@@ -1,5 +1,6 @@
 import { matchResources } from "./matcher"
 import { normalizeText } from "./normalize"
+import { detectConversationalIntent } from "./intents"
 import type {
   ChatMessage,
   ChatNode,
@@ -10,6 +11,8 @@ import type {
 } from "./types"
 
 export const CHATBOT_HISTORY_KEY = "cpts_chatbot_history"
+const CHATBOT_HISTORY_VERSION = 4
+const quickReplyLookupCache = new WeakMap<QuickReply[], Map<string, QuickReply>>()
 
 function isBrowser(): boolean {
   return typeof window !== "undefined"
@@ -90,7 +93,7 @@ function buildNodeMessages(config: ChatbotConfig, node: ChatNode): ChatMessage[]
     }
 
     messages.push(
-      createMessage("bot", action.message ?? "Je te conseille :", {
+      createMessage("bot", action.message ?? "Je vous conseille :", {
         suggestions,
       }),
     )
@@ -99,14 +102,33 @@ function buildNodeMessages(config: ChatbotConfig, node: ChatNode): ChatMessage[]
   return messages
 }
 
-function findTextQuickReply(node: ChatNode, input: string): QuickReply | undefined {
-  const normalizedInput = normalizeText(input)
+function getQuickReplyLookup(quickReplies: QuickReply[] = []): Map<string, QuickReply> {
+  if (!quickReplies.length) {
+    return new Map<string, QuickReply>()
+  }
 
-  return node.quickReplies?.find((reply) => {
-    const labelMatch = normalizeText(reply.label) === normalizedInput
-    const valueMatch = normalizeText(reply.value) === normalizedInput
-    return labelMatch || valueMatch
-  })
+  const cached = quickReplyLookupCache.get(quickReplies)
+  if (cached) {
+    return cached
+  }
+
+  const lookup = new Map<string, QuickReply>()
+
+  for (const reply of quickReplies) {
+    lookup.set(normalizeText(reply.label), reply)
+    lookup.set(normalizeText(reply.value), reply)
+  }
+
+  quickReplyLookupCache.set(quickReplies, lookup)
+  return lookup
+}
+
+function findTextQuickReply(node: ChatNode, normalizedInput: string): QuickReply | undefined {
+  if (!node.quickReplies?.length) {
+    return undefined
+  }
+
+  return getQuickReplyLookup(node.quickReplies).get(normalizedInput)
 }
 
 function applyQuickReplyWithoutUserMessage(
@@ -121,7 +143,7 @@ function applyQuickReplyWithoutUserMessage(
     const suggestions = suggestionsFromResourceIds(config, quickReply.actionResourceIds)
 
     if (suggestions.length) {
-      nextMessages.push(createMessage("bot", "Je te conseille :", { suggestions }))
+      nextMessages.push(createMessage("bot", "Je vous conseille :", { suggestions }))
     }
   }
 
@@ -154,6 +176,21 @@ function isPersistedState(value: unknown): value is ChatbotState {
   return typeof candidate.currentNodeId === "string" && Array.isArray(candidate.messages)
 }
 
+interface PersistedHistory {
+  version: number
+  state: ChatbotState
+}
+
+function isPersistedHistory(value: unknown): value is PersistedHistory {
+  if (!value || typeof value !== "object") {
+    return false
+  }
+
+  const candidate = value as PersistedHistory
+
+  return typeof candidate.version === "number" && isPersistedState(candidate.state)
+}
+
 export function createInitialState(config: ChatbotConfig): ChatbotState {
   const startNode = resolveNode(config, config.rules.startNodeId)
 
@@ -175,11 +212,15 @@ export function hydrateState(config: ChatbotConfig): ChatbotState {
     }
 
     const parsed: unknown = JSON.parse(raw)
-    if (!isPersistedState(parsed)) {
-      return createInitialState(config)
+    if (isPersistedHistory(parsed)) {
+      if (parsed.version !== CHATBOT_HISTORY_VERSION) {
+        return createInitialState(config)
+      }
+
+      return parsed.state
     }
 
-    return parsed
+    return createInitialState(config)
   } catch {
     return createInitialState(config)
   }
@@ -190,7 +231,13 @@ export function persistState(state: ChatbotState): void {
     return
   }
 
-  window.localStorage.setItem(CHATBOT_HISTORY_KEY, JSON.stringify(state))
+  window.localStorage.setItem(
+    CHATBOT_HISTORY_KEY,
+    JSON.stringify({
+      version: CHATBOT_HISTORY_VERSION,
+      state,
+    }),
+  )
   logDev("persist", {
     currentNodeId: state.currentNodeId,
     messageCount: state.messages.length,
@@ -228,8 +275,9 @@ export function processUserInput(
   }
 
   const messagesWithUser = [...state.messages, createMessage("user", trimmed)]
+  const normalizedInput = normalizeText(trimmed)
   const currentNode = resolveNode(config, state.currentNodeId)
-  const matchedQuickReply = findTextQuickReply(currentNode, trimmed)
+  const matchedQuickReply = findTextQuickReply(currentNode, normalizedInput)
 
   if (matchedQuickReply) {
     return applyQuickReplyWithoutUserMessage(
@@ -242,8 +290,28 @@ export function processUserInput(
     )
   }
 
+  const startNodeQuickReplies = resolveNode(config, config.rules.startNodeId).quickReplies ?? []
+  const conversationalIntent = detectConversationalIntent(normalizedInput, startNodeQuickReplies)
+
+  if (conversationalIntent) {
+    const suggestions = conversationalIntent.resourceIds
+      ? suggestionsFromResourceIds(config, conversationalIntent.resourceIds)
+      : undefined
+
+    return {
+      currentNodeId: state.currentNodeId,
+      messages: [
+        ...messagesWithUser,
+        createMessage("bot", conversationalIntent.message, {
+          quickReplies: conversationalIntent.quickReplies,
+          suggestions,
+        }),
+      ],
+    }
+  }
+
   const matches = matchResources({
-    input: trimmed,
+    input: normalizedInput,
     keywordIndex: config.keywordIndex,
     resources: config.resources,
     maxSuggestions: config.rules.maxSuggestions,
@@ -261,7 +329,7 @@ export function processUserInput(
       currentNodeId: state.currentNodeId,
       messages: [
         ...messagesWithUser,
-        createMessage("bot", "Je te conseille :", {
+        createMessage("bot", "Je vous conseille :", {
           suggestions: matches,
         }),
       ],
