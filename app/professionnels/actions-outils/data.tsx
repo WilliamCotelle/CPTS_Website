@@ -816,7 +816,7 @@ export const accordionItemsPrevention: AccordionItem[] = [
         <div className="rounded-xl border border-gray-200 bg-primary/5 p-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-muted-foreground leading-relaxed">
-              Des mémos de suivi disponibles sur le site
+              Des fiches de suivi disponibles sur le site
             </p>
             <Link
               href="/prevention/memos-suivi"

@@ -121,6 +121,27 @@ export default function CancerColorectalPage() {
                   </div>
                 ))}
               </div>
+
+              {"resourceHub" in commentSeFaireDepister &&
+                commentSeFaireDepister.resourceHub && (
+                  <div className="rounded-2xl border border-cyan-200 bg-cyan-50/40 p-5 sm:p-6 space-y-3">
+                    <h3 className="text-lg font-semibold text-foreground">
+                      {commentSeFaireDepister.resourceHub.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {commentSeFaireDepister.resourceHub.text}
+                    </p>
+                    <a
+                      href={commentSeFaireDepister.resourceHub.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-cyan-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-cyan-800"
+                    >
+                      {commentSeFaireDepister.resourceHub.urlLabel}
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                )}
             </div>
 
             {/* FACTEURS DE RISQUE */}

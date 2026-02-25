@@ -1,22 +1,22 @@
 {
   "slides": [
     {
-      "image": "/colimaçon.jpg",
-      "title": "Santé mentale : comprendre et s'orienter",
-      "alt": "Santé mentale",
-      "link": "/sante-mental"
-    },
-    {
       "image": "/prevention/sante-famille/mars-bleu-2026.png",
       "title": "Mars Bleu 2026 : prévention du cancer colorectal",
       "alt": "Mars Bleu 2026",
       "link": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2026"
     },
     {
-      "image": "/prevention/sante-famille/movember-2026.png",
-      "title": "Movember 2026 : santé masculine et prévention",
-      "alt": "Movember 2026",
-      "link": "/prevention/sante-familiale/movember-2026"
+      "image": "/insomnie.jpg",
+      "title": "L'insomnie : la comprendre et la traiter",
+      "alt": "Insomnie",
+      "link": "/l-insomnie-la-comprendre-et-la-traiter"
+    },
+    {
+      "image": "/colimaçon.jpg",
+      "title": "Santé mentale : comprendre et s'orienter",
+      "alt": "Santé mentale",
+      "link": "/sante-mental"
     },
     {
       "image": "/mon-espace-santé.png",

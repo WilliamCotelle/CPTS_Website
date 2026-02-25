@@ -28,11 +28,25 @@
   ],
   "articles": [
     {
+      "id": "mars-bleu-2026",
+      "title": "Mars Bleu 2026 : prévention du cancer colorectal",
+      "image": "/prevention/sante-famille/mars-bleu-2026.png",
+      "category": "Santé familiale",
+      "link": "/prevention/sante-familiale/prevention-cancer-colorectal-mars-bleu-2026"
+    },
+    {
       "id": "insomnie",
       "title": "L'insomnie : la comprendre et la traiter",
       "image": "/insomnie.jpg",
       "category": "Education thérapeutique",
       "link": "/l-insomnie-la-comprendre-et-la-traiter"
+    },
+    {
+      "id": "sante-mentale",
+      "title": "Santé mentale : comprendre et s'orienter",
+      "image": "/colimaçon.jpg",
+      "category": "Santé mentale",
+      "link": "/sante-mental"
     },
     {
       "id": "violences",
