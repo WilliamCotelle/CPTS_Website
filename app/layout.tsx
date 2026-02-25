@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import { ChatbotWidget } from "@/app/_features/chatbot/ChatbotWidget"
 import "./globals.css"
 
 const inter = Inter({
@@ -68,6 +69,7 @@ export default function RootLayout({
       <body className={`font-sans ${inter.variable} ${GeistMono.variable} antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>
           {children}
+          <ChatbotWidget />
           <Analytics />
         </Suspense>
       </body>
