@@ -55,8 +55,12 @@ Comment : Saisir la CPAM de situations d'assurés via un formulaire de saisine �
     content: "",
     files: [
       {
-        name: "Pharmacies participantes",
-        url: "/actions-outils/Affiche-Pharmacies-CPTS-OG.pdf",
+        name: "Affiche pour les rhinites allergiques",
+        url: "https://drive.google.com/file/d/1l5Q86gdQxVzKlH8d1DuNimN654-0gOpZ/view?usp=drive_link",
+      },
+      {
+        name: "Je souhaite participer au SAS",
+        url: "https://drive.google.com/file/d/1WVB2B-RZ33Km7G_8crJ4uK-B0WG05fsk/view?usp=sharing",
       },
     ],
     customContent: (
@@ -285,7 +289,7 @@ export const accordionItemsParcours: AccordionItem[] = [
         {/* Sous-titre */}
         <div className="pt-6 border-t-2 border-gray-200">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            Pour faciliter la prise en charge pluripro
+            Pour faciliter la prise en charge pluriprofessionnelle
           </h3>
           <div className="space-y-4">
             {/* <p className="text-muted-foreground leading-relaxed">
@@ -498,7 +502,7 @@ export const accordionItemsParcours: AccordionItem[] = [
               </h4>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              cf onglet Réunion de Concertation Pluriprofessionnelles
+              cf onglet Réunion de Concertation Pluriprofessionnelle
             </p>
           </div>
 
@@ -730,39 +734,44 @@ export const accordionItemsParcours: AccordionItem[] = [
 export const accordionItemsPrevention: AccordionItem[] = [
   {
     id: "depistage-organise",
-    title: "Des campagnes de dépistage organisé",
+    title: "Demande d'orientation",
     content: "",
     files: [],
     customContent: (
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p className="text-muted-foreground leading-relaxed">
-          Une prévention ciblée – vers les patients en retard dans leur
-          dépistage pour leur proposer une solution de proximité.
-        </p>
-        <ul className="list-disc pl-6 space-y-2 text-muted-foreground leading-relaxed">
-          <li>
-            Pour le <span className="font-bold">Cancer du Col de l'Utérus</span>
-          </li>
-          <li>
-            Pour le <span className="font-bold">Cancer du sein</span>
-          </li>
-          <li>
-            Pour le <span className="font-bold">Cancer Colo Rectal</span>
-          </li>
-        </ul>
-        <p className="text-muted-foreground leading-relaxed">
-          Via des Campagnes d'appels sortants CAPSO : l'Assurance Maladie
-          téléphone aux assurés
+          Vous êtes en difficulté avec une prise en charge en santé mentale ?
+          Vous souhaitez un avis spécialisé pour une orientation.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Avec des opérations « aller vers » grâce à des professionnels de santé
-          qui se déplacent dans les quartiers
+          Une infirmière en psychiatrie de la Maison de santé les Pins
+          (clinique psychiatrique, 35 rue du Blayais 33600 Pessac) propose un
+          temps dédié pour vous répondre.
         </p>
-        <p className="text-muted-foreground leading-relaxed">
-          Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac
-          le 29 novembre 2024 (avec 3 Gynécologues, 1 sage femme, 1 médecin
-          généraliste adhérentes de la CPTS)
-        </p>
+        <div className="space-y-3">
+          <h4 className="font-semibold text-foreground">Comment ?</h4>
+          <ul className="list-disc pl-6 space-y-2 text-muted-foreground leading-relaxed">
+            <li>
+              Remplir le formulaire de demande d'orientation disponible sur
+              Plexus Santé.
+            </li>
+            <li>
+              Envoyer le formulaire par messagerie de santé sécurisée à{" "}
+              <a
+                href="mailto:elise.patenere@pro.mssante.fr"
+                className="text-primary hover:underline font-semibold"
+              >
+                elise.patenere@pro.mssante.fr
+              </a>
+              .
+            </li>
+            <li>
+              L'IDE Psy (Elise Patenere) répond par un mail au Professionnel de
+              Santé proposant une orientation possible (et/ou rdv téléphonique
+              si besoin pour expliciter l'orientation).
+            </li>
+          </ul>
+        </div>
       </div>
     ),
   },

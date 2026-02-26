@@ -82,7 +82,7 @@ export default function PresentationPage() {
                   Pourquoi une CPTS ?
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <Card className="p-8 rounded-3xl bg-green-50/40 border-2 border-green-100 hover:border-green-200 transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-green-50/40 border-2 border-green-100">
                     <img
                       src="/presentation/Connecting teams-cuate.svg"
                       alt="Professionnels de santé collaborant"
@@ -99,7 +99,7 @@ export default function PresentationPage() {
                     </p>
                   </Card>
 
-                  <Card className="p-8 rounded-3xl bg-teal-50/40 border-2 border-teal-100 hover:border-teal-200 transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-teal-50/40 border-2 border-teal-100">
                     <img
                       src="/presentation/Public health-cuate.svg"
                       alt="Soins aux patients"
@@ -178,7 +178,7 @@ export default function PresentationPage() {
 
                 <div className="space-y-6">
                   {/* Mission 1 */}
-                  <Card className="p-8 rounded-3xl bg-emerald-50/60 border-2 border-emerald-200 hover:border-emerald-300 hover:shadow-md transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-emerald-50/60 border-2 border-emerald-200">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
                         <span className="text-2xl font-bold text-emerald-700">
@@ -212,7 +212,7 @@ export default function PresentationPage() {
                   </Card>
 
                   {/* Mission 2 */}
-                  <Card className="p-8 rounded-3xl bg-teal-50/60 border-2 border-teal-200 hover:border-teal-300 hover:shadow-md transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-teal-50/60 border-2 border-teal-200">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center flex-shrink-0">
                         <span className="text-2xl font-bold text-teal-700">
@@ -261,7 +261,7 @@ export default function PresentationPage() {
                   </Card>
 
                   {/* Mission 3 */}
-                  <Card className="p-8 rounded-3xl bg-green-50/60 border-2 border-green-200 hover:border-green-300 hover:shadow-md transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-green-50/60 border-2 border-green-200">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center flex-shrink-0">
                         <span className="text-2xl font-bold text-green-700">
@@ -317,7 +317,7 @@ export default function PresentationPage() {
                   </Card>
 
                   {/* Mission 4 */}
-                  <Card className="p-8 rounded-3xl bg-emerald-50/50 border-2 border-emerald-200 hover:border-emerald-300 hover:shadow-md transition-all duration-300">
+                  <Card className="p-8 rounded-3xl bg-emerald-50/50 border-2 border-emerald-200">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
                         <span className="text-2xl font-bold text-emerald-700">
@@ -354,7 +354,7 @@ export default function PresentationPage() {
                   Organisation
                 </h2>
 
-                <Card className="p-8 lg:p-12 rounded-3xl bg-teal-50/50 border-2 border-teal-100 hover:border-teal-200 transition-all duration-300 mb-8">
+                <Card className="p-8 lg:p-12 rounded-3xl bg-teal-50/50 border-2 border-teal-100 mb-8">
                   <div className="flex flex-col lg:flex-row gap-8 items-center">
                     <div className="flex-1">
                       <img

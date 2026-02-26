@@ -44,17 +44,6 @@ export default function AccesAuxSoinsPage() {
               </div>
             </div>
 
-            <div className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-border bg-card">
-              <div className="relative w-full aspect-[3/4]">
-                <Image
-                  src="/actu/acces-aux-soins/Acces-Aux-Soins-2.jpg"
-                  alt="Affiche accès aux soins 2"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>

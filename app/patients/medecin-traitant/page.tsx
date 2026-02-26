@@ -103,10 +103,7 @@ export default function MedecinTraitantPage() {
             {medecinTraitantData.benefits.map((benefit) => {
               const Icon = iconMap[benefit.iconName] || FolderOpen;
               return (
-                <Card
-                  key={benefit.id}
-                  className="hover:shadow-lg transition-shadow"
-                >
+                <Card key={benefit.id}>
                   <CardContent className="p-5 space-y-3 text-center">
                     <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                       <Icon className="w-7 h-7 text-primary" />

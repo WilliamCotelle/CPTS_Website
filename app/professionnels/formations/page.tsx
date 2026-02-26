@@ -65,7 +65,7 @@ export default function FormationsPage() {
   };
 
   const FormationCard = ({ formation }: { formation: Formation }) => (
-    <Card className={`border-2 rounded-2xl overflow-hidden transition-all hover:shadow-lg ${
+    <Card className={`border-2 rounded-2xl overflow-hidden ${
       formation.status === "available"
         ? "border-primary/20 bg-primary/5"
         : formation.status === "upcoming"

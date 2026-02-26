@@ -101,7 +101,7 @@ export default function ActionsOutilsPage() {
               {/* Titre de section */}
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                  Organisation des parcours pluripro des patients
+                  Organisation des parcours pluriprofessionnels des patients
                 </h2>
                 <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
               </div>
