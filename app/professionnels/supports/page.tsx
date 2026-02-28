@@ -11,6 +11,11 @@ import { Dialog, DialogContent, DialogTitle, VisuallyHidden } from "@/components
 import { Check, Plus, Minus, ShoppingCart, ZoomIn, X, Loader2 } from "lucide-react"
 import Image from "next/image"
 import data from "@/app/data/supports.json"
+import {
+  containsForbiddenLink,
+  isValidPersonName,
+  isValidPostalAddress,
+} from "@/lib/message-content"
 
 interface Support {
   id: string
@@ -32,6 +37,7 @@ export default function SupportsPage() {
   const [previewSupport, setPreviewSupport] = useState<Support | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,8 +66,34 @@ export default function SupportsPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsLoading(true)
     setStatus("idle")
+    setErrorMessage("")
+
+    if (containsForbiddenLink(formData.name)) {
+      setStatus("error")
+      setErrorMessage("Les liens ne sont pas autorisés dans le nom.")
+      return
+    }
+
+    if (!isValidPersonName(formData.name)) {
+      setStatus("error")
+      setErrorMessage("Le nom et le prénom contiennent des caractères invalides.")
+      return
+    }
+
+    if (containsForbiddenLink(formData.address)) {
+      setStatus("error")
+      setErrorMessage("Les liens ne sont pas autorisés dans l'adresse postale.")
+      return
+    }
+
+    if (!isValidPostalAddress(formData.address)) {
+      setStatus("error")
+      setErrorMessage("L'adresse postale contient des caractères invalides.")
+      return
+    }
+
+    setIsLoading(true)
 
     try {
       const response = await fetch("/api/supports/order", {
@@ -83,14 +115,18 @@ export default function SupportsPage() {
 
       if (response.ok) {
         setStatus("success")
+        setErrorMessage("")
         // Vider le panier et le formulaire
         setSelectedSupports([])
         setFormData({ name: "", email: "", phone: "", address: "" })
       } else {
+        const payload = (await response.json().catch(() => null)) as { error?: string } | null
         setStatus("error")
+        setErrorMessage(payload?.error || "Une erreur est survenue. Veuillez réessayer.")
       }
     } catch {
       setStatus("error")
+      setErrorMessage("Une erreur est survenue. Veuillez réessayer.")
     } finally {
       setIsLoading(false)
     }
@@ -296,6 +332,8 @@ export default function SupportsPage() {
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           className="mt-1 rounded-xl"
                           disabled={isLoading}
+                          maxLength={100}
+                          autoComplete="name"
                           required
                         />
                       </div>
@@ -311,6 +349,8 @@ export default function SupportsPage() {
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           className="mt-1 rounded-xl"
                           disabled={isLoading}
+                          maxLength={254}
+                          autoComplete="email"
                           required
                         />
                       </div>
@@ -326,6 +366,8 @@ export default function SupportsPage() {
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="mt-1 rounded-xl"
                           disabled={isLoading}
+                          maxLength={32}
+                          autoComplete="tel"
                           required
                         />
                       </div>
@@ -341,6 +383,8 @@ export default function SupportsPage() {
                           onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                           className="mt-1 rounded-xl"
                           disabled={isLoading}
+                          maxLength={200}
+                          autoComplete="street-address"
                           required
                         />
                       </div>
@@ -362,7 +406,7 @@ export default function SupportsPage() {
                             <X className="w-3 h-3 text-white" />
                           </div>
                           <p className="text-sm font-medium text-red-800">
-                            Une erreur est survenue. Veuillez réessayer ou nous contacter.
+                            {errorMessage || "Une erreur est survenue. Veuillez réessayer ou nous contacter."}
                           </p>
                         </div>
                       )}

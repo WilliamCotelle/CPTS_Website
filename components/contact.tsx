@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Linkedin, Facebook, Instagram, Copy, Check, Loader2 } from "lucide-react"
+import { containsForbiddenLink } from "@/lib/message-content"
 
 const EMAIL = "info@cpts-ouest-gironde.fr"
 
@@ -12,6 +13,7 @@ export function Contact() {
   const [copied, setCopied] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState("")
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -39,8 +41,16 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsLoading(true)
     setStatus("idle")
+    setErrorMessage("")
+
+    if (containsForbiddenLink(formData.message)) {
+      setStatus("error")
+      setErrorMessage("Les liens ne sont pas autorisés dans le message.")
+      return
+    }
+
+    setIsLoading(true)
 
     try {
       const response = await fetch("/api/contact", {
@@ -51,12 +61,16 @@ export function Contact() {
 
       if (response.ok) {
         setStatus("success")
+        setErrorMessage("")
         setFormData({ firstName: "", lastName: "", email: "", message: "" })
       } else {
+        const payload = (await response.json().catch(() => null)) as { error?: string } | null
         setStatus("error")
+        setErrorMessage(payload?.error || "Une erreur est survenue. Veuillez réessayer.")
       }
     } catch {
       setStatus("error")
+      setErrorMessage("Une erreur est survenue. Veuillez réessayer.")
     } finally {
       setIsLoading(false)
     }
@@ -226,7 +240,7 @@ export function Contact() {
 
               {status === "error" && (
                 <div className="p-3 rounded-xl bg-red-100 text-red-800 text-sm font-medium">
-                  Une erreur est survenue. Veuillez réessayer.
+                  {errorMessage || "Une erreur est survenue. Veuillez réessayer."}
                 </div>
               )}
 
