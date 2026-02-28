@@ -1,11 +1,16 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
-import { SocialModal } from "./social-modal"
 import Image from "next/image"
+
+const SocialModal = dynamic(
+  () => import("./social-modal").then((mod) => mod.SocialModal),
+  { ssr: false },
+)
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,6 +35,7 @@ export function Header() {
                 height={80}
                 className="h-12 lg:h-14 w-auto"
                 priority
+                sizes="(max-width: 1024px) 192px, 280px"
               />
             </Link>
 

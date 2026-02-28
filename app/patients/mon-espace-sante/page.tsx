@@ -79,7 +79,7 @@ export default function MonEspaceSantePage() {
       </section>
 
       {/* Features Section */}
-      <section className="relative py-16 lg:py-24 bg-secondary/20 overflow-hidden">
+      <section className="relative py-16 lg:py-24 bg-secondary/20 overflow-hidden [content-visibility:auto] [contain-intrinsic-size:1200px]">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
@@ -142,7 +142,7 @@ export default function MonEspaceSantePage() {
       </section>
 
       {/* DMP Section */}
-      <section className="relative py-16 lg:py-24 overflow-hidden">
+      <section className="relative py-16 lg:py-24 overflow-hidden [content-visibility:auto] [contain-intrinsic-size:900px]">
         {/* Decorative elements */}
         <div className="absolute top-1/4 left-10 w-32 h-32 border border-primary/10 rounded-full" />
         <div className="absolute bottom-1/4 right-10 w-20 h-20 border border-primary/10 rounded-2xl rotate-45" />

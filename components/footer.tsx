@@ -17,6 +17,7 @@ export function Footer() {
               style={{ width: "auto" }}
               loading="lazy"
               quality={85}
+              sizes="(max-width: 640px) 160px, (max-width: 1024px) 180px, 200px"
             />
           </div>
 
