@@ -46,7 +46,7 @@ export default function CancerColorectalPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative pt-24 lg:pt-32 pb-12 overflow-hidden">
+      <section className="relative pt-28 lg:pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-blue-700/5 to-background" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
