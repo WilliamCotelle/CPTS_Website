@@ -5,6 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { LoadingScreen } from "@/components/loading-screen"
+import { GoogleAnalytics } from "@/components/google-analytics"
+import { CookieConsentBanner } from "@/components/cookie-consent-banner"
 import "./globals.css"
 
 const inter = Inter({
@@ -70,6 +72,8 @@ export default function RootLayout({
         <Suspense fallback={<LoadingScreen />}>
           {children}
           <Analytics />
+          <GoogleAnalytics />
+          <CookieConsentBanner />
         </Suspense>
       </body>
     </html>
