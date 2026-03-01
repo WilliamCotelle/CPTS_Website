@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import { LoadingScreen } from "@/components/loading-screen"
 import "./globals.css"
 
 const inter = Inter({
@@ -66,7 +67,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
       </head>
       <body className={`font-sans ${inter.variable} ${GeistMono.variable} antialiased`}>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen />}>
           {children}
           <Analytics />
         </Suspense>
