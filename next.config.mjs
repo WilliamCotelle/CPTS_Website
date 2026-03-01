@@ -30,6 +30,35 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/presentation-de-la-cpts-ouest-gironde',
+        destination: '/presentation',
+        permanent: true,
+      },
+      {
+        source: '/professionnels-de-sante',
+        destination: '/professionnels/adhesion',
+        permanent: true,
+      },
+      {
+        source: '/mon-espace-de-sante',
+        destination: '/patients/mon-espace-sante',
+        permanent: true,
+      },
+      {
+        source: '/avez-vous-un-medecin-traitant',
+        destination: '/patients/medecin-traitant',
+        permanent: true,
+      },
+      {
+        source: '/vos-numeros-utiles',
+        destination: '/patients/coordonnees',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
