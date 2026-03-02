@@ -47,13 +47,6 @@
       "image": "/colimaçon.jpg",
       "category": "Santé mentale",
       "link": "/sante-mental"
-    },
-    {
-      "id": "violences",
-      "title": "Face aux violences, vous n'êtes pas seules !",
-      "image": "/femme-floue-face-anxiete-vue-f.png",
-      "category": "Santé familiale",
-      "link": "/face-aux-violences-vous-n-etes-pas-seules"
     }
   ]
 }
