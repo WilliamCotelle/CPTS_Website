@@ -340,6 +340,9 @@ export default function CancerColorectalPage() {
                                 {"title" in evt && evt.title ? evt.title : evt.label}
                               </h3>
                               <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
+                                {"textBold" in evt && evt.textBold && (
+                                  <strong className="font-semibold text-foreground">{evt.textBold} </strong>
+                                )}
                                 {evt.text}
                               </p>
                               {"link" in evt && evt.link && (

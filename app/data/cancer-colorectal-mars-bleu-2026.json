@@ -139,10 +139,15 @@
         ]
       },
       {
-        "label": "Clinique Bagatelle – Côlon Tour",
-        "text": "Les dates 2026 du Côlon Tour de la clinique Bagatelle seront communiquées dès qu'elles seront connues. En attendant, nous conservons le visuel de l'édition 2025.",
-        "image": "/prevention/sante-famille/cancer-colorectal/colon-tour-2025.jpeg",
-        "imageAlt": "Visuel Côlon Tour 2025 à la Fondation Bagatelle"
+        "label": "CPTS Polygone Rive Droite",
+        "title": "JOURNÉE DE PRÉVENTION MARS BLEU 2026 – SENSIBILISATION AU DÉPISTAGE DU CANCER COLORECTAL",
+        "textBold": "Retrouvez-nous le mercredi 25 mars de 10h00 à 18h00",
+        "text": "à la galerie Carrefour de Lormont pour une visite du Côlon Géant et des stands d'information animés par les professionnels de la Ligue contre le cancer Gironde et de la CPTS Polygone Rive Droite : présentation du kit de dépistage, remise du kit, expériences de réalité virtuelle autour des facteurs de risques de cancer…",
+        "link": "https://polygonerivedroite.fr/journee-de-prevention-mars-bleu-2026-sensibilisation-au-depistage-du-cancer-colorectal/",
+        "linkLabel": "En savoir plus",
+        "image": "/prevention/sante-famille/cancer-colorectal/prevention-mars-bleu-2026.png",
+        "imageAlt": "Journée de prévention Mars Bleu 2026 - CPTS Polygone Rive Droite",
+        "program": []
       }
     ]
   },
