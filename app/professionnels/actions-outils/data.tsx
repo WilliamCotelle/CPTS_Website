@@ -511,42 +511,44 @@ export const accordionItemsParcours: AccordionItem[] = [
             </p>
           </div>
 
-          {/* Questionnaire d'adressage */}
+          {/* Demande d'orientation */}
           <div className="bg-primary/5 p-6 rounded-xl space-y-4">
             <h4 className="text-xl font-bold text-foreground">
-              Questionnaire d'adressage à IDE Psy
+              Demande d'orientation
             </h4>
-            <p className="text-sm text-muted-foreground">
-              (basée à Maison de Santé les Pins 33600 Pessac)
+            <p className="text-muted-foreground leading-relaxed">
+              Vous êtes en difficulté avec une prise en charge en santé mentale
+              ? Vous souhaitez un avis spécialisé pour une orientation.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Une infirmière en psychiatrie de la Maison de santé les Pins
+              (clinique psychiatrique , 35 rue du blayais 33600 Pessac) propose
+              un temps dédié pour vous répondre
             </p>
 
             <div className="space-y-3">
-              <div>
-                <p className="font-semibold text-foreground mb-2">
-                  Objectifs :
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Graduer et fluidifier le parcours pour les professionnels de
-                  santé, rendre visible l'offre sur le territoire et diminuer
-                  les délais de prise en charge psychiatriques, acquérir des
-                  réflexes, autonomiser les professionnels de santé sur la mise
-                  en réseau
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-foreground mb-2">
-                  Processus :
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Le professionnel de santé (MG, IDEL, Kinésithérapeute,
-                  psychologue) remplit le questionnaire d'adressage
-                  (téléchargeable sur Plexus - Projet Santé mentale 'Boite à
-                  outils') puis l'envoie à IDE Psy par MSS. IDE Psy répond par
-                  un mail au PS précisant orientation possible avec proposition
-                  de rdv téléphonique si besoin.
-                </p>
-              </div>
+              <p className="font-semibold text-foreground">Comment ?</p>
+              <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                <li>
+                  • Remplir le formulaire de demande d'orientation disponible
+                  sur Plexus Santé
+                </li>
+                <li>
+                  • Envoyer le formulaire par messagerie de santé sécurisée à{" "}
+                  <a
+                    href="mailto:elise.patenere@pro.mssante.fr"
+                    className="text-primary hover:underline font-semibold"
+                  >
+                    elise.patenere@pro.mssante.fr
+                  </a>
+                </li>
+                <li>
+                  • L'IDE Psy (Elise Patenere) répond par un mail au
+                  Professionnel de Santé proposant une orientation possible
+                  ( et/ou rdv téléphonique si besoin pour expliciter
+                  l'orientation).
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -739,44 +741,43 @@ export const accordionItemsParcours: AccordionItem[] = [
 export const accordionItemsPrevention: AccordionItem[] = [
   {
     id: "depistage-organise",
-    title: "Demande d'orientation",
+    title: "Des campagnes de dépistage organisé",
     content: "",
     files: [],
     customContent: (
       <div className="space-y-5">
         <p className="text-muted-foreground leading-relaxed">
-          Vous êtes en difficulté avec une prise en charge en santé mentale ?
-          Vous souhaitez un avis spécialisé pour une orientation.
+          Une prévention ciblée – vers les patients en retard dans leur
+          dépistage pour leur proposer une solution de proximité.
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-muted-foreground leading-relaxed">
+          <li>
+            Pour le <span className="font-bold">Cancer du Col de l'Utérus</span>
+          </li>
+          <li>
+            Pour le <span className="font-bold">Cancer du sein</span>
+          </li>
+          <li>
+            Pour le <span className="font-bold">Cancer Colo Rectal</span>
+          </li>
+        </ul>
+        <p className="text-muted-foreground leading-relaxed">
+          Via des Campagnes d'appels sortants CAPSO : l'Assurance Maladie
+          téléphone aux assurés
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Une infirmière en psychiatrie de la Maison de santé les Pins
-          (clinique psychiatrique, 35 rue du Blayais 33600 Pessac) propose un
-          temps dédié pour vous répondre.
+          Avec des opérations « aller vers » grâce à des professionnels de
+          santé qui se déplacent dans les quartiers
         </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Comment ?</h4>
-          <ul className="list-disc pl-6 space-y-2 text-muted-foreground leading-relaxed">
-            <li>
-              Remplir le formulaire de demande d'orientation disponible sur
-              Plexus Santé.
-            </li>
-            <li>
-              Envoyer le formulaire par messagerie de santé sécurisée à{" "}
-              <a
-                href="mailto:elise.patenere@pro.mssante.fr"
-                className="text-primary hover:underline font-semibold"
-              >
-                elise.patenere@pro.mssante.fr
-              </a>
-              .
-            </li>
-            <li>
-              L'IDE Psy (Elise Patenere) répond par un mail au Professionnel de
-              Santé proposant une orientation possible (et/ou rdv téléphonique
-              si besoin pour expliciter l'orientation).
-            </li>
-          </ul>
-        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Une action de dépistage a été menée à la RPA Jean Brocas de Mérignac
+          le 29 novembre 2024 (avec 3 Gynécologues, 1 sage femme, 1 médecin
+          généraliste adhérentes de la CPTS)
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Prochaine action de dépistage au Foyer occupationnel Jenny Lepreux à
+          Mérignac le 16 avril 2026
+        </p>
       </div>
     ),
   },
