@@ -85,7 +85,7 @@ export async function POST(request: Request) {
     const totalItems = supports.reduce((sum, s) => sum + s.quantity, 0)
 
     const { data, error } = await resend.emails.send({
-      from: "CPTS Ouest Gironde <onboarding@resend.dev>",
+      from: "CPTS Ouest Gironde <contact@cpts-ouest-gironde.fr>",
       to: notificationRecipients,
       subject: `Nouvelle commande de supports - ${safeSubjectName}`,
       html: `

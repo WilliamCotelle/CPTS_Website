@@ -90,7 +90,7 @@ export async function POST(request: Request) {
     const replyToHref = toMailtoHref(email)
 
     const { data, error } = await resend.emails.send({
-      from: "CPTS Ouest Gironde <onboarding@resend.dev>",
+      from: "CPTS Ouest Gironde <contact@cpts-ouest-gironde.fr>",
       to: notificationRecipients,
       subject: `Nouveau message de ${safeSubjectFirstName} ${safeSubjectLastName}`,
       html: `
