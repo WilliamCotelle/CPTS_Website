@@ -453,9 +453,6 @@ function AnnuaireContent({
   // Always show "Tous âges" section (emergency numbers) for specific age categories
   const tousAgesGroup = ageGroups.find(g => g.age_group === "Tous âges");
   const showTousAges = category !== null && category !== "Tous âges" && tousAgesGroup;
-  const tousAgesAidantsSections = (tousAgesGroup?.sections || []).filter(
-    (s) => !isEmergencySection(s.section_title)
-  );
   const tousAgesEmergencyResources =
     tousAgesGroup?.sections.find((s) => isEmergencySection(s.section_title))
       ?.resources || [];
@@ -573,27 +570,9 @@ function AnnuaireContent({
         );
       })}
 
-      {/* Numéros d'urgence et aidants affichés pour toutes les catégories d'âge */}
+      {/* Numéros d'urgence affichés pour toutes les catégories d'âge */}
       {showTousAges && (
-        <div className="space-y-4 pt-2">
-          {tousAgesAidantsSections.map((section) => (
-            <Card
-              key={section.section_title}
-              className="border-border rounded-2xl overflow-hidden bg-card"
-            >
-              <CardContent className="p-5">
-                <h4 className="text-base font-bold text-card-foreground mb-4">
-                  {section.section_title}
-                </h4>
-                <div className="grid md:grid-cols-2 gap-3">
-                  {section.resources.map((resource, idx) => (
-                    <ResourceCard key={idx} resource={resource} />
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-
+        <div className="pt-2">
           <EmergencyNumbersSection resources={tousAgesEmergencyResources} />
         </div>
       )}
