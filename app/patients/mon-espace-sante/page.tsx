@@ -1,7 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
-import { UserRound, FileText, MessageSquare, LayoutGrid, ExternalLink, LucideIcon } from "lucide-react";
+import Link from "next/link";
+import { UserRound, FileText, MessageSquare, LayoutGrid, ExternalLink, BookOpen, LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import data from "@/app/data/mon-espace-sante.json";
@@ -57,6 +58,13 @@ export default function MonEspaceSantePage() {
                   <ExternalLink className="w-4 h-4" />
                   <span>{data.intro.link.label}</span>
                 </a>
+
+                <Link href={data.intro.tutorialButton.href}>
+                  <Button size="lg" className="mt-6 w-full sm:w-auto gap-2">
+                    <BookOpen className="w-4 h-4" />
+                    {data.intro.tutorialButton.label}
+                  </Button>
+                </Link>
               </div>
 
               {/* Illustration à droite */}
