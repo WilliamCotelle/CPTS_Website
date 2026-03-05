@@ -120,7 +120,18 @@
       "status": "available",
       "category": "Autres",
       "duration": "3H (soirée)",
-      "speakers": "Dr Adrien Crestani et association Dis Dame Donc"
+      "speakers": "Dr Adrien Crestani et association Dis Dame Donc",
+      "registrationStatusLabel": "Inscriptions closes",
+      "partnerLinks": [
+        {
+          "label": "IfemENDo",
+          "url": "https://www.institutendometriose.com/"
+        },
+        {
+          "label": "ViVmed",
+          "url": "https://www.vivmed.fr/"
+        }
+      ]
     },
     {
       "id": "cardiologie-mars-2026",

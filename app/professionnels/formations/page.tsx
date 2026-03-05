@@ -25,6 +25,8 @@ interface Formation {
   speakers?: string;
   partners?: string;
   images?: { src: string; alt: string }[];
+  partnerLinks?: { label: string; url: string }[];
+  registrationStatusLabel?: string;
 }
 
 interface FormationWithMeta extends Formation {
@@ -108,6 +110,15 @@ function sortByTemporalOrder(items: FormationWithMeta[]): FormationWithMeta[] {
   });
 }
 
+function sortArchivesByDateDesc(items: FormationWithMeta[]): FormationWithMeta[] {
+  return [...items].sort((a, b) => {
+    if (a.parsedDate && b.parsedDate) return b.parsedDate.getTime() - a.parsedDate.getTime();
+    if (a.parsedDate && !b.parsedDate) return -1;
+    if (!a.parsedDate && b.parsedDate) return 1;
+    return a.title.localeCompare(b.title, "fr");
+  });
+}
+
 export default function FormationsPage() {
   const [activeTab, setActiveTab] = useState<"simairlec" | "autres">("simairlec");
 
@@ -121,9 +132,9 @@ export default function FormationsPage() {
   const simairlecCurrent = sortByTemporalOrder(
     formationsSimairlec2026.map((formation) => normalizeStatus(formation, today)),
   );
-  const simairlecArchives = sortByTemporalOrder(
+  const simairlecArchives = sortArchivesByDateDesc(
     formationsSimairlecArchives.map((formation) => normalizeStatus(formation, today)),
-  ).reverse();
+  );
 
   const autresCurrentAll = autresFormations2026.map((formation) =>
     normalizeStatus(formation, today),
@@ -131,10 +142,10 @@ export default function FormationsPage() {
   const autresCurrent = sortByTemporalOrder(
     autresCurrentAll.filter((formation) => formation.effectiveStatus !== "past"),
   );
-  const autresArchivesMerged = sortByTemporalOrder([
+  const autresArchivesMerged = sortArchivesByDateDesc([
     ...autresCurrentAll.filter((formation) => formation.effectiveStatus === "past"),
     ...autresFormationsArchives.map((formation) => normalizeStatus(formation, today)),
-  ]).reverse();
+  ]);
 
   const getStatusBadge = (status: FormationStatus) => {
     switch (status) {
@@ -225,6 +236,25 @@ export default function FormationsPage() {
             </div>
           )}
 
+          {formation.partnerLinks && formation.partnerLinks.length > 0 && (
+            <div className="text-sm text-muted-foreground">
+              <span className="font-medium">Partenaires : </span>
+              <span className="inline-flex flex-wrap gap-x-3 gap-y-1">
+                {formation.partnerLinks.map((partner) => (
+                  <a
+                    key={partner.url}
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80 hover:underline font-medium"
+                  >
+                    {partner.label}
+                  </a>
+                ))}
+              </span>
+            </div>
+          )}
+
           {formation.note && (
             <div className="flex items-start gap-2 text-sm text-muted-foreground bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <Info className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
@@ -242,6 +272,12 @@ export default function FormationsPage() {
               {formation.linkLabel || "S'inscrire sur Digiforma"}
               <ExternalLink className="w-4 h-4" />
             </a>
+          )}
+
+          {!formation.link && formation.registrationStatusLabel && (
+            <p className="text-sm font-semibold text-muted-foreground">
+              {formation.registrationStatusLabel}
+            </p>
           )}
 
           {formation.images && formation.images.length > 0 && (
