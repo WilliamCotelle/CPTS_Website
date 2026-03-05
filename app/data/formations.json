@@ -154,11 +154,23 @@
     {
       "id": "copil-ville-hop-2026",
       "title": "Webinaire Villehop",
-      "date": "8 juin 2026",
+      "date": "12 mars 2026",
       "status": "available",
       "category": "Autres",
-      "duration": "2H",
-      "location": "Lieu non défini"
+      "duration": "2H (webinaire)",
+      "location": "En ligne",
+      "link": "https://chu-bordeaux.webex.com/wbxmjs/joinservice/sites/chu-bordeaux/meeting/download/6d602f40b8844669a4b8219423c248e7?MTID=m666a90210a2882b7cfa1393c0d68f33c",
+      "linkLabel": "Rejoindre le webinaire",
+      "images": [
+        {
+          "src": "/formation/logo-participants.jpg",
+          "alt": "Participants du webinaire Villehop"
+        },
+        {
+          "src": "/formation/webinaire-VilleHop.jpg",
+          "alt": "Visuel du webinaire Villehop"
+        }
+      ]
     }
   ],
   "autresFormationsArchives": [
