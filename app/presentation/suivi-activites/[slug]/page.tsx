@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CalendarDays, ExternalLink } from "lucide-react";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -11,6 +11,10 @@ import { ArticleMediaCarousel } from "@/components/suivi-activite/article-media-
 const LES_MATINS_SLUG = "les-matins-prevention-sante-aller-vers-les-usagers";
 const JOURNEE_ALLER_VERS_SLUG =
   "journee-aller-vers-usagers-martignas-pharmacie-ccas";
+const ATELIER_DIVERSIFICATION_5_MARS_2026_SLUG =
+  "atelier-diversification-alimentaire-5-mars-2026";
+const SOIREE_ENDOMETRIOSE_FEVRIER_2026_SLUG =
+  "soiree-endometriose-formation-fevrier-2026";
 const DEUXIEME_ATELIER_DIVERSIFICATION_SLUG =
   "deuxieme-atelier-de-diversification-alimentaire";
 const PREMIERE_JOURNEE_PREVENTION_ALLER_VERS_SLUG =
@@ -33,6 +37,33 @@ function renderParagraphWithBold(text: string) {
 }
 
 const articleDetails = {
+  [ATELIER_DIVERSIFICATION_5_MARS_2026_SLUG]: {
+    paragraphs: [
+      "Merci à Céline MAILLARD, diététicienne pédiatrique, pour l’animation de cet atelier, ainsi qu’aux familles présentes pour leur participation.",
+      "Prochain atelier : jeudi 7 mai 2026.",
+    ],
+    mediaImages: [
+      "/suivi-activite/articles/diversification-alimentaire-2026/1.webp",
+      "/suivi-activite/articles/diversification-alimentaire-2026/2.webp",
+      "/suivi-activite/articles/diversification-alimentaire-2026/3.webp",
+    ],
+  },
+  [SOIREE_ENDOMETRIOSE_FEVRIER_2026_SLUG]: {
+    paragraphs: [
+      "Ce mercredi 4 février, notre CPTS Ouest Gironde proposait une formation sur le thème de l’endométriose, pilotée par Marie-Amélie Bonnet, sage-femme à Mérignac.",
+      "Au programme : les nouveautés en physiopathologie et les nouvelles recommandations de traitement, présentées par le Dr Adrien Crestani d’IFEM Endo.",
+      "Il a rappelé l’importance d’un suivi pluriprofessionnel : rééducation, psychologue, psychiatre, sage-femme, gynécologue, médecin généraliste.",
+      "Un grand merci au centre VIVMED pour avoir éclairé nos adhérents sur les errances diagnostiques dans la prise en charge des vulvodynies, souvent étirées sur près de 2 ans.",
+      "Leur accompagnement pluridisciplinaire est disponible à Mérignac depuis décembre 2025 : contact@vivmed.fr",
+      "Enfin, un coup de projecteur sur l’association DisDameDonc et son programme d’ETP Endométriose : 4 demi-journées pour les patientes, et une 1ère en Nouvelle-Aquitaine.",
+    ],
+    mediaImages: [
+      "/suivi-activite/articles/soirée-endométriose-mars-2026/image.webp",
+      "/suivi-activite/articles/soirée-endométriose-mars-2026/image2.webp",
+      "/suivi-activite/articles/soirée-endométriose-mars-2026/image3.webp",
+      "/suivi-activite/articles/soirée-endométriose-mars-2026/image4.webp",
+    ],
+  },
   [LES_MATINS_SLUG]: {
     paragraphs: [
       "Un grand merci au CCAS de nous avoir convié ce jeudi 27 novembre 2025 pour ce dépistage des agents et du public Pessacais.",
@@ -159,6 +190,10 @@ export default async function SuiviActiviteArticlePage({ params }: PageProps) {
     article.slug === DEUXIEME_ATELIER_DIVERSIFICATION_SLUG
       ? "Affiche de l’atelier"
       : "Photo de la journée";
+  const articleRegistrationUrl =
+    article.slug === ATELIER_DIVERSIFICATION_5_MARS_2026_SLUG
+      ? "https://www.doctolib.fr/dieteticien/merignac/celine-maillard-merignac/booking/availabilities?specialityId=414&telehealth=false&placeId=practice-763409&motiveIds%5B%5D=13383386&pid=practice-763409&source=profile"
+      : null;
 
   return (
     <main className="min-h-screen bg-background">
@@ -178,6 +213,13 @@ export default async function SuiviActiviteArticlePage({ params }: PageProps) {
             <h1 className="text-3xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
               {article.title}
             </h1>
+
+            {article.publishedAt && (
+              <p className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-muted-foreground mb-6">
+                <CalendarDays className="w-4 h-4 text-primary" />
+                {article.publishedAt}
+              </p>
+            )}
 
             <div className="rounded-3xl border border-border bg-card p-3 lg:p-4 shadow-xl">
               <div className="relative h-[220px] sm:h-[280px] md:h-[340px] lg:h-[380px] bg-muted/40 rounded-2xl">
@@ -214,10 +256,21 @@ export default async function SuiviActiviteArticlePage({ params }: PageProps) {
                       {renderParagraphWithBold(paragraph)}
                     </p>
                   ))}
-                  {article.publishedAt && (
-                    <p className="pt-2 text-sm text-muted-foreground">
-                      {article.publishedAt}
-                    </p>
+                  {articleRegistrationUrl && (
+                    <div className="space-y-3">
+                      <p className="text-muted-foreground leading-relaxed text-lg">
+                        Inscriptions au prochain atelier :
+                      </p>
+                      <a
+                        href={articleRegistrationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
+                      >
+                        Voir les disponibilités Doctolib
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </div>
                   )}
                 </div>
               </article>

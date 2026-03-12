@@ -10,6 +10,24 @@ export interface SuiviArticle {
 // Ordre du plus récent au plus ancien
 export const suiviArticles: SuiviArticle[] = [
   {
+    slug: "atelier-diversification-alimentaire-5-mars-2026",
+    title: "Retour sur l’atelier diversification alimentaire du 5 mars 2026",
+    image: "/suivi-activite/articles/diversification-alimentaire-2026/1.webp",
+    excerpt:
+      "Merci à Céline MAILLARD, diététicienne pédiatrique, et aux familles présentes pour leur participation. Prochain atelier le jeudi 7 mai 2026.",
+    frame: "landscape",
+    publishedAt: "5 mars 2026",
+  },
+  {
+    slug: "soiree-endometriose-formation-fevrier-2026",
+    title: "Soirée endométriose du mercredi 4 février 2026",
+    image: "/suivi-activite/articles/soirée-endométriose-mars-2026/image.webp",
+    excerpt:
+      "Formation sur l’endométriose avec mises à jour en physiopathologie, recommandations de traitement et accompagnement pluriprofessionnel.",
+    frame: "landscape",
+    publishedAt: "4 février 2026",
+  },
+  {
     slug: "les-matins-prevention-sante-aller-vers-les-usagers",
     title: "Les matins prévention santé : « aller vers » les usagers",
     image: "/suivi-activite/articles/les-matins-prevention-sante.jpg",
